@@ -1,7 +1,7 @@
 sphinx-book-theme
 myst-nb
 ghp-import
-jupyter-book
+jupyter-book==0.11.3
 jupytext
 seaborn
 matplotlib
