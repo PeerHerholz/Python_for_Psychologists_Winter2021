@@ -23,11 +23,8 @@ Within these pages, we provide the all information important to follow and condu
 
 ## Python for Psychologists
 
-GORELLA stands for "Generalizable Outline for Realistic Empirical Life
-Science Lectures and their Applications". It is a framework aimed to
-improve openness and sustainability in scientific teaching and training.
-GORELLA is designed to help you prepare and supply lecture content
-in a way that it is [FAIR](https://en.wikipedia.org/wiki/FAIR_data) for as
+This course is designed to provide lecture content in a way that it 
+is [FAIR](https://en.wikipedia.org/wiki/FAIR_data) for as
 many people as possible.
 
 You can use the following sections to navigate through the content of the lecture:
