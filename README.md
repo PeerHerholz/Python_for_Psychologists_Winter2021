@@ -1,4 +1,4 @@
-![logo](lecture/static/fpf_logo.png)
+![logo](lecture/static/pfp_logo.png)
 
 ## "What's in this repository?"
 
