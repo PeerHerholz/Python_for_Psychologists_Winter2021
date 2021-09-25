@@ -16,9 +16,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'gorella_base'
-copyright = '2020, G0RELLA'
-author = 'Peer Herholz, José C. García Alanis, Christoph Vogelbacher'
+project = 'Python_for_Psychologists_Winter2021'
+copyright = '2021, Peer Herholz'
+author = 'Peer Herholz'
 
 master_doc = "index"
 
@@ -54,8 +54,8 @@ html_title = ""
 html_theme = "sphinx_book_theme"
 html_logo = "_static/gorella_logo.png"
 html_theme_options = {
-    "github_url": "https://github.com/G0RELLA/gorella_base",
-    "repository_url": "https://github.com/G0RELLA/gorella_base",
+    "github_url": "https://github.com/PeerHerholz/Python_for_Psychologists_Winter2021",
+    "repository_url": "https://github.com/PeerHerholz/Python_for_Psychologists_Winter2021",
     "repository_branch": "master",
     "use_edit_page_button": True,
     "path_to_docs": "docs/",

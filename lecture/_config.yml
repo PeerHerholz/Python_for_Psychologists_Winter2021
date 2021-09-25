@@ -5,10 +5,10 @@
 
 #######################################################################################
 # Book settings
-title                       : ""  # The title of the book. Will be placed in the left navbar.
-author                      : Peer Herholz, José C. García Alanis, Christoph Vogelbacher  # The author of the book
+title                       : "Python for Psychologists Winter - 2021"  # The title of the book. Will be placed in the left navbar.
+author                      : Peer Herholz  # The author of the book
 copyright                   : "2020"  # Copyright year to be placed in the footer
-logo                        : "static/gorella_logo.png"  # A path to the book logo
+logo                        : "static/pfp_logo.png"  # A path to the book logo
 exclude_patterns            : []  # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
 
 #######################################################################################
@@ -41,7 +41,7 @@ launch_buttons:
   thebe                     : false  # Add a thebe button to pages (requires the repository to run on Binder)
 
 repository:
-  url                       : https://github.com/G0RELLA/gorella_base  # The URL to your book's repository
+  url                       : https://github.com/PeerHerholz/Python_for_Psychologists_Winter2021  # The URL to your book's repository
   path_to_book              : "lecture"  # A path to your book's folder, relative to the repository root.
   branch                    : master  # Which branch of the repository should be used when creating links
 
