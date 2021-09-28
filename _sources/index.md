@@ -7,7 +7,7 @@ titlesonly: true
 ---
 ```
 
-![FpF logo](static/fpf_logo.png)
+![PfP logo](static/pfp_logo.png)
 
 ```{admonition} About the content of this Jupyter Book
 :class: warning
