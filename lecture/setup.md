@@ -1,4 +1,4 @@
-# Setup for the workshop
+# Setup for the course
 
 There are a few things you need to get working on your machine in order to follow this course. However, don't worry as it's all gonna be `open source`, won't require a lot of storage and explained in detail.
 
