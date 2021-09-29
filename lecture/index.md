@@ -7,14 +7,16 @@ titlesonly: true
 ---
 ```
 
-![PfP logo](static/pfp_logo.png)
+<img align="center" src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/pfp_logo.png" alt="logo" title="Twitter" width="500" height="300" />
+
+# Welcome!
+
 
 ```{admonition} About the content of this Jupyter Book
 :class: warning
 This page is currently under construction and will be updated continuously.
 Please visit this page again in the next few weeks for further information.
 ```
-# Welcome!
 
 Hello everyone and welcome to the course page for "Python for Psychologists", taught
 within the [Psychology master programme](https://www.goethe-university-frankfurt.de/51789866/Institute_of_Psychology?) of the [Goethe-University Frankfurt](https://www.goethe-university-frankfurt.de/en) during the winter term 2021. We're glad to see you here!
@@ -52,7 +54,7 @@ You can use the following sections to navigate through the content of the lectur
 
 * [Python for analyses]()
 
-   How can you use python to obtain insights from data, including preprecessing, statistics and visualizations? 
+   How can you use python to obtain insights from data, including preprocessing, statistics and visualizations? 
 
 * [Student projects]()
 
