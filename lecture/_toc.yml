@@ -2,7 +2,6 @@ root: index
 format: jb-book
 chapters:
 - file: overview
-- file: procedure
 - file: setup
 - file: outline
 - file: introduction/introduction.md
