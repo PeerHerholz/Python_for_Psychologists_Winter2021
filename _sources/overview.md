@@ -24,7 +24,7 @@ Below you will find important details regarding the course summarized in a compa
 
 #### When and where
 
-The course will run from October 28th, 2021 till February 10th, 2022, every Thursday from 4:15 - 5:45 PM CEST at [PEG 5.G 056](https://qis.server.uni-frankfurt.de/qisserver/rds?state=verpublish&status=init&vmfile=no&moduleCall=webInfo&publishConfFile=webInfoRaum&publishSubDir=raum&keep=y&raum.rgid=7008&noDBAction=y&init=y), Theodor-W.-Adorno-Platz 6, 60323, Frankfurt am Main. Please note that there will be "winter holidays" from December 18th, 2021 - January 13th, 2022 and no classes will take place within this time period.
+The course will run from October 28th, 2021 till February 10th, 2022, every Thursday from 4:15 - 5:45 PM CET at [PEG 5.G 056](https://qis.server.uni-frankfurt.de/qisserver/rds?state=verpublish&status=init&vmfile=no&moduleCall=webInfo&publishConfFile=webInfoRaum&publishSubDir=raum&keep=y&raum.rgid=7008&noDBAction=y&init=y), Theodor-W.-Adorno-Platz 6, 60323, Frankfurt am Main. Please note that there will be "winter holidays" from December 18th, 2021 - January 13th, 2022 and no classes will take place within this time period.
 
 <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.661464452743532%2C50.12589530933526%2C8.67423176765442%2C50.130778644149046&amp;layer=mapnik&amp;marker=50.12833703902714%2C8.667848110198975" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=50.12834&amp;mlon=8.66785#map=17/50.12834/8.66785">View Larger Map</a></small>
 
