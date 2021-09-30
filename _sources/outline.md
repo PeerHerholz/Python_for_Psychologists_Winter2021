@@ -8,7 +8,8 @@ As mentioned in the [overview]() and [procedure]() sections, the course will tak
 
 ### Schedule
 
-Please see below for our current _optimistic_ schedule. Depending on our progress, potential software problems and different forms of learning, content and times might change a bit. Each lecture will be divided into two parts separated by a 5 minute break and might constitute a transition from basic to advanced concepts.   
+Please see below for our current _optimistic_ schedule. Depending on our progress, potential software problems and different forms of learning, content and times might change a bit. Each lecture will be divided into two parts separated by a 5 minute break and might constitute a transition from basic to advanced concepts. 
+Please note that there will be "winter holidays" from December 18th, 2021 - January 13th, 2022 and no classes will take place within this time period.  
 
 | Date (day/month/year)         | Topic     | Assignment & deadline |
 |--------------|-----------|------------|
@@ -23,5 +24,5 @@ Please see below for our current _optimistic_ schedule. Depending on our progres
 | 13/01/2022 | Data analyses I - data handling  | 18/01/2022 - 11:59 PM EST       |
 | 20/01/2022 | Data analyses II - statistics  | 25/01/2022 - 11:59 PM EST       |
 | 27/01/2022 | Data analyses III - visualization  | 02/02/2022 - 11:59 PM EST      |
-| 03/02/2022 | To behavioral data & beyond - a primer on python packages  | 08/02/2021 - 11:59 PM EST       |
-| 10/02/2022 | Project discussion, Q&A  | not applicable       |
+| 03/02/2022 | To behavioral data & beyond - a primer on python packages  | not applicable       |
+| 10/02/2022 | Project discussion, Q&A  |  not applicable      |
