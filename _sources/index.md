@@ -7,16 +7,15 @@ titlesonly: true
 ---
 ```
 
-<img align="center" src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/pfp_logo.png" alt="logo" title="Twitter" width="500" height="300" />
+<img align="right" src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/pfp_logo.png" alt="logo" title="Twitter" width="500" height="300" />
 
 # Welcome!
 
-
-```{admonition} About the content of this Jupyter Book
-:class: warning
-This page is currently under construction and will be updated continuously.
-Please visit this page again in the next few weeks for further information.
-```
+````{margin}
+```{warning} 
+These pages are currently under construction and will be updated continuously.
+Please visit these pages again in the next few weeks for further information.
+````
 
 Hello everyone and welcome to the course page for "Python for Psychologists", taught
 within the [Psychology master programme](https://www.goethe-university-frankfurt.de/51789866/Institute_of_Psychology?) of the [Goethe-University Frankfurt](https://www.goethe-university-frankfurt.de/en) during the winter term 2021. We're glad to see you here!
