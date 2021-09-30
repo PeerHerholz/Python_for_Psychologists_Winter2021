@@ -134,7 +134,7 @@ Open a terminal and type the following commands:
 
         conda config --append channels conda-forge
         conda config --set channel_priority strict
-        conda install -y flake8 ipython jupyter jupyterlab matplotlib numpy pandas scipy seaborn
+        conda install -y flake8 ipython jupyter jupyterlab matplotlib numpy pandas scipy seaborn pingouin statsmodels plotly psychopy
 ```
 
 ```{tabbed} Linux
@@ -200,7 +200,7 @@ Open a terminal and type the following commands:
 
         conda config --append channels conda-forge
         conda config --set channel_priority strict
-        conda install -y flake8 ipython jupyter jupyterlab matplotlib numpy pandas scipy seaborn
+        conda install -y flake8 ipython jupyter jupyterlab matplotlib numpy pandas scipy seaborn pingouin statsmodels plotly psychopy
 
 ```
 
@@ -277,7 +277,7 @@ Open a terminal and type the following commands:
 
         conda config --append channels conda-forge
         conda config --set channel_priority strict
-        conda install -y flake8 ipython jupyter jupyterlab matplotlib numpy pandas scipy seaborn
+        conda install -y flake8 ipython jupyter jupyterlab matplotlib numpy pandas scipy seaborn pingouin statsmodels plotly psychopy
 ```
 
 **Note**: If the instructions aren't working and you have spent more than 15-20 minutes troubleshooting on your own, reach out on the #help-installation channel on the Discord channel with the exact problems you're having.
