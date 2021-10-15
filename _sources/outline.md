@@ -9,7 +9,8 @@ As mentioned in the [overview]() and [procedure]() sections, the course will tak
 ### Schedule
 
 Please see below for our current _optimistic_ schedule. Depending on our progress, potential software problems and different forms of learning, content and times might change a bit. Each lecture will be divided into two parts separated by a 5 minute break and might constitute a transition from basic to advanced concepts. 
-Please note that there will be "winter holidays" from December 18th, 2021 - January 13th, 2022 and no classes will take place within this time period.  
+
+**Please note** that there will be "winter holidays" from December 18th, 2021 - January 13th, 2022 and no classes will take place within this time period.  
 
 | Date (day/month/year)         | Topic     | Assignment & deadline |
 |--------------|-----------|------------|

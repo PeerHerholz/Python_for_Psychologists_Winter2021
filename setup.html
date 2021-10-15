@@ -53,7 +53,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="General outline" href="outline.html" />
-    <link rel="prev" title="Course overview &amp; procedure" href="overview.html" />
+    <link rel="prev" title="Diversity, Equity and Inclusion" href="dei.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -98,6 +98,11 @@
  <li class="toctree-l1">
   <a class="reference internal" href="overview.html">
    Course overview &amp; procedure
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dei.html">
+   Diversity, Equity and Inclusion
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -301,7 +306,7 @@
                 
   <div class="section" id="setup-for-the-course">
 <h1>Setup for the course<a class="headerlink" href="#setup-for-the-course" title="Permalink to this headline">¶</a></h1>
-<p>There are a few things you need to get working on your machine in order to follow this course. However, don’t worry as it’s all gonna be <code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">source</span></code>, won’t require a lot of storage and explained in detail.</p>
+<p>There are a few things you need to get working on your machine in order to follow this course. However, don’t worry as it’s all gonna be <span class="xref myst">open source</span>, won’t require a lot of storage and will be explained in detail.</p>
 <p>While same parts and section will be do-able via <code class="docutils literal notranslate"><span class="pre">cloud</span> <span class="pre">computing</span></code>, which is nice and easy to follow in an interactive manner, it’s not recommended as getting <code class="docutils literal notranslate"><span class="pre">Python</span></code> &amp; friends to work reliably on your machine is going to be very beneficial. This holds true for the course and especially beyond. Via installing these tools, you will be equipped to basically continue right away and start using them in your everyday research workflow. This even applies if you won’t continue with <code class="docutils literal notranslate"><span class="pre">python</span></code> (I certainly hope you do.) and instead work with <code class="docutils literal notranslate"><span class="pre">R</span></code> (of course also cool), <code class="docutils literal notranslate"><span class="pre">matlab</span></code> (weeeeeeeell…) or what have you.  Having that in mind and integrating other tools/resources focusing open and reproducible (neuro-/data) science, you will find a rather comprehensive set of install instructions below. While not all of them might be totally necessary for the course, they all will help you a great deal going further and are especially useful/needed if we have to hold the course virtually due to the COVID-19 pandemic.</p>
 <p>Don’t worry, you got this!</p>
 <p><img alt="logo" src="https://media1.tenor.com/images/f72cb542d6b3e3c3421889e0a3d9628d/tenor.gif?itemid=4533805" /><br />
@@ -348,8 +353,8 @@ You <em>must</em> have <code class="docutils literal notranslate"><span class="p
 <h3>OS-specific installation instructions<a class="headerlink" href="#os-specific-installation-instructions" title="Permalink to this headline">¶</a></h3>
 <p>Select the tab that corresponds to your operating system and follow the instructions therein.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="7a468824-65ac-4193-8cbf-d50d44847047" name="c0093216-c85e-477e-b901-6036dee5171f" type="radio">
-</input><label class="tabbed-label" for="7a468824-65ac-4193-8cbf-d50d44847047">
+<input checked="checked" id="ad3802c8-f7ff-42ac-840d-f779aa05e5f1" name="f89006c4-fdbf-4ae8-8298-78e79d69d56e" type="radio">
+</input><label class="tabbed-label" for="ad3802c8-f7ff-42ac-840d-f779aa05e5f1">
 Windows</label><div class="tabbed-content docutils">
 <p><strong>Windows Subsystem for Linux (WSL)</strong></p>
 <ol>
@@ -444,8 +449,8 @@ If your issue is still not resolved skip the following step and contact an instr
 </pre></div>
 </div>
 </div>
-<input id="d7bc75f0-9658-43ed-9a21-628b0637e702" name="c0093216-c85e-477e-b901-6036dee5171f" type="radio">
-</input><label class="tabbed-label" for="d7bc75f0-9658-43ed-9a21-628b0637e702">
+<input id="7be4648b-7b9e-4e68-97ad-b60e40b563cc" name="f89006c4-fdbf-4ae8-8298-78e79d69d56e" type="radio">
+</input><label class="tabbed-label" for="7be4648b-7b9e-4e68-97ad-b60e40b563cc">
 Linux</label><div class="tabbed-content docutils">
 <p><strong>Bash shell</strong></p>
 <p>You already have it!
@@ -516,8 +521,8 @@ If your issue is still not resolved skip the following step and contact an instr
 </pre></div>
 </div>
 </div>
-<input id="d6f0c5a3-1109-4e47-b499-81b0fd0a960c" name="c0093216-c85e-477e-b901-6036dee5171f" type="radio">
-</input><label class="tabbed-label" for="d6f0c5a3-1109-4e47-b499-81b0fd0a960c">
+<input id="b582539e-54f6-4839-9294-cf140f2fcf13" name="f89006c4-fdbf-4ae8-8298-78e79d69d56e" type="radio">
+</input><label class="tabbed-label" for="b582539e-54f6-4839-9294-cf140f2fcf13">
 MacOs</label><div class="tabbed-content docutils">
 <p><strong>Bash shell</strong></p>
 <p>You already have it!
@@ -637,8 +642,8 @@ If you followed these instructions step-by-step and cannot resolve the issue ple
 <h2>Getting the course content<a class="headerlink" href="#getting-the-course-content" title="Permalink to this headline">¶</a></h2>
 <p>Now that you have installed the required software (or not) to follow the course, it’s time to gather the respective materials.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="0ba3e0c2-d70f-4f07-8958-4fa457528936" name="f2dd9871-d385-4d2d-a885-176c683de1b3" type="radio">
-</input><label class="tabbed-label" for="0ba3e0c2-d70f-4f07-8958-4fa457528936">
+<input checked="checked" id="4606fef6-ef4d-464a-b8ee-0ebcdc70943f" name="2f40014e-4ee2-4492-a383-ada22b9eb187" type="radio">
+</input><label class="tabbed-label" for="4606fef6-ef4d-464a-b8ee-0ebcdc70943f">
 Local</label><div class="tabbed-content docutils">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg" alt="conda logo" width="300"/><br />
 <sub><sup><sub><sup><a class="reference external" href="https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg">https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg</a></sup></sub></sup></sub></p>
@@ -647,13 +652,13 @@ Local</label><div class="tabbed-content docutils">
 <ol class="simple">
 <li><p>Download the <a class="reference external" href="https://raw.githubusercontent.com/peerherholz/Python_for_Psychologists_Winter2021/master/environment.yml"><code class="docutils literal notranslate"><span class="pre">environment.yml</span></code></a> file (e.g. with right mouse click -&gt; Save As). Make sure that the file ends with <code class="docutils literal notranslate"><span class="pre">.yml</span></code> and not <code class="docutils literal notranslate"><span class="pre">.txt</span></code>.</p></li>
 <li><p>Open up a conda terminal (or any other terminal), and create a new conda environment with the following command: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">-f</span> <span class="pre">/path/to/file/environment.yml</span></code> - For example ``conda env create -f ~/Downloads/environment.yml`</p></li>
-<li><p>Download the notebooks in this repository via <a class="reference external" href="https://github.com/peerherholz/Python_for_Psychologists_Winter2021/archive/master.zip">this link</a>) and unzip them to your prefered location, e.g. <code class="docutils literal notranslate"><span class="pre">Desktop/Python_for_Psychologists_Winter2021</span></code>.</p></li>
+<li><p>Download the notebooks in this repository via <a class="reference external" href="https://github.com/peerherholz/Python_for_Psychologists_Winter2021/archive/master.zip">this link</a>) and unzip them to your preferred location, e.g. <code class="docutils literal notranslate"><span class="pre">Desktop/Python_for_Psychologists_Winter2021</span></code>.</p></li>
 <li><p>Next, open up a <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">terminal</span></code> (or any other <code class="docutils literal notranslate"><span class="pre">terminal</span></code>), activate the <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">environment</span></code> with <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">pfp_2021</span></code> (or on older <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">environment</span></code> with <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">activate</span> <span class="pre">pfp_2021</span></code> for <code class="docutils literal notranslate"><span class="pre">mac</span></code> and <code class="docutils literal notranslate"><span class="pre">linux</span></code> and <code class="docutils literal notranslate"><span class="pre">activate</span> <span class="pre">pfp_2021</span></code> for <code class="docutils literal notranslate"><span class="pre">windows</span></code>).</p></li>
 <li><p>Finally, via the <code class="docutils literal notranslate"><span class="pre">terminal</span></code>, move to the folder where you’ve put all the unzipped content of this workshop, e.g. with the command <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~/Desktop/Python_for_Psychologists_Winter2021</span></code> and run the command <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>.</p></li>
 </ol>
 </div>
-<input id="7f5ec800-93ae-4082-b960-97a9e22e68fb" name="f2dd9871-d385-4d2d-a885-176c683de1b3" type="radio">
-</input><label class="tabbed-label" for="7f5ec800-93ae-4082-b960-97a9e22e68fb">
+<input id="1a81561a-60da-4c01-891b-16aeeb9a7b5a" name="2f40014e-4ee2-4492-a383-ada22b9eb187" type="radio">
+</input><label class="tabbed-label" for="1a81561a-60da-4c01-891b-16aeeb9a7b5a">
 Cloud via Mybinder</label><div class="tabbed-content docutils">
 <p><img src="https://mybinder.org/static/logo.svg?v=fe52c40adc69454ba7536393f76ebd715e5fb75f5feafe16a27c47483eabf3311c14ed9fda905c49915d6dbf369ae68fb855a40dd05489a7b9542a9ee532e92b" alt="binder logo" width="300"/><br />
 <sub><sup><sub><sup><a class="reference external" href="https://mybinder.org/static/logo.svg?v=fe52c40adc69454ba7536393f76ebd715e5fb75f5feafe16a27c47483eabf3311c14ed9fda905c49915d6dbf369ae68fb855a40dd05489a7b9542a9ee532e92b">https://mybinder.org/static/logo.svg?v=fe52c40adc69454ba7536393f76ebd715e5fb75f5feafe16a27c47483eabf3311c14ed9fda905c49915d6dbf369ae68fb855a40dd05489a7b9542a9ee532e92b</a></sup></sub></sup></sub></p>
@@ -701,11 +706,11 @@ Cloud via Mybinder</label><div class="tabbed-content docutils">
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="overview.html" title="previous page">
+        <a class="left-prev" href="dei.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Course overview &amp; procedure</p>
+                <p class="prevnext-title">Diversity, Equity and Inclusion</p>
             </div>
         </a>
     </div>
