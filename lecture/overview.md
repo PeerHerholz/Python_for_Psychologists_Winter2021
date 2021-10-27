@@ -70,19 +70,46 @@ Additional reading material might be added but will always be open & free with s
 
 #### How to get those credits?
 
+As this is a practical lab course intended to provide you with an introduction to using `python` for experimental work via a mixture of guided and independent work, your assignments and tasks will be rather diverse and quite different from other modules. In order to successfully participate in this you will need to work on and hand in multiple things, including `homework assignments`, `python scripts` and `analyses pipelines`.  While this sounds like a lot, it is intended to provide you with a holistic learning experience and the instructors with a way to assess your learning progress (somewhat) individually. The assignments and tasks aim to reflect these aspects and will entail working on research projects, evaluating that of others, reading project-related and general research-related literature and more. All of this will follow [open science practices](https://en.wikipedia.org/wiki/Open_science) & [FAIR principles](https://en.wikipedia.org/wiki/FAIR_data), meaning all work will be completely open & maximized regarding reproducibility. The different parts and grading scheme are further outlined below.  
+
 ##### Exams and Assignments
 
-There will be a `take-home, open book final exam` at the end of the course. It will entail the generation of an `analysis pipeline` `documented` and `run` within a `jupyter notebook`. There will be __no midterm exam__.
+There will be a `take-home, open book final exam` at the end of the course. It will entail the generation of an `interactive & reproducible publication`, that is a `data analysis pipeline` which is `documented` and `run` within a `jupyter notebook`, as well as provided in a form that allows others to `openly re-run everything`.  There will be __no classical midterm exam__. Instead, you will have to hand in a `python script` that runs an `experiment` of your choice and which was used to generate the data you will be presenting and analyzing in the `final exam`.
 
 There will be `10 homework assignments`. Assignments will be posted as the semester progresses after each meeting.
 
 ##### Grading
 
-Your final grade will be based on a `weighted combination` of `homework assignments`, the `final exam` and `class participation`:
+Your final grade will be based on a `weighted combination` of `homework assignments`, the `experiment script`, the `final exam` and `class participation`. **Please note** that there will prominent differences depending on the start date of your studies, i.e. the `exam regulation` under which you started the master program. I'm very sorry that there will be some imbalance, I'm also not a fan of this. However, we have to comply with the `exam regulations` unfortunately.   
 
-- `homework assignments` (50%): There will be `10 homework assignments`. Each `assignment` is worth `5%` of your grade.
-- `Final exam` (40%): There will be a `take-home, open book final exam`.
-- `Class participation` (10%): Showing up for class, demonstrating preparedness (i.e., doing the readings), contributing to class discussions, and doing the in-class labs. Students who are unable to regularly attend synchronous online class should contact the instructor.
+**First semester, started winter term 21/22**
+
+You can choose if you want to only obtain a participation credit **or** a grade. Regarding the first, your grade for this module will be based on the second course next semester. 
+
+*In order to obtain your participation credit you will have to provide the following:*
+
+- `homework assignments`: There will be `10 homework assignments`. You have to hand in at least `8` and thus can miss two in total.
+- `Class participation`: Showing up for class, demonstrating preparedness (i.e., doing the readings), contributing to class discussions, and doing the in-class labs.
+
+*If you want to obtain your grade for the module in this course, you will have to provide the following:*
+
+- `homework assignments` (10%): There will be `10 homework assignments`. Each `assignment` is worth `1%` of your grade.
+- `Experiment script` (30%): There will be a `take-home, open book exam` roughly in the middle of the course as outlined above. 
+- `Final exam` (30%): There will be a `take-home, open book final exam` as outlined above.
+- `Class participation` (10%): Showing up for class, demonstrating preparedness (i.e., doing the readings), contributing to class discussions, and doing the in-class labs.
+
+**Not first semester, started earlier than winter term 21/22** 
+
+Both courses of the module will be graded with the final grade being the average of both. 
+
+In order to obtain your grade in this course, you will have to provide the following:
+
+- `homework assignments`: There will be `10 homework assignments`. You have to hand in at least `8` and thus can miss two in total.
+- `Experiment script` (50%): There will be a `take-home, open book exam` roughly in the middle of the course as outlined above. 
+- `Final exam` (50%): There will be a `take-home, open book final exam` as outlined above.
+- `Class participation`: Showing up for class, demonstrating preparedness (i.e., doing the readings), contributing to class discussions, and doing the in-class labs.
+
+
 
 <iframe src="https://giphy.com/embed/yFHkrrbfITemc" width="240" height="173" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/exams-yFHkrrbfITemc">via GIPHY</a></p>
 

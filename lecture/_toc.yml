@@ -1,8 +1,8 @@
 root: index
 format: jb-book
 chapters:
-- file: overview
 - file: dei
+- file: overview
 - file: setup
 - file: outline
 - file: introduction/introduction.md
