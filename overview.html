@@ -52,8 +52,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Diversity, Equity and Inclusion" href="dei.html" />
-    <link rel="prev" title="Welcome!" href="index.html" />
+    <link rel="next" title="Setup for the course" href="setup.html" />
+    <link rel="prev" title="Diversity, Equity and Inclusion" href="dei.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -95,14 +95,14 @@
  </li>
 </ul>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Course overview &amp; procedure
-  </a>
- </li>
  <li class="toctree-l1">
   <a class="reference internal" href="dei.html">
    Diversity, Equity and Inclusion
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Course overview &amp; procedure
   </a>
  </li>
  <li class="toctree-l1">
@@ -124,7 +124,17 @@
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="simple">
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="introduction/intro_to_shell.html">
+     Introduction to the (unix) command line: bash
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="introduction/intro_jupyter.html">
+     Introduction to the jupyter ecosystem &amp; notebooks
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1">
@@ -404,18 +414,37 @@ psychology. To do so, we will follow a “learning by doing” approach in a tri
 </div>
 <div class="section" id="how-to-get-those-credits">
 <h3>How to get those credits?<a class="headerlink" href="#how-to-get-those-credits" title="Permalink to this headline">¶</a></h3>
+<p>As this is a practical lab course intended to provide you with an introduction to using <code class="docutils literal notranslate"><span class="pre">python</span></code> for experimental work via a mixture of guided and independent work, your assignments and tasks will be rather diverse and quite different from other modules. In order to successfully participate in this you will need to work on and hand in multiple things, including <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignments</span></code>, <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">scripts</span></code> and <code class="docutils literal notranslate"><span class="pre">analyses</span> <span class="pre">pipelines</span></code>.  While this sounds like a lot, it is intended to provide you with a holistic learning experience and the instructors with a way to assess your learning progress (somewhat) individually. The assignments and tasks aim to reflect these aspects and will entail working on research projects, evaluating that of others, reading project-related and general research-related literature and more. All of this will follow <a class="reference external" href="https://en.wikipedia.org/wiki/Open_science">open science practices</a> &amp; <a class="reference external" href="https://en.wikipedia.org/wiki/FAIR_data">FAIR principles</a>, meaning all work will be completely open &amp; maximized regarding reproducibility. The different parts and grading scheme are further outlined below.</p>
 <div class="section" id="exams-and-assignments">
 <h4>Exams and Assignments<a class="headerlink" href="#exams-and-assignments" title="Permalink to this headline">¶</a></h4>
-<p>There will be a <code class="docutils literal notranslate"><span class="pre">take-home,</span> <span class="pre">open</span> <span class="pre">book</span> <span class="pre">final</span> <span class="pre">exam</span></code> at the end of the course. It will entail the generation of an <code class="docutils literal notranslate"><span class="pre">analysis</span> <span class="pre">pipeline</span></code> <code class="docutils literal notranslate"><span class="pre">documented</span></code> and <code class="docutils literal notranslate"><span class="pre">run</span></code> within a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>. There will be <strong>no midterm exam</strong>.</p>
+<p>There will be a <code class="docutils literal notranslate"><span class="pre">take-home,</span> <span class="pre">open</span> <span class="pre">book</span> <span class="pre">final</span> <span class="pre">exam</span></code> at the end of the course. It will entail the generation of an <code class="docutils literal notranslate"><span class="pre">interactive</span> <span class="pre">&amp;</span> <span class="pre">reproducible</span> <span class="pre">publication</span></code>, that is a <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">analysis</span> <span class="pre">pipeline</span></code> which is <code class="docutils literal notranslate"><span class="pre">documented</span></code> and <code class="docutils literal notranslate"><span class="pre">run</span></code> within a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>, as well as provided in a form that allows others to <code class="docutils literal notranslate"><span class="pre">openly</span> <span class="pre">re-run</span> <span class="pre">everything</span></code>.  There will be <strong>no classical midterm exam</strong>. Instead, you will have to hand in a <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">script</span></code> that runs an <code class="docutils literal notranslate"><span class="pre">experiment</span></code> of your choice and which was used to generate the data you will be presenting and analyzing in the <code class="docutils literal notranslate"><span class="pre">final</span> <span class="pre">exam</span></code>.</p>
 <p>There will be <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">homework</span> <span class="pre">assignments</span></code>. Assignments will be posted as the semester progresses after each meeting.</p>
 </div>
 <div class="section" id="grading">
 <h4>Grading<a class="headerlink" href="#grading" title="Permalink to this headline">¶</a></h4>
-<p>Your final grade will be based on a <code class="docutils literal notranslate"><span class="pre">weighted</span> <span class="pre">combination</span></code> of <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignments</span></code>, the <code class="docutils literal notranslate"><span class="pre">final</span> <span class="pre">exam</span></code> and <code class="docutils literal notranslate"><span class="pre">class</span> <span class="pre">participation</span></code>:</p>
+<p>Your final grade will be based on a <code class="docutils literal notranslate"><span class="pre">weighted</span> <span class="pre">combination</span></code> of <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignments</span></code>, the <code class="docutils literal notranslate"><span class="pre">experiment</span> <span class="pre">script</span></code>, the <code class="docutils literal notranslate"><span class="pre">final</span> <span class="pre">exam</span></code> and <code class="docutils literal notranslate"><span class="pre">class</span> <span class="pre">participation</span></code>. <strong>Please note</strong> that there will prominent differences depending on the start date of your studies, i.e. the <code class="docutils literal notranslate"><span class="pre">exam</span> <span class="pre">regulation</span></code> under which you started the master program. I’m very sorry that there will be some imbalance, I’m also not a fan of this. However, we have to comply with the <code class="docutils literal notranslate"><span class="pre">exam</span> <span class="pre">regulations</span></code> unfortunately.</p>
+<p><strong>First semester, started winter term 21/22</strong></p>
+<p>You can choose if you want to only obtain a participation credit <strong>or</strong> a grade. Regarding the first, your grade for this module will be based on the second course next semester.</p>
+<p><em>In order to obtain your participation credit you will have to provide the following:</em></p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignments</span></code> (50%): There will be <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">homework</span> <span class="pre">assignments</span></code>. Each <code class="docutils literal notranslate"><span class="pre">assignment</span></code> is worth <code class="docutils literal notranslate"><span class="pre">5%</span></code> of your grade.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Final</span> <span class="pre">exam</span></code> (40%): There will be a <code class="docutils literal notranslate"><span class="pre">take-home,</span> <span class="pre">open</span> <span class="pre">book</span> <span class="pre">final</span> <span class="pre">exam</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Class</span> <span class="pre">participation</span></code> (10%): Showing up for class, demonstrating preparedness (i.e., doing the readings), contributing to class discussions, and doing the in-class labs. Students who are unable to regularly attend synchronous online class should contact the instructor.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignments</span></code>: There will be <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">homework</span> <span class="pre">assignments</span></code>. You have to hand in at least <code class="docutils literal notranslate"><span class="pre">8</span></code> and thus can miss two in total.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Class</span> <span class="pre">participation</span></code>: Showing up for class, demonstrating preparedness (i.e., doing the readings), contributing to class discussions, and doing the in-class labs.</p></li>
+</ul>
+<p><em>If you want to obtain your grade for the module in this course, you will have to provide the following:</em></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignments</span></code> (10%): There will be <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">homework</span> <span class="pre">assignments</span></code>. Each <code class="docutils literal notranslate"><span class="pre">assignment</span></code> is worth <code class="docutils literal notranslate"><span class="pre">1%</span></code> of your grade.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Experiment</span> <span class="pre">script</span></code> (30%): There will be a <code class="docutils literal notranslate"><span class="pre">take-home,</span> <span class="pre">open</span> <span class="pre">book</span> <span class="pre">exam</span></code> roughly in the middle of the course as outlined above.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Final</span> <span class="pre">exam</span></code> (30%): There will be a <code class="docutils literal notranslate"><span class="pre">take-home,</span> <span class="pre">open</span> <span class="pre">book</span> <span class="pre">final</span> <span class="pre">exam</span></code> as outlined above.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Class</span> <span class="pre">participation</span></code> (10%): Showing up for class, demonstrating preparedness (i.e., doing the readings), contributing to class discussions, and doing the in-class labs.</p></li>
+</ul>
+<p><strong>Not first semester, started earlier than winter term 21/22</strong></p>
+<p>Both courses of the module will be graded with the final grade being the average of both.</p>
+<p>In order to obtain your grade in this course, you will have to provide the following:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignments</span></code>: There will be <code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">homework</span> <span class="pre">assignments</span></code>. You have to hand in at least <code class="docutils literal notranslate"><span class="pre">8</span></code> and thus can miss two in total.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Experiment</span> <span class="pre">script</span></code> (50%): There will be a <code class="docutils literal notranslate"><span class="pre">take-home,</span> <span class="pre">open</span> <span class="pre">book</span> <span class="pre">exam</span></code> roughly in the middle of the course as outlined above.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Final</span> <span class="pre">exam</span></code> (50%): There will be a <code class="docutils literal notranslate"><span class="pre">take-home,</span> <span class="pre">open</span> <span class="pre">book</span> <span class="pre">final</span> <span class="pre">exam</span></code> as outlined above.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Class</span> <span class="pre">participation</span></code>: Showing up for class, demonstrating preparedness (i.e., doing the readings), contributing to class discussions, and doing the in-class labs.</p></li>
 </ul>
 <iframe src="https://giphy.com/embed/yFHkrrbfITemc" width="240" height="173" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/exams-yFHkrrbfITemc">via GIPHY</a></p>
 </div>
@@ -483,19 +512,19 @@ psychology. To do so, we will follow a “learning by doing” approach in a tri
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="index.html" title="previous page">
+        <a class="left-prev" href="dei.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Welcome!</p>
+                <p class="prevnext-title">Diversity, Equity and Inclusion</p>
             </div>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="dei.html" title="next page">
+        <a class="right-next" href="setup.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Diversity, Equity and Inclusion</p>
+                <p class="prevnext-title">Setup for the course</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>
