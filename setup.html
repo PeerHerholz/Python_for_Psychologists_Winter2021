@@ -126,14 +126,31 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="introduction/intro_to_shell.html">
-     Introduction II - the (unix) command line: bash
+    <a class="reference internal" href="introduction/introduction_1.html">
+     Introduction I
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="introduction/intro_jupyter.html">
-     Introduction II - the jupyter ecosystem &amp; notebooks
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="introduction/introduction_2.html">
+     Introduction II
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="introduction/intro_to_shell.html">
+       Introduction II - the (unix) command line: bash
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="introduction/intro_jupyter.html">
+       Introduction II - the jupyter ecosystem &amp; notebooks
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -363,8 +380,8 @@ You <em>must</em> have <code class="docutils literal notranslate"><span class="p
 <h3>OS-specific installation instructions<a class="headerlink" href="#os-specific-installation-instructions" title="Permalink to this headline">¶</a></h3>
 <p>Select the tab that corresponds to your operating system and follow the instructions therein.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="31cfe694-f006-4d43-b6f1-ae1de977e536" name="be4fd5c8-bc00-429a-8203-0aa9f96cbaf9" type="radio">
-</input><label class="tabbed-label" for="31cfe694-f006-4d43-b6f1-ae1de977e536">
+<input checked="checked" id="db68ade1-0966-43f6-a433-79438f50cf69" name="7edab143-f51a-465e-a7a1-8bb33233cae4" type="radio">
+</input><label class="tabbed-label" for="db68ade1-0966-43f6-a433-79438f50cf69">
 Windows</label><div class="tabbed-content docutils">
 <p><strong>Windows Subsystem for Linux (WSL)</strong></p>
 <ol>
@@ -459,8 +476,8 @@ If your issue is still not resolved skip the following step and contact an instr
 </pre></div>
 </div>
 </div>
-<input id="c8e151dd-6a93-4174-a7bc-f5fad91e4352" name="be4fd5c8-bc00-429a-8203-0aa9f96cbaf9" type="radio">
-</input><label class="tabbed-label" for="c8e151dd-6a93-4174-a7bc-f5fad91e4352">
+<input id="dede3ce5-c88d-4dfc-9b55-5bb0ddc2e598" name="7edab143-f51a-465e-a7a1-8bb33233cae4" type="radio">
+</input><label class="tabbed-label" for="dede3ce5-c88d-4dfc-9b55-5bb0ddc2e598">
 Linux</label><div class="tabbed-content docutils">
 <p><strong>Bash shell</strong></p>
 <p>You already have it!
@@ -531,8 +548,8 @@ If your issue is still not resolved skip the following step and contact an instr
 </pre></div>
 </div>
 </div>
-<input id="ad5d677b-45f8-4d11-851a-8db1b2fdeaf3" name="be4fd5c8-bc00-429a-8203-0aa9f96cbaf9" type="radio">
-</input><label class="tabbed-label" for="ad5d677b-45f8-4d11-851a-8db1b2fdeaf3">
+<input id="7cb55df5-642b-4189-a15f-ad9aae53583a" name="7edab143-f51a-465e-a7a1-8bb33233cae4" type="radio">
+</input><label class="tabbed-label" for="7cb55df5-642b-4189-a15f-ad9aae53583a">
 MacOs</label><div class="tabbed-content docutils">
 <p><strong>Bash shell</strong></p>
 <p>You already have it!
@@ -652,8 +669,8 @@ If you followed these instructions step-by-step and cannot resolve the issue ple
 <h2>Getting the course content<a class="headerlink" href="#getting-the-course-content" title="Permalink to this headline">¶</a></h2>
 <p>Now that you have installed the required software (or not) to follow the course, it’s time to gather the respective materials.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="330442af-7150-480b-b401-9ef87d0ac610" name="f79a44b2-321f-4c98-8498-1782eea6d500" type="radio">
-</input><label class="tabbed-label" for="330442af-7150-480b-b401-9ef87d0ac610">
+<input checked="checked" id="efb315ff-8bbe-460e-95b9-a0d1162e8a84" name="17aac9f2-e677-4f10-9e8f-a3fdda302831" type="radio">
+</input><label class="tabbed-label" for="efb315ff-8bbe-460e-95b9-a0d1162e8a84">
 Local</label><div class="tabbed-content docutils">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg" alt="conda logo" width="300"/><br />
 <sub><sup><sub><sup><a class="reference external" href="https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg">https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg</a></sup></sub></sup></sub></p>
@@ -667,8 +684,8 @@ Local</label><div class="tabbed-content docutils">
 <li><p>Finally, via the <code class="docutils literal notranslate"><span class="pre">terminal</span></code>, move to the folder where you’ve put all the unzipped content of this workshop, e.g. with the command <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~/Desktop/Python_for_Psychologists_Winter2021</span></code> and run the command <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>.</p></li>
 </ol>
 </div>
-<input id="a663880a-3eab-4d40-b8c2-286984446370" name="f79a44b2-321f-4c98-8498-1782eea6d500" type="radio">
-</input><label class="tabbed-label" for="a663880a-3eab-4d40-b8c2-286984446370">
+<input id="0b99bf0b-1dd6-4e3f-b003-17fcd1097ad5" name="17aac9f2-e677-4f10-9e8f-a3fdda302831" type="radio">
+</input><label class="tabbed-label" for="0b99bf0b-1dd6-4e3f-b003-17fcd1097ad5">
 Cloud via Mybinder</label><div class="tabbed-content docutils">
 <p><img src="https://mybinder.org/static/logo.svg?v=fe52c40adc69454ba7536393f76ebd715e5fb75f5feafe16a27c47483eabf3311c14ed9fda905c49915d6dbf369ae68fb855a40dd05489a7b9542a9ee532e92b" alt="binder logo" width="300"/><br />
 <sub><sup><sub><sup><a class="reference external" href="https://mybinder.org/static/logo.svg?v=fe52c40adc69454ba7536393f76ebd715e5fb75f5feafe16a27c47483eabf3311c14ed9fda905c49915d6dbf369ae68fb855a40dd05489a7b9542a9ee532e92b">https://mybinder.org/static/logo.svg?v=fe52c40adc69454ba7536393f76ebd715e5fb75f5feafe16a27c47483eabf3311c14ed9fda905c49915d6dbf369ae68fb855a40dd05489a7b9542a9ee532e92b</a></sup></sub></sup></sub></p>
