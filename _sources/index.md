@@ -30,41 +30,37 @@ many people as possible.
 
 You can use the following sections to navigate through the content of the lecture:
 
-* [An overview]()
+* [Overview & procedure ](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/overview.html)
 
-   What's this course all about?
+   What's this course all about? How are things implemented and supposed to work? 
 
-* [General procedure]()
-
-   How are things implemented and supposed to work? 
-
-* [General outline]()
+* [General outline](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/outline.html)
 
    What are the specific topics and aspects taught?
 
-* [An introduction to computing environments]()
+* [Introduction](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/introduction.html)
 
    All things gotta start somewhere and using programming within research settings is no exception to
    that, but how?
 
-* [Python for experiments]()
+* [Running experiments in Python](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/experiments/experiments.html#)
 
    How can you use python to conduct experiments to acquire data from participants? 
 
-* [Python for analyses]()
+* [Data analyses in Python](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/analyses/analyses.html)
 
    How can you use python to obtain insights from data, including preprocessing, statistics and visualizations? 
 
-* [Student projects]()
+* [Student projects](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/projects.html)
 
    Making sure the work and progress of the participants is transparent and
    documented.
 
-* [Questionnaires]()
+* [Questionnaires](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/questionnaires.html)
 
    Was it worth it and how can this be evaluated?
 
-* [Code of Conduct]()
+* [Code of Conduct](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/CoC.html)
 
    Necessities for creating an open, fair, safe and inclusive learning
    experience.
@@ -72,4 +68,6 @@ You can use the following sections to navigate through the content of the lectur
 ## I've got a question!
 
 In case you have any questions or difficulties with the lecture and its materials, please don’t hesitate a single second to get in touch with us. A great way to do this is to [open an issue](https://github.com/PeerHerholz/Python_for_Psychologists_Winter2021/issues) on the
-GitHub site of the course. We would also highly appreciate and value every feedback or idea or you might have.
+GitHub site of the course. Every feedback or idea or you might have is also highly appreciated and valued.
+
+<p align="center"><iframe src="https://giphy.com/embed/ATt7p8OO4mvvO" width="440" height="140" frameBorder="0" vspace="0" class="giphy-embed" allowFullScreen></iframe></p><p align="center"><a href="https://giphy.com/gifs/photos-street-sesame-ATt7p8OO4mvvO"><small>via GIPHY</small></a></p></p>
