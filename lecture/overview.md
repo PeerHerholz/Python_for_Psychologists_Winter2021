@@ -7,24 +7,41 @@ Since a good amount of years, the majority of experimental work within `Psycholo
 Within this course we will explore the [Python programming language](https://en.wikipedia.org/wiki/Python_(programming_language)), specifically how it can be and why it should be utilized within experimental
 psychology. To do so, we will follow a "learning by doing" approach in a tripartite manner. Starting from a basic introduction into `programming` and `python` (Block I), we will evaluate how `python` can be used to run `experiments` (Block II) and `analyze` the resulting `data` (Block III). Thus, we actively seek out `realistic examples` and `workflows`, trying to solve problems with `python`.  Along this way we will also talk about important adjacent topics such as `computing environments` and `IDE`s. For a rather precise outline of the course, please consult the [respective section](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/setup.html).
 
-### How to reach the person in the front
+### How to reach the folks in the front
 
-The contact information of the instructor are as follows:
+<iframe src="https://giphy.com/embed/U6GunJi6B1o7ecMfKc" width="240" height="136" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/justviralnet-funny-mistake-spelling-U6GunJi6B1o7ecMfKc">via GIPHY</a></p>
+
+The contact information of the instructors are as follows:
+
+- [Maren Wehrheim]()  
+- Office hours:   
+- E-mail:  
+- preferred mode of contact:  
+
+```{admonition} How to address one another?
+:class: dropdown
+```
+
+and:
 
 - [Peer Herholz (he/him)](https://peerherholz.github.io/)
 - Office hours: [by arrangement via this webpage](https://peerherholz.github.io/contact/)
 - E-mail: Herholz@psych.uni-frankfurt.de
 - preferred mode of contact: usually online to save time and effort for everyone
 
-<iframe src="https://giphy.com/embed/U6GunJi6B1o7ecMfKc" width="240" height="136" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/justviralnet-funny-mistake-spelling-U6GunJi6B1o7ecMfKc">via GIPHY</a></p>
 
+
+```{admonition} How to address one another?
+:class: dropdown
+When contacting me, please refrain from using titles when addressing me and super formal language, just “Peer” is fine and it’s way more important that the content is respectful, fair and constructive (I aim for the same when I reply). However, please let me know if you have a preferred way of interacting with other folks, including how you would liked to be addressed, your pronouns and the level of formality.
+```
 ### Gimme the details
 
 Below you will find important details regarding the course summarized in a compact form. Please consult and familiarize yourself with the information presented there prior to and/or within the first few days of the course. 
 
 #### When and where
 
-The course will run from October 28th, 2021 till February 10th, 2022, every Thursday from 4:15 - 5:45 PM CET at [PEG 5.G 056](https://qis.server.uni-frankfurt.de/qisserver/rds?state=verpublish&status=init&vmfile=no&moduleCall=webInfo&publishConfFile=webInfoRaum&publishSubDir=raum&keep=y&raum.rgid=7008&noDBAction=y&init=y), Theodor-W.-Adorno-Platz 6, 60323, Frankfurt am Main. Please note that there will be "winter holidays" from December 18th, 2021 - January 13th, 2022 and no classes will take place within this time period.
+The course will run from October 28th, 2021 till February 10th, 2022, every Thursday from 4:15 - 5:45 PM CET at [PEG 1 G 150](https://qis.server.uni-frankfurt.de/qisserver/rds?state=verpublish&status=init&vmfile=no&moduleCall=webInfo&publishConfFile=webInfoRaum&publishSubDir=raum&keep=y&raum.rgid=6097), Theodor-W.-Adorno-Platz 6, 60323, Frankfurt am Main. Please note that there will be "winter holidays" from December 18th, 2021 - January 13th, 2022 and no classes will take place within this time period.
 
 <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.661464452743532%2C50.12589530933526%2C8.67423176765442%2C50.130778644149046&amp;layer=mapnik&amp;marker=50.12833703902714%2C8.667848110198975" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=50.12834&amp;mlon=8.66785#map=17/50.12834/8.66785">View Larger Map</a></small>
 
@@ -139,6 +156,29 @@ This course has a `Code of conduct`. Please inform yourself about the specifics 
 
 <iframe src="https://giphy.com/embed/l5s71uAp3CzKwxwkoZ" width="240" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/theoffice-nbc-the-office-tv-l5s71uAp3CzKwxwkoZ">via GIPHY</a></p>
 
+
+### How to Get Your Question(s) Answered and/or Provide Feedback
+
+It’s great that we have so many ways to communicate, but it can get tricky to figure out who to contact or where your question belongs or when to expect a response. These guidelines are to help you get your question answered as quickly as possible and to ensure that we’re able to get to everyone’s questions.
+
+That said, to ensure that we’re respecting everyone's time and thus will mainly answer questions between normal working hours (M-F 9AM-5PM). The instructors are also going to do their best to stick to these working hours. However, they know that’s not when you may be doing your work. So, please feel free to post messages whenever is best for you while knowing that if you post late at night or on a weekend, you may not get a response until the next weekday. As such, do your best not to wait until the last minute to ask a question.
+
+If you have:
+
+- questions about course content - these are awesome! We want everyone to see them and have their questions answered too, so either use the [hypothes.is](https://web.hypothes.is/) plugin, the `discord` channel, the `e-mail` list or the [GitHub repository](https://github.com/PeerHerholz/Python_for_Psychologists_Winter2021/issues).
+
+- a technical assignment question - come to office hours (or post to `discord`). Answering technical questions is often best accomplished ‘in person’ where we can discuss the question and talk through ideas. However, if that is not possible, post your question to `discord`. Be as specific as you can in the question you ask. And, for those answering, help your classmates as much as you can without just giving the answer. Help guide them, point them in a direction, provide pseudo code, but do not provide code that answers assignment questions.
+
+- been stuck on something for a while (>30min) and aren’t even really sure where to start - Programming can be frustrating and it may not always be obvious what is going wrong or why something isn’t working. That’s OK - we’ve all been there! IF you are stuck, you can and should reach out for help, even if you aren’t exactly sure what your specific question is. To determine when to reach out, consider the 2-hour rule. This rule states that if you are stuck, work on that problem for an hour. Then, take a 30 minute break and do something else. When you come back after your break, try for another 30 minutes or so to solve your problem. If you are still completely stuck, stop and contact us (office hours, post on `discord`). If you don’t have a specific question, include the information you have (what you’re stuck on, the code you’ve been trying that hasn’t been happening, and/or the error messages you’ve been getting).
+
+- questions about course logistics - first, check the [overview](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/overview.html) & [syllabus](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/outline.html). If you can’t find the answer there, first ask a classmate. If still unsure, post on `discord`.
+
+- something super cool to share related to class or want to talk about a topic in further depth - feel free to post on `discord`, contact the instructors or come to office hours. 
+
+- some feedback about the course you want to share anonymously - If you’ve been offended by an example in class, really liked or disliked a lesson, or wish there were something covered in class that wasn’t but would rather not share this publicly, etc., please fill out the anonymous Google Form*
+
+*This form can be taken down at any time if it’s not being used for its intended purpose; however, you all will be notified should that happen.
+
 ### Acknowledgements
 
-Several parts of this section are directly taken or adapted from [Alexander Huth's Neuro Data Analysis in Python syllabus](https://github.com/alexhuth/ndap-fa2020) licensed under a [BSD-3-Clause License](https://github.com/alexhuth/ndap-fa2020/blob/master/LICENSE). 
+Several parts of this section are directly taken or adapted from [Alexander Huth's Neuro Data Analysis in Python syllabus](https://github.com/alexhuth/ndap-fa2020) licensed under a [BSD-3-Clause License](https://github.com/alexhuth/ndap-fa2020/blob/master/LICENSE) and [Shannon Ellis' COGS 18: Introduction to Python](https://cogs18.github.io/assets/intro/syllabus.html).
