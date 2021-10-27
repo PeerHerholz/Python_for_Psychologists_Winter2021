@@ -7,6 +7,9 @@ chapters:
 - file: outline
 - file: introduction/introduction.md
   sections:
+  - file: introduction/introduction_1.md
+  - file: introduction/introduction_2.md
+    sections:
     - file: introduction/intro_to_shell.ipynb
     - file: introduction/intro_jupyter.ipynb
 - file: experiments/experiments.md
