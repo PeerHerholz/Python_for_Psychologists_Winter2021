@@ -14,7 +14,7 @@ psychology. To do so, we will follow a "learning by doing" approach in a tripart
 
 ### How to reach the folks in the front
 
-<iframe src="https://giphy.com/embed/U6GunJi6B1o7ecMfKc" width="240" height="136" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/justviralnet-funny-mistake-spelling-U6GunJi6B1o7ecMfKc">via GIPHY</a></p>
+<p align="center"><iframe src="https://giphy.com/embed/U6GunJi6B1o7ecMfKc" width="240" height="240" frameBorder="0" vspace="0" class="giphy-embed" allowFullScreen></iframe></p><p align="center"><a href="https://giphy.com/gifs/justviralnet-funny-mistake-spelling-U6GunJi6B1o7ecMfKc"><small>via GIPHY</small></a></p></p>
 
 The contact information of the instructors are as follows:
 
