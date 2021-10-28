@@ -24,9 +24,12 @@ Within these pages, we provide the all information important to follow and condu
 
 ## Python for Psychologists
 
-This course is designed to provide lecture content in a way that it 
-is [FAIR](https://en.wikipedia.org/wiki/FAIR_data) for as
-many people as possible.
+Within this course we will explore the [Python programming language](https://en.wikipedia.org/wiki/Python_(programming_language)), specifically how it can be and why it should be utilized within experimental
+psychology. To do so, we will follow a "learning by doing" approach in a tripartite manner. Starting from a basic introduction into `programming` and `python` (Block I), we will evaluate how `python` can be used to run `experiments` (Block II) and `analyze` the resulting `data` (Block III). Thus, we actively seek out `realistic examples` and `workflows`, trying to solve problems with `python`.  Along this way we will also talk about important adjacent topics such as `computing environments` and `IDE`s. For a rather precise outline of the course, please consult the [respective section](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/setup.html).
+
+This course is designed to provide lecture content in a way that it is [FAIR](https://en.wikipedia.org/wiki/FAIR_data) for as many people as possible.
+
+<iframe src="https://giphy.com/embed/13HgwGsXF0aiGY" width="240" height="136" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/13HgwGsXF0aiGY">via GIPHY</a></p>
 
 You can use the following sections to navigate through the content of the lecture:
 
