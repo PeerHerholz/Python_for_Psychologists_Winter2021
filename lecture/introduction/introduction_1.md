@@ -23,6 +23,8 @@ First things first: what is going to happen in this course? What is it all about
 
 #### Materials 📓
 
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQFQeu3eM4R5GtnRzb_bZPOEO66lZ8QZAYvyPjb_4ApRpXkW715drhvrsP9bGNrAQg5fl3WpiR9hpt5/embed?start=false&loop=false&delayms=3000" frameborder="0" width="600" height="370" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 ## Project related work 🥼🧑🏿‍🔬👩🏻‍🔬
 
 Not applicable, as project related work didn't start yet.
@@ -31,5 +33,19 @@ Not applicable, as project related work didn't start yet.
 
 Not applicable, as we will ease into things.
 
-### optional/reading/further materials
+## optional/reading/further materials
+
+Here are some things that were briefly addressed during the session which you could check out further, including the [The Turing Way](https://the-turing-way.netlify.app/welcome.html) & [Project TIER](https://www.projecttier.org/).
+
+### The Turing Way
+
+https://the-turing-way.netlify.app/welcome.html 
+
+<iframe src="https://the-turing-way.netlify.app/welcome.html" frameborder="0" width="700" height="370"></iframe>
+
+### Project TIER
+
+https://www.projecttier.org/
+
+<iframe src="https://www.projecttier.org/" frameborder="0" width="700" height="370"></iframe>
 
