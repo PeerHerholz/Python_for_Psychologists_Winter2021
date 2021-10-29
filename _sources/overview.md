@@ -2,7 +2,7 @@
 
 Since a good amount of years, the majority of experimental work within `Psychology` (and most other disciplines) requires the application of computers. No matter if `data acquisition` or `analyses`, computer-aided research is almost impossible to avoid and if done right, can be incredible helpful and even enable new types of `analyses` to obtain insights that are otherwise inaccessible. Rather surprisingly to most folks, the efficient utilization of `computers` within `research` also includes `programming` or even requires it. Besides making `research` faster, more streamlined, efficient, stable and less prone to errors, some parts of the  `research workflow` might actually require certain `programming skills`. This for example entails the generation of `experiments` and certain `analyses` of subsequently obtained `data`. 
 
-<p align="center"><iframe src="https://giphy.com/embed/sgZdwNkOH43wZOEUJ2" width="240" height="240" frameBorder="0" vspace="0" class="giphy-embed" allowFullScreen></iframe></p><p align="center"><a href="https://giphy.com/gifs/parksandrec-episode-9-parks-and-recreation-rec-sgZdwNkOH43wZOEUJ2"><small>via GIPHY</small></a></p></p>
+<p align="center"><iframe src="https://giphy.com/embed/sgZdwNkOH43wZOEUJ2" width="240" height="240" frameBorder="0" vspace="0" class="giphy-embed" allowFullScreen style="overflow-y: hidden;"></iframe></p><p align="center"><a href="https://giphy.com/gifs/parksandrec-episode-9-parks-and-recreation-rec-sgZdwNkOH43wZOEUJ2"><small>via GIPHY</small></a></p></p>
 
 
 While most thesis projects (undergrad and grad), PhD and other positions that actively work with `data` expect `programming` knowledge and/or experience, most programs however don't enable students to gather this skill set as their curricula don't include respective course. Obviously, we won't be able to turn you into expert programmers within one semester, but this course is intended to provide you with a good basic understanding of and capabilities with the [Python](https://www.python.org/) [programming language](https://en.wikipedia.org/wiki/Programming_language). Specifically, this course should build the basis for further endeavors, setting you up with everything you need to know for that.    
@@ -14,7 +14,7 @@ psychology. To do so, we will follow a "learning by doing" approach in a tripart
 
 ### How to reach the folks in the front
 
-<p align="center"><iframe src="https://giphy.com/embed/U6GunJi6B1o7ecMfKc" width="240" height="240" frameBorder="0" vspace="0" class="giphy-embed" allowFullScreen></iframe></p><p align="center"><a href="https://giphy.com/gifs/justviralnet-funny-mistake-spelling-U6GunJi6B1o7ecMfKc"><small>via GIPHY</small></a></p></p>
+<p align="center"><iframe src="https://giphy.com/embed/U6GunJi6B1o7ecMfKc" width="240" height="240" frameBorder="0" vspace="0" class="giphy-embed" allowFullScreen style="overflow-y: hidden;"></iframe></p><p align="center"><a href="https://giphy.com/gifs/justviralnet-funny-mistake-spelling-U6GunJi6B1o7ecMfKc"><small>via GIPHY</small></a></p></p>
 
 The contact information of the instructors are as follows:
 
