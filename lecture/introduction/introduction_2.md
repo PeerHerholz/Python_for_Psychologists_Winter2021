@@ -40,7 +40,7 @@ Please see the rendered version of the `jupyter notebook`[Introduction II - the 
 
 #### Objectives 📍
 
-Please download the example script [fancy_analyzes.py](https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip).
+Please download the example script [fancy_analyzes.py](https://www.dropbox.com/s/52q11h8r5oj8ocg/fancy_analyzes.py?dl=1).
 
 #### Materials 📓
 
