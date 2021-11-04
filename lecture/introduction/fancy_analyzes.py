@@ -1,3 +1,4 @@
+# The script was written using Python 3.7
 
 print("Downloading data")
 import requests
