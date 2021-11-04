@@ -1,6 +1,6 @@
 # Introduction II
 
-Within the second session we'll start exploring this thing called "the computer" a bit more, specifically two aspects that might seem adjacent to utilizing `python` within research workflows but are actually crucial components: the `(bash) shell` and `computing environments`. Don't worry: this will also entail hands-on programming, just not directly in `python`. The things covered in this session will introduce central concepts for our subsequent endeavors.
+Within the second session we'll start exploring this thing called "the computer" a bit more, specifically two aspects that might seem adjacent to utilizing `python` within research workflows but are actually crucial components: `CLIs/IDEs`  and `(bash) shell`. Don't worry: this will also entail hands-on programming, just not directly in `python`. The things covered in this session will introduce central concepts for our subsequent endeavors.
 
 ## Topics 💡👨🏻‍🏫 
 
@@ -34,18 +34,6 @@ Please download the [example dataset provided here](https://swcarpentry.github.i
 #### Materials 📓
 
 Please see the rendered version of the `jupyter notebook`[Introduction II - the (unix) command line: bash](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/intro_to_shell.html) in the `ToC` on the left.
-
-### Computing environments
-
-
-#### Objectives 📍
-
-Please download the example script [fancy_analyzes.py](https://www.dropbox.com/s/52q11h8r5oj8ocg/fancy_analyzes.py?dl=1).
-
-#### Materials 📓
-
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRRRVMRe7CegikWx84HvsfGvAhvWlA-Bb8tj5bqWmU9Vucl6kUxCC4XcIzVU6a0ExcJkgnnRYO_aE7Q/embed?start=false&loop=false&delayms=3000" frameborder="0" width="600" height="370" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
 
 ## Project related work 🥼🧑🏿‍🔬👩🏻‍🔬
 
