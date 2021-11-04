@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introduction II &#8212; Winter - 2021</title>
+    <title>Introduction III &#8212; Winter - 2021</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -52,8 +52,6 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Introduction II - the (unix) command line: bash" href="intro_to_shell.html" />
-    <link rel="prev" title="Introduction I" href="introduction_1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -94,7 +92,7 @@
   </a>
  </li>
 </ul>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../dei.html">
    Diversity, Equity and Inclusion
@@ -115,26 +113,26 @@
    General outline
   </a>
  </li>
- <li class="toctree-l1 current active has-children">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="introduction.html">
    Introduction
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="introduction_1.html">
      Introduction I
     </a>
    </li>
-   <li class="toctree-l2 current active has-children">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="introduction_2.html">
      Introduction II
     </a>
-    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
     <label for="toctree-checkbox-2">
      <i class="fas fa-chevron-down">
      </i>
@@ -220,7 +218,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/introduction/introduction_2.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/introduction/introduction_3.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -240,10 +238,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/PeerHerholz/Python_for_Psychologists_Winter2021/issues/new?title=Issue%20on%20page%20%2Fintroduction/introduction_2.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/PeerHerholz/Python_for_Psychologists_Winter2021/issues/new?title=Issue%20on%20page%20%2Fintroduction/introduction_3.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/PeerHerholz/Python_for_Psychologists_Winter2021/edit/master/lecture/introduction/introduction_2.md"><button
+        <a class="edit-button" href="https://github.com/PeerHerholz/Python_for_Psychologists_Winter2021/edit/master/lecture/introduction/introduction_3.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -274,8 +272,8 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#you-your-computer">
-     You &amp; your computer
+    <a class="reference internal nav-link" href="#computing-environments">
+     Computing environments
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
@@ -291,8 +289,8 @@
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-bash-shell">
-     The (bash) shell
+    <a class="reference internal nav-link" href="#jupyter-notebooks">
+     Jupyter notebooks
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
@@ -308,8 +306,8 @@
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#computing-environments">
-     Computing environments
+    <a class="reference internal nav-link" href="#python">
+     Python
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
@@ -354,32 +352,25 @@
         
               <div>
                 
-  <div class="section" id="introduction-ii">
-<h1>Introduction II<a class="headerlink" href="#introduction-ii" title="Permalink to this headline">¶</a></h1>
-<p>Within the second session we’ll start exploring this thing called “the computer” a bit more, specifically two aspects that might seem adjacent to utilizing <code class="docutils literal notranslate"><span class="pre">python</span></code> within research workflows but are actually crucial components: the <code class="docutils literal notranslate"><span class="pre">(bash)</span> <span class="pre">shell</span></code> and <code class="docutils literal notranslate"><span class="pre">computing</span> <span class="pre">environments</span></code>. Don’t worry: this will also entail hands-on programming, just not directly in <code class="docutils literal notranslate"><span class="pre">python</span></code>. The things covered in this session will introduce central concepts for our subsequent endeavors.</p>
+  <div class="section" id="introduction-iii">
+<h1>Introduction III<a class="headerlink" href="#introduction-iii" title="Permalink to this headline">¶</a></h1>
+<p>Within the second session we’ll continue with the sections from last week, that is exploring this thing called “the computer” a bit more, specifically one aspect that might seem adjacent to utilizing <code class="docutils literal notranslate"><span class="pre">python</span></code> within research workflows but is actually a crucial component: <code class="docutils literal notranslate"><span class="pre">computing</span> <span class="pre">environments</span></code>. Don’t worry: this will also entail hands-on programming, just not directly in <code class="docutils literal notranslate"><span class="pre">python</span></code>. The things covered in this session will introduce central concepts for our subsequent endeavors. For example, also the ones we will cover in the second part of the session, that is <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebooks</span></code> and finally <code class="docutils literal notranslate"><span class="pre">python</span></code>.</p>
 <div class="section" id="topics">
 <h2>Topics 💡👨🏻‍🏫<a class="headerlink" href="#topics" title="Permalink to this headline">¶</a></h2>
 <p>In the following you’ll find the <code class="docutils literal notranslate"><span class="pre">objectives</span></code> and <code class="docutils literal notranslate"><span class="pre">materials</span></code> for each of the topics we’ll discuss during this session.</p>
-<div class="section" id="you-your-computer">
-<h3>You &amp; your computer<a class="headerlink" href="#you-your-computer" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="computing-environments">
+<h3>Computing environments<a class="headerlink" href="#computing-environments" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="objectives">
 <h4>Objectives 📍<a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h4>
-<ul class="simple">
-<li><p>Learn about different ways of interacting with computers</p></li>
-<li><p>GUI, CLI, IDEs</p></li>
-<li><p>test different options on your machines</p></li>
-<li><p>Ask and answer questions</p></li>
-<li><p>Have a great time</p></li>
-</ul>
+<p>Please download the example script <a class="reference external" href="https://www.dropbox.com/s/52q11h8r5oj8ocg/fancy_analyzes.py?dl=1">fancy_analyzes.py</a>.</p>
 </div>
 <div class="section" id="materials">
 <h4>Materials 📓<a class="headerlink" href="#materials" title="Permalink to this headline">¶</a></h4>
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTkm6evTi-Ag-noQGTGLVwykDUFJroeLyr-oKcB1qISpb9vD6pU-ktMRswOjUZeUNESSoMxt9Z3Pd4b/embed?start=false&loop=false&delayms=3000" frameborder="0" width="600" height="370" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRRRVMRe7CegikWx84HvsfGvAhvWlA-Bb8tj5bqWmU9Vucl6kUxCC4XcIzVU6a0ExcJkgnnRYO_aE7Q/embed?start=false&loop=false&delayms=3000" frameborder="0" width="600" height="370" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 </div>
-<div class="section" id="the-bash-shell">
-<h3>The (bash) shell<a class="headerlink" href="#the-bash-shell" title="Permalink to this headline">¶</a></h3>
-<p>Please download the <a class="reference external" href="https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip">example dataset provided here</a>.</p>
+<div class="section" id="jupyter-notebooks">
+<h3>Jupyter notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="id1">
 <h4>Objectives 📍<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
@@ -393,18 +384,16 @@
 </div>
 <div class="section" id="id2">
 <h4>Materials 📓<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
-<p>Please see the rendered version of the <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code><a class="reference external" href="https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/intro_to_shell.html">Introduction II - the (unix) command line: bash</a> in the <code class="docutils literal notranslate"><span class="pre">ToC</span></code> on the left.</p>
+<p>Please see the rendered version of the <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code><a class="reference external" href="https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/intro_jupyter.html">Introduction III - jupyter notebooks</a> in the <code class="docutils literal notranslate"><span class="pre">ToC</span></code> on the left.</p>
 </div>
 </div>
-<div class="section" id="computing-environments">
-<h3>Computing environments<a class="headerlink" href="#computing-environments" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="python">
+<h3>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="id3">
 <h4>Objectives 📍<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
-<p>Please download the example script <a class="reference external" href="https://www.dropbox.com/s/52q11h8r5oj8ocg/fancy_analyzes.py?dl=1">fancy_analyzes.py</a>.</p>
 </div>
 <div class="section" id="id4">
 <h4>Materials 📓<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRRRVMRe7CegikWx84HvsfGvAhvWlA-Bb8tj5bqWmU9Vucl6kUxCC4XcIzVU6a0ExcJkgnnRYO_aE7Q/embed?start=false&loop=false&delayms=3000" frameborder="0" width="600" height="370" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 </div>
 </div>
@@ -414,12 +403,10 @@
 </div>
 <div class="section" id="tasks-for-subsequent-meeting">
 <h2>tasks for subsequent meeting 🖥️✍🏽📖<a class="headerlink" href="#tasks-for-subsequent-meeting" title="Permalink to this headline">¶</a></h2>
-<p>None, as we didn’t finish the lecture and didn’t cover the content necessary to conduct the task.</p>
+<p>Your first homework assignment will entail the generation of a <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">environment</span></code> within which our <code class="docutils literal notranslate"><span class="pre">fancy_analyzes.py</span></code> can run &amp; sending us the corresponding <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> via e-mail. Please note the deadline: 08/11/2021, 11:59 PM EST.</p>
 <div class="section" id="optional-reading-further-materials">
 <h3>optional/reading/further materials<a class="headerlink" href="#optional-reading-further-materials" title="Permalink to this headline">¶</a></h3>
 </div>
-</div>
-<div class="toctree-wrapper compound">
 </div>
 </div>
 
@@ -452,24 +439,6 @@
 
 <div class='prev-next-bottom'>
     
-    <div id="prev">
-        <a class="left-prev" href="introduction_1.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Introduction I</p>
-            </div>
-        </a>
-    </div>
-     <div id="next">
-        <a class="right-next" href="intro_to_shell.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Introduction II - the (unix) command line: bash</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
 
 </div>
         

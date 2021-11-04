@@ -1,6 +1,6 @@
 # Introduction II
 
-Within the second session we'll start exploring this thing called "the computer" a bit more, specifically two aspects that might seem adjacent to utilizing `python` within research workflows but are actually crucial components: the `(bash) shell` and `computing environments`. Don't worry: this will also entail hands-on programming, just no directly in `python`. The things covered in this session will introduce central concepts for our subsequent endeavors.
+Within the second session we'll start exploring this thing called "the computer" a bit more, specifically two aspects that might seem adjacent to utilizing `python` within research workflows but are actually crucial components: the `(bash) shell` and `computing environments`. Don't worry: this will also entail hands-on programming, just not directly in `python`. The things covered in this session will introduce central concepts for our subsequent endeavors.
 
 ## Topics 💡👨🏻‍🏫 
 
@@ -53,7 +53,6 @@ Not applicable, as project related work didn't start yet.
 
 ## tasks for subsequent meeting 🖥️✍🏽📖
 
-Your first homework assignment will entail the generation of a `conda environment` within which our `fancy_analyzes.py` can run & sending us the corresponding `environment.yml` via e-mail. Please note the deadline: 08/11/2021, 11:59 PM EST.
+None, as we didn't finish the lecture and didn't cover the content necessary to conduct the task. 
 
 ### optional/reading/further materials
-
