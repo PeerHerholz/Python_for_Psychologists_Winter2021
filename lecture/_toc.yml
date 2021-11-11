@@ -12,8 +12,6 @@ chapters:
     sections:
     - file: introduction/intro_to_shell.ipynb
   - file: introduction/introduction_3.md
-    sections:
-    - file: introduction/intro_jupyter.ipynb
 - file: experiments/experiments.md
 - file: analyses/analyses.md
 - file: projects
