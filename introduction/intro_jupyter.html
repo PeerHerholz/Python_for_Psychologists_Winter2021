@@ -305,8 +305,8 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#goals">
-   Goals
+  <a class="reference internal nav-link" href="#objectives">
+   Objectives 📍
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -488,6 +488,11 @@
    To Jupyter &amp; beyond
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#homework-assignment-2">
+   Homework assignment #2
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -517,8 +522,8 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <li><p>based on <a class="reference external" href="https://github.com/oesteban/biss2016">https://github.com/oesteban/biss2016</a> &amp;  <a class="reference external" href="https://github.com/jvns/pandas-cookbook">https://github.com/jvns/pandas-cookbook</a></p></li>
 </ul>
 </div>
-<div class="section" id="goals">
-<h2>Goals<a class="headerlink" href="#goals" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="objectives">
+<h2>Objectives 📍<a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>learn basic and efficient usage of the <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">ecosystem</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">notebooks</span></code></p>
 <ul>
@@ -545,19 +550,13 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <p>We’re going to be working in <span class="xref myst">Jupyter notebooks</span> for most of this presentation!</p>
 <p>To load yours, do the following:</p>
 <ol class="simple">
-<li><p>Open a terminal &amp; navigate to the folder where you stored the course material</p></li>
+<li><p>Open a terminal/shell &amp; navigate to the folder where you stored the course material (<code class="docutils literal notranslate"><span class="pre">cd</span></code>)</p></li>
 </ol>
 <ol class="simple">
 <li><p>Type <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code></p></li>
 </ol>
 <ol class="simple">
-<li><p>If you’re not automatically directed to a webpage copy the URL printed in the terminal and paste it in your browser</p></li>
-</ol>
-<ol class="simple">
-<li><p>Click “New” in the top-right corner and select “Python 3”</p></li>
-</ol>
-<ol class="simple">
-<li><p>You have a Jupyter notebook!</p></li>
+<li><p>If you’re not automatically directed to a webpage copy the URL (<code class="docutils literal notranslate"><span class="pre">https://....</span></code>) printed in the <code class="docutils literal notranslate"><span class="pre">terminal</span></code> and paste it in your <code class="docutils literal notranslate"><span class="pre">browser</span></code></p></li>
 </ol>
 </div>
 <div class="section" id="files-tab">
@@ -581,15 +580,23 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <p>The <code class="docutils literal notranslate"><span class="pre">body</span></code> of a <code class="docutils literal notranslate"><span class="pre">notebook</span></code> is composed of <code class="docutils literal notranslate"><span class="pre">cells</span></code>. Each <code class="docutils literal notranslate"><span class="pre">cell</span></code> contains either <code class="docutils literal notranslate"><span class="pre">markdown</span></code>, <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">input</span></code>, <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">output</span></code>, or <code class="docutils literal notranslate"><span class="pre">raw</span> <span class="pre">text</span></code>. <code class="docutils literal notranslate"><span class="pre">Cells</span></code> can be included in any order and edited at-will, allowing for a large amount of flexibility for constructing a narrative.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Markdown</span> <span class="pre">cells</span></code> - These are used to build a <code class="docutils literal notranslate"><span class="pre">nicely</span> <span class="pre">formatted</span> <span class="pre">narrative</span></code> around the <code class="docutils literal notranslate"><span class="pre">code</span></code> in the document. The majority of this lesson is composed of <code class="docutils literal notranslate"><span class="pre">markdown</span> <span class="pre">cells</span></code>.</p></li>
+<li><p>to get a <code class="docutils literal notranslate"><span class="pre">markdown</span> <span class="pre">cell</span></code> you can either select the <code class="docutils literal notranslate"><span class="pre">cell</span></code> and use <code class="docutils literal notranslate"><span class="pre">esc</span></code> + <code class="docutils literal notranslate"><span class="pre">m</span></code> or via <code class="docutils literal notranslate"><span class="pre">Cell</span> <span class="pre">-&gt;</span> <span class="pre">cell</span> <span class="pre">type</span> <span class="pre">-&gt;</span> <span class="pre">markdown</span></code></p></li>
+</ul>
+<img align="center" src="https://raw.githubusercontent.com/PeerHerholz/ML-DL_workshop_SynAGE/master/lecture/static/notebook_body_4_0.png" alt="logo" title="jupyter" width="700" height="200" /><ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Code</span> <span class="pre">cells</span></code> - These are used to define the <code class="docutils literal notranslate"><span class="pre">computational</span> <span class="pre">code</span></code> in the <code class="docutils literal notranslate"><span class="pre">document</span></code>. They come in <code class="docutils literal notranslate"><span class="pre">two</span> <span class="pre">forms</span></code>:</p>
 <ul>
 <li><p>the <code class="docutils literal notranslate"><span class="pre">input</span> <span class="pre">cell</span></code> where the <code class="docutils literal notranslate"><span class="pre">user</span></code> types the <code class="docutils literal notranslate"><span class="pre">code</span></code> to be <code class="docutils literal notranslate"><span class="pre">executed</span></code>,</p></li>
 <li><p>and the <code class="docutils literal notranslate"><span class="pre">output</span> <span class="pre">cell</span></code> which is the <code class="docutils literal notranslate"><span class="pre">representation</span></code> of the <code class="docutils literal notranslate"><span class="pre">executed</span> <span class="pre">code</span></code>. Depending on the <code class="docutils literal notranslate"><span class="pre">code</span></code>, this <code class="docutils literal notranslate"><span class="pre">representation</span></code> may be a <code class="docutils literal notranslate"><span class="pre">simple</span> <span class="pre">scalar</span> <span class="pre">value</span></code>, or something more complex like a <code class="docutils literal notranslate"><span class="pre">plot</span></code> or an <code class="docutils literal notranslate"><span class="pre">interactive</span> <span class="pre">widget</span></code>.</p></li>
 </ul>
 </li>
+<li><p>to get a <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">cell</span></code> you can either select the <code class="docutils literal notranslate"><span class="pre">cell</span></code> and use <code class="docutils literal notranslate"><span class="pre">esc</span></code> + <code class="docutils literal notranslate"><span class="pre">y</span></code> or via <code class="docutils literal notranslate"><span class="pre">Cell</span> <span class="pre">-&gt;</span> <span class="pre">cell</span> <span class="pre">type</span> <span class="pre">-&gt;</span> <span class="pre">code</span></code></p></li>
+</ul>
+<img align="center" src="https://raw.githubusercontent.com/PeerHerholz/ML-DL_workshop_SynAGE/master/lecture/static/notebook_body_4_0.png" alt="logo" title="jupyter" width="700" height="200" />
+<ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Raw</span> <span class="pre">cells</span></code> - These are used when <code class="docutils literal notranslate"><span class="pre">text</span></code> needs to be included in <code class="docutils literal notranslate"><span class="pre">raw</span> <span class="pre">form</span></code>, without <code class="docutils literal notranslate"><span class="pre">execution</span></code> or <code class="docutils literal notranslate"><span class="pre">transformation</span></code>.</p></li>
 </ul>
-<img align="center" src="https://raw.githubusercontent.com/PeerHerholz/ML-DL_workshop_SynAGE/master/lecture/static/notebook_body_4_0.png" alt="logo" title="jupyter" width="700" height="200" /> </div>
+<img align="center" src="https://raw.githubusercontent.com/PeerHerholz/ML-DL_workshop_SynAGE/master/lecture/static/notebook_body_4_0.png" alt="logo" title="jupyter" width="700" height="200" />
+</div>
 <div class="section" id="modality">
 <h3>Modality<a class="headerlink" href="#modality" title="Permalink to this headline">¶</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">notebook</span> <span class="pre">user</span> <span class="pre">interface</span></code> is <code class="docutils literal notranslate"><span class="pre">modal</span></code>. This means that the <code class="docutils literal notranslate"><span class="pre">keyboard</span></code> behaves <code class="docutils literal notranslate"><span class="pre">differently</span></code> depending upon the <code class="docutils literal notranslate"><span class="pre">current</span> <span class="pre">mode</span></code> of the <code class="docutils literal notranslate"><span class="pre">notebook</span></code>. A <code class="docutils literal notranslate"><span class="pre">notebook</span></code> has <code class="docutils literal notranslate"><span class="pre">two</span> <span class="pre">modes</span></code>: <code class="docutils literal notranslate"><span class="pre">edit</span></code> and <code class="docutils literal notranslate"><span class="pre">command</span></code>.</p>
@@ -599,7 +606,7 @@ Member - <a class="reference external" href="https://bids-specification.readthed
 <div class="section" id="mouse-navigation">
 <h3>Mouse navigation<a class="headerlink" href="#mouse-navigation" title="Permalink to this headline">¶</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">first</span> <span class="pre">concept</span></code> to understand in <code class="docutils literal notranslate"><span class="pre">mouse-based</span> <span class="pre">navigation</span></code> is that <code class="docutils literal notranslate"><span class="pre">cells</span></code> can be <code class="docutils literal notranslate"><span class="pre">selected</span> <span class="pre">by</span> <span class="pre">clicking</span> <span class="pre">on</span> <span class="pre">them</span></code>. The <code class="docutils literal notranslate"><span class="pre">currently</span> <span class="pre">selected</span> <span class="pre">cell</span></code> is indicated with a <code class="docutils literal notranslate"><span class="pre">grey</span></code> or <code class="docutils literal notranslate"><span class="pre">green</span> <span class="pre">border</span> <span class="pre">depending</span></code> on whether the <code class="docutils literal notranslate"><span class="pre">notebook</span></code> is in <code class="docutils literal notranslate"><span class="pre">edit</span> <span class="pre">or</span> <span class="pre">command</span> <span class="pre">mode</span></code>. Clicking inside a <code class="docutils literal notranslate"><span class="pre">cell</span></code>’s <code class="docutils literal notranslate"><span class="pre">editor</span> <span class="pre">area</span></code> will enter <code class="docutils literal notranslate"><span class="pre">edit</span> <span class="pre">mode</span></code>. Clicking on the <code class="docutils literal notranslate"><span class="pre">prompt</span></code> or the <code class="docutils literal notranslate"><span class="pre">output</span> <span class="pre">area</span></code> of a <code class="docutils literal notranslate"><span class="pre">cell</span></code> will enter <code class="docutils literal notranslate"><span class="pre">command</span> <span class="pre">mode</span></code>.</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">second</span> <span class="pre">concept</span></code> to understand in <code class="docutils literal notranslate"><span class="pre">mouse-based</span> <span class="pre">navigation</span></code> is that <code class="docutils literal notranslate"><span class="pre">cell</span> <span class="pre">actions</span></code> usually apply to the <code class="docutils literal notranslate"><span class="pre">currently</span> <span class="pre">selected</span> <span class="pre">cell</span></code>. For example, to <code class="docutils literal notranslate"><span class="pre">run</span></code> the <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">in</span> <span class="pre">a</span> <span class="pre">cell</span></code>, select it and then click the  <code class="docutils literal notranslate"><span class="pre">button</span></code> in the <code class="docutils literal notranslate"><span class="pre">toolbar</span></code> or the <code class="docutils literal notranslate"><span class="pre">Cell</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Run</span></code> menu item. Similarly, to <code class="docutils literal notranslate"><span class="pre">copy</span></code> a <code class="docutils literal notranslate"><span class="pre">cell</span></code>, select it and then click the  <code class="docutils literal notranslate"><span class="pre">button</span></code> in the <code class="docutils literal notranslate"><span class="pre">toolbar</span></code> or the <code class="docutils literal notranslate"><span class="pre">Edit</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Copy</span></code> menu item. With this simple pattern, it should be possible to perform nearly every <code class="docutils literal notranslate"><span class="pre">action</span></code> with the <code class="docutils literal notranslate"><span class="pre">mouse</span></code>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">second</span> <span class="pre">concept</span></code> to understand in <code class="docutils literal notranslate"><span class="pre">mouse-based</span> <span class="pre">navigation</span></code> is that <code class="docutils literal notranslate"><span class="pre">cell</span> <span class="pre">actions</span></code> usually apply to the <code class="docutils literal notranslate"><span class="pre">currently</span> <span class="pre">selected</span> <span class="pre">cell</span></code>. For example, to <code class="docutils literal notranslate"><span class="pre">run</span></code> the <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">in</span> <span class="pre">a</span> <span class="pre">cell</span></code>, select it and then click the  <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">button</span></code> in the <code class="docutils literal notranslate"><span class="pre">toolbar</span></code> or the <code class="docutils literal notranslate"><span class="pre">Cell</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Run</span></code> menu item. Similarly, to <code class="docutils literal notranslate"><span class="pre">copy</span></code> a <code class="docutils literal notranslate"><span class="pre">cell</span></code>, select it and then click the <code class="docutils literal notranslate"><span class="pre">copy</span> <span class="pre">selected</span> <span class="pre">cells</span>&#160; <span class="pre">button</span></code> in the <code class="docutils literal notranslate"><span class="pre">toolbar</span></code> or the <code class="docutils literal notranslate"><span class="pre">Edit</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Copy</span></code> menu item. With this simple pattern, it should be possible to perform nearly every <code class="docutils literal notranslate"><span class="pre">action</span></code> with the <code class="docutils literal notranslate"><span class="pre">mouse</span></code>.</p>
 <p><code class="docutils literal notranslate"><span class="pre">Markdown</span> <span class="pre">cells</span></code> have one other <code class="docutils literal notranslate"><span class="pre">state</span></code> which can be <code class="docutils literal notranslate"><span class="pre">modified</span></code> with the <code class="docutils literal notranslate"><span class="pre">mouse</span></code>. These <code class="docutils literal notranslate"><span class="pre">cells</span></code> can either be <code class="docutils literal notranslate"><span class="pre">rendered</span></code> or <code class="docutils literal notranslate"><span class="pre">unrendered</span></code>. When they are <code class="docutils literal notranslate"><span class="pre">rendered</span></code>, a nice <code class="docutils literal notranslate"><span class="pre">formatted</span> <span class="pre">representation</span></code> of the <code class="docutils literal notranslate"><span class="pre">cell</span></code>’s <code class="docutils literal notranslate"><span class="pre">contents</span></code> will be presented. When they are <code class="docutils literal notranslate"><span class="pre">unrendered</span></code>, the <code class="docutils literal notranslate"><span class="pre">raw</span> <span class="pre">text</span> <span class="pre">source</span></code> of the <code class="docutils literal notranslate"><span class="pre">cell</span></code> will be presented. To <code class="docutils literal notranslate"><span class="pre">render</span></code> the <code class="docutils literal notranslate"><span class="pre">selected</span> <span class="pre">cell</span></code> with the <code class="docutils literal notranslate"><span class="pre">mouse</span></code>, click the  <code class="docutils literal notranslate"><span class="pre">button</span></code> in the <code class="docutils literal notranslate"><span class="pre">toolbar</span></code> or the <code class="docutils literal notranslate"><span class="pre">Cell</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Run</span></code> menu item. To <code class="docutils literal notranslate"><span class="pre">unrender</span></code> the <code class="docutils literal notranslate"><span class="pre">selected</span> <span class="pre">cell</span></code>, <code class="docutils literal notranslate"><span class="pre">double</span> <span class="pre">click</span></code> on the <code class="docutils literal notranslate"><span class="pre">cell</span></code>.</p>
 </div>
 <div class="section" id="keyboard-navigation">
@@ -715,7 +722,7 @@ Namespaces are one honking great idea – let’s do more of those!</p>
 </div>
 <div class="section" id="github-flavored-markdown-gfm">
 <h3>Github flavored markdown (GFM)<a class="headerlink" href="#github-flavored-markdown-gfm" title="Permalink to this headline">¶</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">Notebook</span> <span class="pre">webapp</span></code> support <code class="docutils literal notranslate"><span class="pre">Github</span> <span class="pre">flavored</span> <span class="pre">markdown</span></code> meaning that you can use <code class="docutils literal notranslate"><span class="pre">triple</span> <span class="pre">backticks</span></code> for <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">blocks</span></code></p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Notebook</span> <span class="pre">webapp</span></code> supports <code class="docutils literal notranslate"><span class="pre">Github</span> <span class="pre">flavored</span> <span class="pre">markdown</span></code> meaning that you can use <code class="docutils literal notranslate"><span class="pre">triple</span> <span class="pre">backticks</span></code> for <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">blocks</span></code></p>
 <pre>
 ```python
 print "Hello World"
@@ -790,9 +797,10 @@ console.log("Hello World")
 <div class="section" id="markdown-attachments">
 <h3>Markdown attachments<a class="headerlink" href="#markdown-attachments" title="Permalink to this headline">¶</a></h3>
 <p>Since <code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">notebook</span> <span class="pre">version</span> <span class="pre">5.0</span></code>, in addition to <code class="docutils literal notranslate"><span class="pre">referencing</span> <span class="pre">external</span> <span class="pre">files</span></code> you can <code class="docutils literal notranslate"><span class="pre">attach</span> <span class="pre">a</span> <span class="pre">file</span></code> to a <code class="docutils literal notranslate"><span class="pre">markdown</span> <span class="pre">cell</span></code>. To do so <code class="docutils literal notranslate"><span class="pre">drag</span></code> the <code class="docutils literal notranslate"><span class="pre">file</span></code> from e.g. the <code class="docutils literal notranslate"><span class="pre">browser</span></code> or local <code class="docutils literal notranslate"><span class="pre">storage</span></code> in a <code class="docutils literal notranslate"><span class="pre">markdown</span> <span class="pre">cell</span></code> while <code class="docutils literal notranslate"><span class="pre">editing</span></code> it:</p>
-<p><img alt="pfp_logo.png" src="attachment:https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/pfp_logo.png" /></p>
+<p><code class="docutils literal notranslate"><span class="pre">![pfp_logo.png](attachment:pfp_logo.png)</span></code></p>
+<p><img alt="pfp_logo.png" src="introduction/attachment:pfp_logo.png" /></p>
 <p><code class="docutils literal notranslate"><span class="pre">Files</span></code> are stored in <code class="docutils literal notranslate"><span class="pre">cell</span> <span class="pre">metadata</span></code> and will be <code class="docutils literal notranslate"><span class="pre">automatically</span> <span class="pre">scrubbed</span></code> at <code class="docutils literal notranslate"><span class="pre">save-time</span></code> if not <code class="docutils literal notranslate"><span class="pre">referenced</span></code>. You can recognize <code class="docutils literal notranslate"><span class="pre">attached</span> <span class="pre">images</span></code> from other <code class="docutils literal notranslate"><span class="pre">files</span></code> by their <code class="docutils literal notranslate"><span class="pre">url</span></code> that starts with <code class="docutils literal notranslate"><span class="pre">attachment</span></code>. For the <code class="docutils literal notranslate"><span class="pre">image</span></code> above:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>![pycon-logo.jpg](attachment:pycon-logo.jpg)
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>![pfp_logo.png](attachment:pfp_logo.png)
 </pre></div>
 </div>
 <p>Keep in mind that <code class="docutils literal notranslate"><span class="pre">attached</span> <span class="pre">files</span></code> will <code class="docutils literal notranslate"><span class="pre">increase</span> <span class="pre">the</span> <span class="pre">size</span></code> of your <code class="docutils literal notranslate"><span class="pre">notebook</span></code>.</p>
@@ -1534,7 +1542,7 @@ enjoy is: only the snacks
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/intro_jupyter_108_0.png" src="../_images/intro_jupyter_108_0.png" />
+<img alt="../_images/intro_jupyter_107_0.png" src="../_images/intro_jupyter_107_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1723,6 +1731,23 @@ if this is the most recent Jupyter kernel you have started.
 <ol class="simple">
 <li><p>You have a <code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">notebook</span></code> within <code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">lab</span></code>!</p></li>
 </ol>
+</div>
+<div class="section" id="homework-assignment-2">
+<h2>Homework assignment #2<a class="headerlink" href="#homework-assignment-2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>your second homework assignment will entail the generation of a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> with</p>
+<ul>
+<li><p><strong>mandatory</strong>:  <code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">different</span> <span class="pre">cells</span></code>:
+- 1 rendered markdown cell within which you name your favorite movie and describe why you like it via<br />
+max. 2 sentences
+- 1 code cell with an equation (e.g. <code class="docutils literal notranslate"><span class="pre">1+1</span></code>, <code class="docutils literal notranslate"><span class="pre">(a+b)/(c+d)</span></code>, etc.)
+- 1 raw cell with your favorite snack</p></li>
+<li><p><strong>optional</strong>: try to include a picture of your favorite animal</p></li>
+</ul>
+</li>
+<li><p>save the notebook and e-mail it to Peer</p></li>
+<li><p>deadline: 17/11/2021, 11:59 PM EST</p></li>
+</ul>
 </div>
 </div>
 

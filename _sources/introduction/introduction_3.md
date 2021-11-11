@@ -31,23 +31,23 @@ Please download the example script [fancy_analyzes.py](https://www.dropbox.com/s
 
 Please see the rendered version of the `jupyter notebook`[Introduction III - jupyter notebooks](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/intro_jupyter.html) in the `ToC` on the left.
 
-
-### Python
-
-
-
-#### Objectives 📍
-
-
-#### Materials 📓
-
-
 ## Project related work 🥼🧑🏿‍🔬👩🏻‍🔬
 
 Not applicable, as project related work didn't start yet.
 
 ## tasks for subsequent meeting 🖥️✍🏽📖
 
-Your first homework assignment will entail the generation of a `conda environment` within which our `fancy_analyzes.py` can run & sending us the corresponding `environment.yml` via e-mail. Please note the deadline: 17/11/2021, 11:59 PM EST.
+Your first homework assignment will entail the generation of a `conda environment` within which our `fancy_analyzes.py` can run & sending us the corresponding `environment.yml` via e-mail. 
+
+Your second homework assignment will entail the generation of a jupyter notebook with
+- **mandatory**: 3 different cells:
+  - 1 rendered markdown cell within which you name your favorite movie and describe why you like it via  
+    max. 2 sentences
+  - 1 code cell with an equation (e.g. `1+1`, `(a+b)/(c+d)`, etc.)
+  - 1 raw cell with your favorite snack 
+- **optional**: a picture of your favorite animal
+Once you have everything, save the notebook and e-mail it to Peer.
+
+Please note that the deadline for both assignments is: 17/11/2021, 11:59 PM EST.
 
 ### optional/reading/further materials
