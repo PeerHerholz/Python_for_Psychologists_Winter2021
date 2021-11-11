@@ -48,6 +48,6 @@ Not applicable, as project related work didn't start yet.
 
 ## tasks for subsequent meeting 🖥️✍🏽📖
 
-Your first homework assignment will entail the generation of a `conda environment` within which our `fancy_analyzes.py` can run & sending us the corresponding `environment.yml` via e-mail. Please note the deadline: 08/11/2021, 11:59 PM EST.
+Your first homework assignment will entail the generation of a `conda environment` within which our `fancy_analyzes.py` can run & sending us the corresponding `environment.yml` via e-mail. Please note the deadline: 17/11/2021, 11:59 PM EST.
 
 ### optional/reading/further materials
