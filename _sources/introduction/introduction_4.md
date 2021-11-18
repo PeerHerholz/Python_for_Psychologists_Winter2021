@@ -35,7 +35,7 @@ During the previous session we had a look at different ways of communicating wit
 
 #### Materials 📓
 
-Please see the rendered version of the `jupyter notebook` [Introduction III - jupyter notebooks](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/intro_jupyter.html) in the `ToC` on the left.
+Please see the rendered version of the `jupyter notebook` [Introduction IV - jupyter notebooks](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/intro_jupyter.html) in the `ToC` on the left.
 
 ### Introduction to Python - I
 The big moment is finally here: after spending quite a bit of time exploring important concepts adjacent to/around `python`, with the intention to provide a holistic understanding and situate components accordingly, we will start exploring `python` itself. Within the first block of programming with `python` we will go through basics of the `python` programming language, its central aspects and building blocks, as well as its benefits generally speaking and within the context of psychology research.
