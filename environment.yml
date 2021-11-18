@@ -30,3 +30,5 @@ dependencies:
     - nbval
     - nose
     - pingouin
+    - RISE
+    - jupyter-book
