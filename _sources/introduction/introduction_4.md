@@ -21,6 +21,8 @@ Fair enough but as hinted at during the introduction, knowing a bit more about t
 #### Materials 📓
 Please download the example script [fancy_analyzes.py](https://www.dropbox.com/s/52q11h8r5oj8ocg/fancy_analyzes.py?dl=1).
 
+**Warning**: there will be sounds in the presentation, so might you want to lower the volume on your machine.
+
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT1EWyFjE6jxvPhGJ70wK1scXkKgPmVQzYCFVk0CO0fQ0RV0QBVIovOQYAEek2rMuzyVIGLdR_90wB_/embed?start=false&loop=false&delayms=3000" frameborder="0" width="600" height="370" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ### Jupyter notebooks
