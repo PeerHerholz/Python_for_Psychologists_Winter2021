@@ -67,8 +67,6 @@ Your second homework assignment will entail the generation of a `jupyter noteboo
 - **optional**: a picture of your favorite animal
 Once you have everything, save the notebook and e-mail it to Peer.
 
-Your third homework assignment will entail working through a few tasks covering the contents discussed in this session within of a `jupyter notebook`. You can download it [here](https://www.dropbox.com/s/bafzg60rxcxwwzg/PFP_assignment_3_intro_python_1.ipynb?dl=1). In order to open it, put the `homework assignment notebook` within the folder you stored the `course materials`, start a `jupyter notebook` as during the sessions, `navigate` to the `homework assignment notebook`, `open it` and have fun!
-
-Please note that the deadline for both assignments is: 01/12/2021, 11:59 PM EST.
+Please note that the deadline for the assignment is: 01/12/2021, 11:59 PM EST.
 
 ### optional/reading/further materials
