@@ -31,7 +31,7 @@ During the previous session we had a look at different ways of communicating wit
 
 #### Materials 📓
 
-Please see the rendered version of the `jupyter notebook` [Introduction V - jupyter notebooks](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/intro_jupyter.html) in the `ToC` on the left.
+Please see the rendered version of the `jupyter notebook` [Introduction IV - jupyter notebooks](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/intro_jupyter.html) in the `ToC` on the left.
 
 
 ### Introduction to Python - I
@@ -69,6 +69,6 @@ Once you have everything, save the notebook and e-mail it to Peer.
 
 Your third homework assignment will entail working through a few tasks covering the contents discussed in this session within of a `jupyter notebook`. You can download it [here](https://www.dropbox.com/s/bafzg60rxcxwwzg/PFP_assignment_3_intro_python_1.ipynb?dl=1). In order to open it, put the `homework assignment notebook` within the folder you stored the `course materials`, start a `jupyter notebook` as during the sessions, `navigate` to the `homework assignment notebook`, `open it` and have fun!
 
-Please note that the deadline for both assignments is: 01/11/2021, 11:59 PM EST.
+Please note that the deadline for both assignments is: 01/12/2021, 11:59 PM EST.
 
 ### optional/reading/further materials
