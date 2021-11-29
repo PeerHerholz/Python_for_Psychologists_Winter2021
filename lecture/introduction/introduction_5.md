@@ -1,13 +1,13 @@
 # Introduction V
 
-Within the fifth session we'll continue to explore `jupyter notebooks` as a central tool, resource and prerequisite for future endeavors as all of the `introduction to python`, as well as `data analyzes part` will be conducted within them.  Subsequently, we start working with the `python` programming language, as well as situate and compare it to other programming languages.
+Within the fifth session we'll continue to explore `jupyter notebooks` as a central tool, resource and prerequisite for future endeavors as all of the `introduction to python`, as well as `data analyzes part` will be conducted within them.  Subsequently, we start working with the `python` programming language, as well as situate and compare it to other programming languages. However, before we get back to programming we need to address the elephant in the `virtual room`.
 
 ## Topics 💡👨🏻‍🏫 
 
 In the following you'll find the `objectives` and `materials` for each of the topics we'll discuss during this session.
 
 ### Transition to virtual classes
-
+As mentioned during the last class and e-mails, starting this session the entire course will be transitioning to **virtual classes only**. I already tried my best to explain this decision but TL;DR: the current situation and most likely developments basically leave no other option. Now it's on us to make the best of it! The aid the transition and entire process as best as possible, we'll use the first part of the session to go through the new setup and respective resources/tools together. 
 
 #### Objectives 📍
 - outline transition to virtual classes
