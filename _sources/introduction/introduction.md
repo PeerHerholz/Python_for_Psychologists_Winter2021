@@ -18,11 +18,12 @@ Please see below for our current optimistic schedule. Depending on our progress,
 ✍🏽 - writing outside course hours  
 📖 - reading outside course hours  
 
-
 | Date (day/month/year) 🗓         | Topic 💡 👨🏻‍🏫   | Assignment & deadline 🖥️ ✍🏽📖 |
 |--------------|-----------|------------|
 | 28/10/2021 | Introduction I - course information & setup 💡 👨🏻‍🏫  |  not applicable  🖥️ 📖     |
-| 04/11/2021 | Introduction II - computing environments 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻 |  not applicable  🖥️ 📖|
-| 11/11/2021 | Python I - basics & data types 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  |  not applicable  🖥️ 📖  |
-| 18/11/2021 | Python II - control flow operations 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  |  24/11/2021 - 11:59 PM EST 🖥️ ✍🏽📖     |
-| 25/11/2021 | Python III - functions 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  |  30/11/2021 - 11:59 PM EST  🖥️ ✍🏽📖  |
+| 04/11/2021 | Introduction II - GUI/CLI & BASH  💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻 |  not applicable  🖥️ 📖 |
+| 11/11/2021 | Introduction III - computing environments 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻 |  not applicable  🖥️ 📖 |
+| 18/11/2021 | Introduction IV - jupyter ecosystem/notebooks 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  |  24/11/2021 - 11:59 PM EST  🖥️ 📖 |
+| 25/11/2021 | Python I - basics & data types 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  |  01/12/2021 - 11:59 PM EST 🖥️ ✍🏽📖     |
+| 02/12/2021 | Python II - control flow operations 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  |  08/12/2021 - 11:59 PM EST  🖥️ ✍🏽📖  |
+| 09/12/2021 | Python III - functions & files 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  |  15/12/2021 - 11:59 PM EST  🖥️ ✍🏽📖  |

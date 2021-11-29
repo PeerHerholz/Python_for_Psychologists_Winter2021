@@ -16,6 +16,5 @@ Please see below for our current optimistic schedule. Depending on our progress,
 
 | Date (day/month/year) 🗓         | Topic 💡 👨🏻‍🏫   | Assignment & deadline 🖥️ ✍🏽📖 |
 |--------------|-----------|------------|
-| 02/12/2021 | PsychoPy I - writing experiments in python 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻 🧑🏿‍🔬👩🏻‍🔬 |  07/11/2021 - 11:59 PM EST  🖥️ ✍🏽📖   |
-| 09/12/2021 | PsychoPy II - stimulus presentation & responses 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻 🧑🏿‍🔬👩🏻‍🔬   |  14/12/2021 - 11:59 PM EST 🖥️ ✍🏽📖 |
-| 16/12/2021 | PsychoPy III - data output 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻 🧑🏿‍🔬👩🏻‍🔬  |  21/12/2021 - 11:59 PM EST 🖥️ ✍🏽📖 |
+| 16/12/2021 | PsychoPy I - writing experiments in python 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻 🧑🏿‍🔬👩🏻‍🔬 |  23/12/2021 - 11:59 PM EST  🖥️ ✍🏽📖   |
+| 13/01/2022 | PsychoPy II - stimulus presentation & responses 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻 🧑🏿‍🔬👩🏻‍🔬   |  19/01/2022 - 11:59 PM EST 🖥️ ✍🏽📖 |
