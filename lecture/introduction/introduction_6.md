@@ -12,9 +12,10 @@ This session, we'll build upon the things learn last week and broader our capabi
 
 #### Objectives 📍
 
-- learn basic and efficient usage of the python programming language
-  - what is python & how to utilize it
-  - building blocks of & operations in python
+- learn basic and efficient usage of the `python` programming language
+  - what is `python` & how to utilize it
+  - `operations` & `comparison` in `python`
+  - `data types` & `structures`
 - Ask and answer questions
 - Have a great time
 
