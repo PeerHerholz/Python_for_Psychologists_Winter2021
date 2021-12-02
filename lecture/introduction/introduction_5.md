@@ -47,7 +47,7 @@ The big moment is finally here: after spending quite a bit of time exploring imp
 
 #### Materials 📓
 
-Please see the rendered version of the `jupyter notebook` [Introduction IV - Introduction to Python I](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/intro_python_I.html) in the `ToC` on the left.
+Please see the rendered version of the `jupyter notebook` [Introduction V - Introduction to Python I](https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/intro_python_I.html) in the `ToC` on the left.
 
 
 ## Project related work 🥼🧑🏿‍🔬👩🏻‍🔬
@@ -67,6 +67,8 @@ Your second homework assignment will entail the generation of a `jupyter noteboo
 - **optional**: a picture of your favorite animal
 Once you have everything, save the notebook and e-mail it to Peer.
 
-Please note that the deadline for the assignment is: 01/12/2021, 11:59 PM EST.
+Please note that the deadline for the assignment is: 08/12/2021, 11:59 PM EST.
 
 ### optional/reading/further materials
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MHPGeQD8TvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
