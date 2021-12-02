@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introduction IV &#8212; Winter - 2021</title>
+    <title>Introduction VI &#8212; Winter - 2021</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -52,8 +52,6 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Introduction IV - the jupyter ecosystem &amp; notebooks" href="intro_jupyter.html" />
-    <link rel="prev" title="Introduction III" href="introduction_3.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -97,7 +95,7 @@
   </a>
  </li>
 </ul>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../dei.html">
    Diversity, Equity and Inclusion
@@ -118,16 +116,16 @@
    General outline
   </a>
  </li>
- <li class="toctree-l1 current active has-children">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="introduction.html">
    Introduction
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="introduction_1.html">
      Introduction I
@@ -155,11 +153,11 @@
      Introduction III
     </a>
    </li>
-   <li class="toctree-l2 current active has-children">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="introduction_4.html">
      Introduction IV
     </a>
-    <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
     <label for="toctree-checkbox-3">
      <i class="fas fa-chevron-down">
      </i>
@@ -257,7 +255,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/introduction/introduction_4.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/introduction/introduction_6.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -277,10 +275,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/PeerHerholz/Python_for_Psychologists_Winter2021/issues/new?title=Issue%20on%20page%20%2Fintroduction/introduction_4.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/PeerHerholz/Python_for_Psychologists_Winter2021/issues/new?title=Issue%20on%20page%20%2Fintroduction/introduction_6.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/PeerHerholz/Python_for_Psychologists_Winter2021/edit/master/lecture/introduction/introduction_4.md"><button
+        <a class="edit-button" href="https://github.com/PeerHerholz/Python_for_Psychologists_Winter2021/edit/master/lecture/introduction/introduction_6.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -311,8 +309,8 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#computing-environments">
-     Computing environments
+    <a class="reference internal nav-link" href="#introduction-to-python-ii">
+     Introduction to Python - II
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
@@ -322,23 +320,6 @@
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#materials">
-       Materials 📓
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#jupyter-notebooks">
-     Jupyter notebooks
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id1">
-       Objectives 📍
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id2">
        Materials 📓
       </a>
      </li>
@@ -374,51 +355,31 @@
         
               <div>
                 
-  <div class="section" id="introduction-iv">
-<h1>Introduction IV<a class="headerlink" href="#introduction-iv" title="Permalink to this headline">¶</a></h1>
-<p>Within the fourth session we’ll finish the <code class="docutils literal notranslate"><span class="pre">virtualization</span></code> section, that is exploring one aspect that might seem adjacent to utilizing <code class="docutils literal notranslate"><span class="pre">python</span></code> within research workflows but is actually a crucial component: <code class="docutils literal notranslate"><span class="pre">computing</span> <span class="pre">environments</span></code>. Don’t worry: this will also entail hands-on programming, just not directly in <code class="docutils literal notranslate"><span class="pre">python</span></code>. The things covered in this section will introduce central concepts for our subsequent endeavors in this session. More precisely, we’ll explore <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebooks</span></code> as one form of interacting with your computer, specifically <code class="docutils literal notranslate"><span class="pre">python</span></code>. Getting a good hang of this will be important as most of our <code class="docutils literal notranslate"><span class="pre">python</span></code> endeavors will happen within <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebooks</span></code> and they are a staple in research workflows.</p>
+  <div class="section" id="introduction-vi">
+<h1>Introduction VI<a class="headerlink" href="#introduction-vi" title="Permalink to this headline">¶</a></h1>
+<p>Within the sixth session we’ll continue to explore the basic building blocks of <code class="docutils literal notranslate"><span class="pre">python</span></code>, this and the next <code class="docutils literal notranslate"><span class="pre">session</span></code> will contain exhaustive content aiming to provide you with a somewhat detailed understanding of central <code class="docutils literal notranslate"><span class="pre">python</span></code> aspects. The aim is to get a good set of basic experience to then advance into more practical aspects, specifically evaluating how these things can be utilized within <code class="docutils literal notranslate"><span class="pre">experiments</span></code> to collect data and their subsequent <code class="docutils literal notranslate"><span class="pre">analyzes</span></code>. To nevertheless get some experience on the way, there will be some exercise at the beginning and throughout the session. Additionally, the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignments</span></code> will be made in a way that showcases some tasks that you might most likely encounter in real-life so that you get more practice in conducting them through <code class="docutils literal notranslate"><span class="pre">python</span></code>.</p>
 <div class="section" id="topics">
 <h2>Topics 💡👨🏻‍🏫<a class="headerlink" href="#topics" title="Permalink to this headline">¶</a></h2>
 <p>In the following you’ll find the <code class="docutils literal notranslate"><span class="pre">objectives</span></code> and <code class="docutils literal notranslate"><span class="pre">materials</span></code> for each of the topics we’ll discuss during this session.</p>
-<div class="section" id="computing-environments">
-<h3>Computing environments<a class="headerlink" href="#computing-environments" title="Permalink to this headline">¶</a></h3>
-<p>You might think: “why do we have to talk about computing environments &amp; reproducibility? I just to code.”.
-Fair enough but as hinted at during the introduction, knowing a bit more about this thing called the “computer” and how your code is run will be tremendously helpful and important going further. The sooner you can utilize the respective tools/resources the better as quite a bit, actually all, of your coding will depend on it. We usually trust our machines to do what we ask them to do and while quite often we get the desired output, there’s a fair chance that the same task will lead to a different outcome on a different OS, using a different version, etc. . However, what outcomes do we “trust” and why does it converge? All of this relates to “reproducibility” and within this section we’ll briefly explore underlying problems and potential (partial) solutions via <code class="docutils literal notranslate"><span class="pre">python</span></code>.</p>
+<div class="section" id="introduction-to-python-ii">
+<h3>Introduction to Python - II<a class="headerlink" href="#introduction-to-python-ii" title="Permalink to this headline">¶</a></h3>
+<p>This session, we’ll build upon the things learn last week and broader our capabilities in <code class="docutils literal notranslate"><span class="pre">python</span></code>, focusing on <code class="docutils literal notranslate"><span class="pre">operations</span></code>, <code class="docutils literal notranslate"><span class="pre">comparisons</span></code> and <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">types</span></code>/<code class="docutils literal notranslate"><span class="pre">structures</span></code>.</p>
 <div class="section" id="objectives">
 <h4>Objectives 📍<a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li><p>get to know problems wrt computational analysis &amp; reproducibility</p></li>
-<li><p>learn about virtualization and its different options</p></li>
-<li><p>experiment with python virtualization options</p></li>
-<li><p>Ask and answer questions</p></li>
-<li><p>Have a great time</p></li>
-</ul>
-</div>
-<div class="section" id="materials">
-<h4>Materials 📓<a class="headerlink" href="#materials" title="Permalink to this headline">¶</a></h4>
-<p>Please download the example script <a class="reference external" href="https://www.dropbox.com/s/52q11h8r5oj8ocg/fancy_analyzes.py?dl=1">fancy_analyzes.py</a>.</p>
-<p><strong>Warning</strong>: there will be sounds in the presentation, so might you want to lower the volume on your machine.</p>
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT1EWyFjE6jxvPhGJ70wK1scXkKgPmVQzYCFVk0CO0fQ0RV0QBVIovOQYAEek2rMuzyVIGLdR_90wB_/embed?start=false&loop=false&delayms=3000" frameborder="0" width="600" height="370" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-</div>
-</div>
-<div class="section" id="jupyter-notebooks">
-<h3>Jupyter notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this headline">¶</a></h3>
-<p>During the previous session we had a look at different ways of communicating with our computers. Generally speaking we could either use a <code class="docutils literal notranslate"><span class="pre">GUI</span></code> or a <code class="docutils literal notranslate"><span class="pre">CLI</span></code>. In more detail we also have different options to utilize the same <code class="docutils literal notranslate"><span class="pre">programming</span> <span class="pre">language</span></code> to communicate with our <code class="docutils literal notranslate"><span class="pre">computer</span></code>, e.g. the <code class="docutils literal notranslate"><span class="pre">shell</span></code>, <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebooks</span></code> and <code class="docutils literal notranslate"><span class="pre">IDE</span></code>s. After we already explored the <code class="docutils literal notranslate"><span class="pre">shell</span></code> a bit, we’ll now spend a closer look at <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> and how we can work with them. This is a central topic as the <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">introduction</span></code> and <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">analyzes</span></code> parts of the course will be conducted via <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> and you’ll have to hand in most assignments via them as well.</p>
-<div class="section" id="id1">
-<h4>Objectives 📍<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
-<ul class="simple">
-<li><p>learn basic and efficient usage of the jupyter ecosystem &amp; notebooks</p>
+<li><p>learn basic and efficient usage of the python programming language</p>
 <ul>
-<li><p>what is Jupyter &amp; how to utilize jupyter notebooks</p></li>
+<li><p>what is python &amp; how to utilize it</p></li>
+<li><p>building blocks of &amp; operations in python</p></li>
 </ul>
 </li>
 <li><p>Ask and answer questions</p></li>
 <li><p>Have a great time</p></li>
 </ul>
 </div>
-<div class="section" id="id2">
-<h4>Materials 📓<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
-<p>Please see the rendered version of the <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> <a class="reference external" href="https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/intro_jupyter.html">Introduction IV - jupyter notebooks</a> in the <code class="docutils literal notranslate"><span class="pre">ToC</span></code> on the left.</p>
+<div class="section" id="materials">
+<h4>Materials 📓<a class="headerlink" href="#materials" title="Permalink to this headline">¶</a></h4>
+<p>Please see the rendered version of the <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> <a class="reference external" href="https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/intro_python_II.html">Introduction VI - Introduction to Python II</a> in the <code class="docutils literal notranslate"><span class="pre">ToC</span></code> on the left.</p>
 </div>
 </div>
 </div>
@@ -428,27 +389,9 @@ Fair enough but as hinted at during the introduction, knowing a bit more about t
 </div>
 <div class="section" id="tasks-for-subsequent-meeting">
 <h2>tasks for subsequent meeting 🖥️✍🏽📖<a class="headerlink" href="#tasks-for-subsequent-meeting" title="Permalink to this headline">¶</a></h2>
-<p>Your first homework assignment will entail the generation of a <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">environment</span></code> called  <code class="docutils literal notranslate"><span class="pre">bb8</span></code> with <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">3.9</span></code> and <code class="docutils literal notranslate"><span class="pre">pandas</span></code>, <code class="docutils literal notranslate"><span class="pre">nilearn</span></code>, <code class="docutils literal notranslate"><span class="pre">jupyter</span></code> &amp; sending us the corresponding <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> via e-mail.</p>
-<p>Your second homework assignment will entail the generation of a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> with</p>
-<ul class="simple">
-<li><p><strong>mandatory</strong>: 3 different cells:</p>
-<ul>
-<li><p>1 rendered markdown cell within which you name your favorite movie and describe why you like it via
-max. 2 sentences</p></li>
-<li><p>1 code cell with an equation (e.g. <code class="docutils literal notranslate"><span class="pre">1+1</span></code>, <code class="docutils literal notranslate"><span class="pre">(a+b)/(c+d)</span></code>, etc.)</p></li>
-<li><p>1 raw cell with your favorite snack</p></li>
-</ul>
-</li>
-<li><p><strong>optional</strong>: a picture of your favorite animal
-Once you have everything, save the notebook and e-mail it to Peer.</p></li>
-</ul>
-<p>Please note that the deadline for both assignments is: 24/11/2021, 11:59 PM EST.</p>
 <div class="section" id="optional-reading-further-materials">
 <h3>optional/reading/further materials<a class="headerlink" href="#optional-reading-further-materials" title="Permalink to this headline">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">Fernando</span> <span class="pre">Perez</span></code>’ presentation on <code class="docutils literal notranslate"><span class="pre">From</span> <span class="pre">interactive</span> <span class="pre">exploration</span> <span class="pre">to</span> <span class="pre">reproducible</span> <span class="pre">data</span> <span class="pre">science:</span> <span class="pre">Jupyter</span></code> from <a class="reference external" href="https://neurohackademy.org/">NeuroHackademy</a> 2020.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nXA39_eW3Q4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-</div>
-<div class="toctree-wrapper compound">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/--_K4G3HCcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 </div>
 
@@ -476,21 +419,7 @@ Once you have everything, save the notebook and e-mail it to Peer.</p></li>
               
         
             <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="introduction_3.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Introduction III</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="intro_jupyter.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Introduction IV - the jupyter ecosystem &amp; notebooks</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+<div class='prev-next-area'>
 </div>
         
         </div>
