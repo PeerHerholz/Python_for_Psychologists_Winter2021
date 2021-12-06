@@ -73,3 +73,7 @@ In case you have any questions or difficulties with the lecture and its material
 GitHub site of the course. Every feedback or idea or you might have is also highly appreciated and valued.
 
 <p align="center"><iframe src="https://giphy.com/embed/ATt7p8OO4mvvO" width="440" height="140" frameBorder="0" vspace="0" class="giphy-embed" allowFullScreen></iframe></p><p align="center"><a href="https://giphy.com/gifs/photos-street-sesame-ATt7p8OO4mvvO"><small>via GIPHY</small></a></p></p>
+
+## Acknowledgements
+
+Peer Herholz' work on and ability to compile this course was enabled through training received at the [Montreal Neurological Institute](https://www.mcgill.ca/neuro/), specifically the [NeuroDataScience - ORIGAMI lab](https://neurodatascience.github.io/) supported by funding from the Canada First Research Excellence Fund, awarded to McGill University for the [Healthy Brains for Healthy Lives initiative](https://www.mcgill.ca/hbhl/), the [National Institutes of Health (NIH)](https://www.nih.gov/) [NIH-NIBIB P41 EB019936 (ReproNim)](https://www.repronim.org/), the [National Institute Of Mental Health](https://www.nimh.nih.gov/) of the NIH under Award  Number [R01MH096906 (Neurosynth)](https://www.neurosynth.org/), a [research scholar award from Brain Canada, in partnership with Health Canada, for the Canadian Open Neuroscience Platform initiative](https://conp.ca/), as well as an [Excellence Scholarship from Unifying Neuroscience and Artificial Intelligence - Québec](https://sites.google.com/view/unique-neuro-ai).
