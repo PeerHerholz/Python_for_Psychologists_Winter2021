@@ -30,6 +30,17 @@ Not applicable, as project related work didn't start yet.
 
 ## tasks for subsequent meeting 🖥️✍🏽📖
 
+Your fourth homework assignment will entail working through a few tasks covering the contents discussed in this session within of a `jupyter notebook`. You can download it [here](https://www.dropbox.com/s/x2suy8dfcmb3yuf/PFP_assignment_4_intro_python_2.ipynb?dl=1). In order to open it, put the `homework assignment notebook` within the folder you stored the `course materials`, start a `jupyter notebook` as during the sessions, navigate to the `homework assignment notebook`, open it and have fun! NB: a substantial part of it will be _optional_ and thus the notebook will look way longer than it actually is.
+
+**Deadline: 15/12/2021, 11:59 PM EST**
+
+Also, in preparation for our switch to more applied things, starting with `experiments` in `python` and thus endeavors in `psychopy`, could you please create a new respective `conda environment` (remember those?) via the following lines:
+
+`conda create -n psychopy psychopy`  
+`conda activate psychopy`  
+`pip install jedi psychtoolbox pygame pyo pyobjc python-vlc ujson`  
+
+and then test if everything works via running `psychopy` (type it and then press "enter") from within the new `environment`?
 
 ### optional/reading/further materials
 
