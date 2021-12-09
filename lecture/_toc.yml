@@ -20,12 +20,13 @@ chapters:
     - file: introduction/intro_python_I.ipynb
   - file: introduction/introduction_6.md
     sections:
-    - file: introduction/intro_python_II.ipynb    
-  - file: introduction/introduction_7.md
+    - file: introduction/intro_python_II.ipynb 
+  - file: introduction/introduction_7.md  
     sections:
-    - file: introduction/intro_python_III.ipynb        
+    - file: introduction/intro_python_III.ipynb 
 - file: experiments/experiments.md
 - file: analyses/analyses.md
 - file: projects
 - file: questionnaires
+- file: break
 - file: CoC
