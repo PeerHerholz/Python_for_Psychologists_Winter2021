@@ -24,6 +24,7 @@ Please see below for our current optimistic schedule. Depending on our progress,
 | 04/11/2021 | Introduction II - GUI/CLI & BASH  💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻 |  not applicable  🖥️ 📖 |
 | 11/11/2021 | Introduction III - computing environments 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻 |  not applicable  🖥️ 📖 |
 | 18/11/2021 | Introduction IV - jupyter ecosystem/notebooks 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  |  24/11/2021 - 11:59 PM EST  🖥️ 📖 |
-| 25/11/2021 | Python I - basics & data types 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  |  01/12/2021 - 11:59 PM EST 🖥️ ✍🏽📖     |
-| 02/12/2021 | Python II - control flow operations 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  |  08/12/2021 - 11:59 PM EST  🖥️ ✍🏽📖  |
-| 09/12/2021 | Python III - functions & files 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  |  15/12/2021 - 11:59 PM EST  🖥️ ✍🏽📖  |
+| 25/11/2021 | Python I - basics & data types I 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  |  01/12/2021 - 11:59 PM EST 🖥️ ✍🏽📖     |
+| 02/12/2021 | Python II - basics & data types II 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  |  08/12/2021 - 11:59 PM EST  🖥️ ✍🏽📖  |
+| 09/12/2021 | Python III - control flow operations 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻  |  15/12/2021 - 11:59 PM EST  🖥️ ✍🏽📖  |
+| 16/12/2021 | Python IV - functions & files 💡 👨🏻‍🏫 🧑🏽‍💻🧑🏾‍💻 🧑🏿‍🔬👩🏻‍🔬 |  12/01/2022 - 11:59 PM EST  🖥️ ✍🏽📖   |
