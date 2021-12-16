@@ -20,8 +20,8 @@ The contact information of the instructors are as follows:
 
 - [Maren Wehrheim]()  
 - Office hours:   
-- E-mail:  
-- preferred mode of contact:  
+- E-mail: `wehrheim at fias.uni-frankfurt.de`
+- preferred mode of contact: usually online to save time and effort for everyone  
 
 ```{admonition} How to address one another?
 :class: dropdown
@@ -31,7 +31,7 @@ and:
 
 - [Peer Herholz (he/him)](https://peerherholz.github.io/)
 - Office hours: [by arrangement via this webpage](https://peerherholz.github.io/contact/)
-- E-mail: Herholz@psych.uni-frankfurt.de
+- E-mail: Herholz at psych.uni-frankfurt.de
 - preferred mode of contact: usually online to save time and effort for everyone
 
 
