@@ -22,18 +22,18 @@ If you foresee any of these being a problem please reach out to one of the instr
 
 ## Required software
 
-To get the most out of the course, we ask that you arrive with the following software already installed:
+To get the most out of the course, we ask that you arrive with the following software already installed (software/things in () are not entirely necessary but definitely great to have):
 
-- A command-line shell: Bash
-- A version control system: Git
-- A remote-capable text editor: VSCode
-- Python 3 via Miniconda
-- A GitHub account
-- Discord
-- A modern browser
+- A command-line shell: `Bash`
+- (A version control system: `Git`)
+- A remote-capable text editor: `VSCode`
+- `Python 3` via `Miniconda`
+- (A `GitHub` account)
+- `Discord`
+- A `modern browser`
 
 If you already have all of the above software tools/packages installed, or are confident you’ll be able to install them by the time the course starts, you can jump straight to [checking your install](#checking-your-install).
-The rest of this page provides more detail on installation procedures for each of the above elements, with separate instructions for each of the three major operating systems (Windows, Mac OS, and Linux).
+The rest of this page provides more detail on installation procedures for each of the above elements, with separate instructions for each of the three major operating systems (`Windows`, `Mac OS`, and `Linux`).
 
 ### Some quick general notes on instructions
 
