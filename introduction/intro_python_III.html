@@ -523,26 +523,28 @@
     <a class="reference internal nav-link" href="#functions">
      Functions
     </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#positional-vs-keyword-arguments">
-     Positional vs. keyword arguments
-    </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#let-s-quickly-talk-about-function-names">
-       Let’s quickly talk about function names…
+      <a class="reference internal nav-link" href="#positional-vs-keyword-arguments">
+       Positional vs. keyword arguments
       </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#exercise-3-1">
-       Exercise 3.1
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#exercise-3-2">
-       Exercise 3.2
-      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#let-s-quickly-talk-about-function-names">
+         Let’s quickly talk about function names…
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#exercise-3-1">
+         Exercise 3.1
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#exercise-3-2">
+         Exercise 3.2
+        </a>
+       </li>
+      </ul>
      </li>
     </ul>
    </li>
@@ -1984,9 +1986,8 @@ func_with_docstring(s)
 </div>
 </div>
 </div>
-</div>
 <div class="section" id="positional-vs-keyword-arguments">
-<h2>Positional vs. keyword arguments<a class="headerlink" href="#positional-vs-keyword-arguments" title="Permalink to this headline">¶</a></h2>
+<h3>Positional vs. keyword arguments<a class="headerlink" href="#positional-vs-keyword-arguments" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Positional</span> <span class="pre">arguments</span></code> are defined by <code class="docutils literal notranslate"><span class="pre">position</span></code> and must be passed</p>
 <ul>
@@ -2067,7 +2068,7 @@ We can increase readability by calling the <code class="docutils literal notrans
 <li><p>don’t have to be called in order</p></li>
 </ul>
 <div class="section" id="let-s-quickly-talk-about-function-names">
-<h3>Let’s quickly talk about function names…<a class="headerlink" href="#let-s-quickly-talk-about-function-names" title="Permalink to this headline">¶</a></h3>
+<h4>Let’s quickly talk about function names…<a class="headerlink" href="#let-s-quickly-talk-about-function-names" title="Permalink to this headline">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">Function</span> <span class="pre">names</span></code> are very important. They will allow you to tell the story of your code. Time spent on naming is never wasted time in <code class="docutils literal notranslate"><span class="pre">coding</span></code>.</p>
 <p>The ‘pythonic’ way to write <code class="docutils literal notranslate"><span class="pre">functions</span></code> is to also imply in the name what the <code class="docutils literal notranslate"><span class="pre">function</span></code> will do.</p>
 <p>Some examples:</p>
@@ -2078,7 +2079,7 @@ We can increase readability by calling the <code class="docutils literal notrans
 </ul>
 </div>
 <div class="section" id="exercise-3-1">
-<h3>Exercise 3.1<a class="headerlink" href="#exercise-3-1" title="Permalink to this headline">¶</a></h3>
+<h4>Exercise 3.1<a class="headerlink" href="#exercise-3-1" title="Permalink to this headline">¶</a></h4>
 <p>Define a <code class="docutils literal notranslate"><span class="pre">function</span></code> called <code class="docutils literal notranslate"><span class="pre">get_longest_string</span></code> that takes two <code class="docutils literal notranslate"><span class="pre">strings</span></code> as <code class="docutils literal notranslate"><span class="pre">input</span></code> and <code class="docutils literal notranslate"><span class="pre">returns</span></code> the <code class="docutils literal notranslate"><span class="pre">longer</span> <span class="pre">string</span></code>. If the <code class="docutils literal notranslate"><span class="pre">strings</span></code> have the same <code class="docutils literal notranslate"><span class="pre">length</span></code>, the <code class="docutils literal notranslate"><span class="pre">first</span></code> one should be <code class="docutils literal notranslate"><span class="pre">returned</span></code>.</p>
 <p>Call your <code class="docutils literal notranslate"><span class="pre">function</span></code> once, using <code class="docutils literal notranslate"><span class="pre">positional</span> <span class="pre">arguments</span></code> and once using <code class="docutils literal notranslate"><span class="pre">keyword</span> <span class="pre">arguments</span></code>.</p>
 <div class="cell docutils container">
@@ -2104,7 +2105,7 @@ We can increase readability by calling the <code class="docutils literal notrans
 </div>
 </div>
 <div class="section" id="exercise-3-2">
-<h3>Exercise 3.2<a class="headerlink" href="#exercise-3-2" title="Permalink to this headline">¶</a></h3>
+<h4>Exercise 3.2<a class="headerlink" href="#exercise-3-2" title="Permalink to this headline">¶</a></h4>
 <p>Define a <code class="docutils literal notranslate"><span class="pre">function</span></code> <code class="docutils literal notranslate"><span class="pre">happy_holidays</span></code> that wishes the user happy holidays. It takes the name of the <code class="docutils literal notranslate"><span class="pre">user</span></code> as <code class="docutils literal notranslate"><span class="pre">input</span></code> <code class="docutils literal notranslate"><span class="pre">argument</span></code>. When the <code class="docutils literal notranslate"><span class="pre">user</span></code> does not define a name, your <code class="docutils literal notranslate"><span class="pre">function</span></code> should use a <code class="docutils literal notranslate"><span class="pre">default</span> <span class="pre">value</span></code>.
 Then call it once, <code class="docutils literal notranslate"><span class="pre">inputting</span></code> a <code class="docutils literal notranslate"><span class="pre">user</span> <span class="pre">name</span></code> and once without.</p>
 <div class="cell docutils container">
@@ -2128,6 +2129,7 @@ Then call it once, <code class="docutils literal notranslate"><span class="pre">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>I wish you a very merry Christmas, Maren.
 I wish you a very merry Christmas, you awesome individual.
 </pre></div>
+</div>
 </div>
 </div>
 </div>
