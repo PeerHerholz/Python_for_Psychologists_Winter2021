@@ -31,7 +31,7 @@ and:
 
 - [Peer Herholz (he/him)](https://peerherholz.github.io/)
 - Office hours: [by arrangement via this webpage](https://peerherholz.github.io/contact/)
-- E-mail: Herholz at psych.uni-frankfurt.de
+- E-mail: `Herholz at psych.uni-frankfurt.de`
 - preferred mode of contact: usually online to save time and effort for everyone
 
 
