@@ -34,14 +34,6 @@ Your fourth homework assignment will entail working through a few tasks covering
 
 **Deadline: 15/12/2021, 11:59 PM EST**
 
-Also, in preparation for our switch to more applied things, starting with `experiments` in `python` and thus endeavors in `psychopy`, could you please create a new respective `conda environment` (remember those?) via the following lines:
-
-`conda create -n psychopy psychopy`  
-`conda activate psychopy`  
-`pip install jedi psychtoolbox pygame pyo pyobjc python-vlc ujson`  
-
-and then test if everything works via running `psychopy` (type it and then press "enter") from within the new `environment`?
-
 ### optional/reading/further materials
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/--_K4G3HCcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
