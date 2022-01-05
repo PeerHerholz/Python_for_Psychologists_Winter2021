@@ -42,7 +42,7 @@
     <script src="../_static/copybutton.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -301,7 +301,7 @@
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -337,7 +337,7 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -425,7 +425,221 @@
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
+    <!-- Table of contents that is only displayed when printing the page -->
+    <div id="jb-print-docs-body" class="onlyprint">
+        <h1>Introduction V</h1>
+        <!-- Table of contents -->
+        <div id="print-main-content" class="row">
+            <div class="col-12 col-md-12 pl-md-5 pr-md-5">
+            <div id="jb-print-toc">
+                
+                <div>
+                    <h2> Contents </h2>
+                </div>
+                <nav aria-label="Page">
+                    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#topics">
+   Topics 💡👨🏻‍🏫
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#transition-to-virtual-classes">
+     Transition to virtual classes
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#objectives">
+       Objectives 📍
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#materials">
+       Materials 📓
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jupyter-notebooks">
+     Jupyter notebooks
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Objectives 📍
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Materials 📓
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#introduction-to-python-i">
+     Introduction to Python - I
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Objectives 📍
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Materials 📓
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-related-work">
+   Project related work 🥼🧑🏿‍🔬👩🏻‍🔬
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tasks-for-subsequent-meeting">
+   tasks for subsequent meeting 🖥️✍🏽📖
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#optional-reading-further-materials">
+     optional/reading/further materials
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                </nav>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="introduction-v">
+<h1>Introduction V<a class="headerlink" href="#introduction-v" title="Permalink to this headline">¶</a></h1>
+<p>Within the fifth session we’ll continue to explore <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebooks</span></code> as a central tool, resource and prerequisite for future endeavors as all of the <code class="docutils literal notranslate"><span class="pre">introduction</span> <span class="pre">to</span> <span class="pre">python</span></code>, as well as <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">analyzes</span> <span class="pre">part</span></code> will be conducted within them.  Subsequently, we start working with the <code class="docutils literal notranslate"><span class="pre">python</span></code> programming language, as well as situate and compare it to other programming languages. However, before we get back to programming we need to address the elephant in the <code class="docutils literal notranslate"><span class="pre">virtual</span> <span class="pre">room</span></code>.</p>
+<div class="section" id="topics">
+<h2>Topics 💡👨🏻‍🏫<a class="headerlink" href="#topics" title="Permalink to this headline">¶</a></h2>
+<p>In the following you’ll find the <code class="docutils literal notranslate"><span class="pre">objectives</span></code> and <code class="docutils literal notranslate"><span class="pre">materials</span></code> for each of the topics we’ll discuss during this session.</p>
+<div class="section" id="transition-to-virtual-classes">
+<h3>Transition to virtual classes<a class="headerlink" href="#transition-to-virtual-classes" title="Permalink to this headline">¶</a></h3>
+<p>As mentioned during the last class and e-mails, starting this session the entire course will be transitioning to <strong>virtual classes only</strong>. I already tried my best to explain this decision but TL;DR: the current situation and most likely developments basically leave no other option. Now it’s on us to make the best of it! The aid the transition and entire process as best as possible, we’ll use the first part of the session to go through the new setup and respective resources/tools together.</p>
+<div class="section" id="objectives">
+<h4>Objectives 📍<a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>outline transition to virtual classes</p></li>
+<li><p>discuss new setup</p></li>
+<li><p>Ask and answer questions</p></li>
+<li><p>Have a great time</p></li>
+</ul>
+</div>
+<div class="section" id="materials">
+<h4>Materials 📓<a class="headerlink" href="#materials" title="Permalink to this headline">¶</a></h4>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQIl4ydcCDeJVcMFvblIJqygXGF0r-nPcBxxZJ6zzVhId_sYI8lSSa0uO6X8rIWmRQHnTYsCmK_s8vy/embed?start=false&loop=false&delayms=3000" frameborder="0" width="600" height="370" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+</div>
+<div class="section" id="jupyter-notebooks">
+<h3>Jupyter notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this headline">¶</a></h3>
+<p>During the previous session we had a look at different ways of communicating with our computers. Generally speaking we could either use a <code class="docutils literal notranslate"><span class="pre">GUI</span></code> or a <code class="docutils literal notranslate"><span class="pre">CLI</span></code>. In more detail we also have different options to utilize the same <code class="docutils literal notranslate"><span class="pre">programming</span> <span class="pre">language</span></code> to communicate with our <code class="docutils literal notranslate"><span class="pre">computer</span></code>, e.g. the <code class="docutils literal notranslate"><span class="pre">shell</span></code>, <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebooks</span></code> and <code class="docutils literal notranslate"><span class="pre">IDE</span></code>s. After we already explored the <code class="docutils literal notranslate"><span class="pre">shell</span></code> a bit, we’ll now spend a closer look at <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> and how we can work with them. This is a central topic as the <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">introduction</span></code> and <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">analyzes</span></code> parts of the course will be conducted via <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> and you’ll have to hand in most assignments via them as well.</p>
+<div class="section" id="id1">
+<h4>Objectives 📍<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>learn basic and efficient usage of the jupyter ecosystem &amp; notebooks</p>
+<ul>
+<li><p>what is Jupyter &amp; how to utilize jupyter notebooks</p></li>
+</ul>
+</li>
+<li><p>Ask and answer questions</p></li>
+<li><p>Have a great time</p></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h4>Materials 📓<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<p>Please see the rendered version of the <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> <a class="reference external" href="https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/intro_jupyter.html">Introduction IV - jupyter notebooks</a> in the <code class="docutils literal notranslate"><span class="pre">ToC</span></code> on the left.</p>
+</div>
+</div>
+<div class="section" id="introduction-to-python-i">
+<h3>Introduction to Python - I<a class="headerlink" href="#introduction-to-python-i" title="Permalink to this headline">¶</a></h3>
+<p>The big moment is finally here: after spending quite a bit of time exploring important concepts adjacent to/around <code class="docutils literal notranslate"><span class="pre">python</span></code>, with the intention to provide a holistic understanding and situate components accordingly, we will start exploring <code class="docutils literal notranslate"><span class="pre">python</span></code> itself. Within the first block of programming with <code class="docutils literal notranslate"><span class="pre">python</span></code> we will go through basics of the <code class="docutils literal notranslate"><span class="pre">python</span></code> programming language, its central aspects and building blocks, as well as its benefits generally speaking and within the context of psychology research.</p>
+<div class="section" id="id3">
+<h4>Objectives 📍<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>learn basic and efficient usage of the python programming language</p>
+<ul>
+<li><p>what is python &amp; how to utilize it</p></li>
+<li><p>building blocks of &amp; operations in python</p></li>
+</ul>
+</li>
+<li><p>Ask and answer questions</p></li>
+<li><p>Have a great time</p></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h4>Materials 📓<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<p>Please see the rendered version of the <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> <a class="reference external" href="https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/intro_python_I.html">Introduction V - Introduction to Python I</a> in the <code class="docutils literal notranslate"><span class="pre">ToC</span></code> on the left.</p>
+</div>
+</div>
+</div>
+<div class="section" id="project-related-work">
+<h2>Project related work 🥼🧑🏿‍🔬👩🏻‍🔬<a class="headerlink" href="#project-related-work" title="Permalink to this headline">¶</a></h2>
+<p>Not applicable, as project related work didn’t start yet.</p>
+</div>
+<div class="section" id="tasks-for-subsequent-meeting">
+<h2>tasks for subsequent meeting 🖥️✍🏽📖<a class="headerlink" href="#tasks-for-subsequent-meeting" title="Permalink to this headline">¶</a></h2>
+<p>I unfortunately didn’t explain things properly at the end of last week’s session and thus some folks already did the second homework assignment and some don’t. I’m truly sorry for that! Those folks that already did it obviously don’t have to repeat it, for the others, please find the information below:</p>
+<p>Your second homework assignment will entail the generation of a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> with</p>
+<ul class="simple">
+<li><p><strong>mandatory</strong>: 3 different cells:</p>
+<ul>
+<li><p>1 rendered markdown cell within which you name your favorite movie and describe why you like it via
+max. 2 sentences</p></li>
+<li><p>1 code cell with an equation (e.g. <code class="docutils literal notranslate"><span class="pre">1+1</span></code>, <code class="docutils literal notranslate"><span class="pre">(a+b)/(c+d)</span></code>, etc.)</p></li>
+<li><p>1 raw cell with your favorite snack</p></li>
+</ul>
+</li>
+<li><p><strong>optional</strong>: a picture of your favorite animal
+Once you have everything, save the notebook and e-mail it to Peer.</p></li>
+</ul>
+<p>Please note that the deadline for the assignment is: 08/12/2021, 11:59 PM EST.</p>
+<div class="section" id="optional-reading-further-materials">
+<h3>optional/reading/further materials<a class="headerlink" href="#optional-reading-further-materials" title="Permalink to this headline">¶</a></h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MHPGeQD8TvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./introduction"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </div>
+        </div>
+    </div>
+    <div id="main-content" class="row noprint">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
               <div>
@@ -568,15 +782,13 @@ Once you have everything, save the notebook and e-mail it to Peer.</p></li>
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By Peer Herholz<br/>
-        
-            &copy; Copyright 2020.<br/>
-      </p>
-    </div>
-  </footer>
+  <p>
+    
+      By Peer Herholz<br/>
+    
+        &copy; Copyright 2020.<br/>
+  </p>
+</footer>
 </main>
 
 

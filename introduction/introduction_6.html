@@ -42,7 +42,7 @@
     <script src="../_static/copybutton.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -301,7 +301,7 @@
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -337,7 +337,7 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -391,7 +391,143 @@
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
+    <!-- Table of contents that is only displayed when printing the page -->
+    <div id="jb-print-docs-body" class="onlyprint">
+        <h1>Introduction VI</h1>
+        <!-- Table of contents -->
+        <div id="print-main-content" class="row">
+            <div class="col-12 col-md-12 pl-md-5 pr-md-5">
+            <div id="jb-print-toc">
+                
+                <div>
+                    <h2> Contents </h2>
+                </div>
+                <nav aria-label="Page">
+                    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#topics">
+   Topics 💡👨🏻‍🏫
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#introduction-to-python-ii">
+     Introduction to Python - II
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#objectives">
+       Objectives 📍
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#materials">
+       Materials 📓
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-related-work">
+   Project related work 🥼🧑🏿‍🔬👩🏻‍🔬
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tasks-for-subsequent-meeting">
+   tasks for subsequent meeting 🖥️✍🏽📖
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#optional-reading-further-materials">
+     optional/reading/further materials
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                </nav>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="introduction-vi">
+<h1>Introduction VI<a class="headerlink" href="#introduction-vi" title="Permalink to this headline">¶</a></h1>
+<p>Within the sixth session we’ll continue to explore the basic building blocks of <code class="docutils literal notranslate"><span class="pre">python</span></code>, this and the next <code class="docutils literal notranslate"><span class="pre">session</span></code> will contain exhaustive content aiming to provide you with a somewhat detailed understanding of central <code class="docutils literal notranslate"><span class="pre">python</span></code> aspects. The aim is to get a good set of basic experience to then advance into more practical aspects, specifically evaluating how these things can be utilized within <code class="docutils literal notranslate"><span class="pre">experiments</span></code> to collect data and their subsequent <code class="docutils literal notranslate"><span class="pre">analyzes</span></code>. To nevertheless get some experience on the way, there will be some exercise at the beginning and throughout the session. Additionally, the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignments</span></code> will be made in a way that showcases some tasks that you might most likely encounter in real-life so that you get more practice in conducting them through <code class="docutils literal notranslate"><span class="pre">python</span></code>.</p>
+<div class="section" id="topics">
+<h2>Topics 💡👨🏻‍🏫<a class="headerlink" href="#topics" title="Permalink to this headline">¶</a></h2>
+<p>In the following you’ll find the <code class="docutils literal notranslate"><span class="pre">objectives</span></code> and <code class="docutils literal notranslate"><span class="pre">materials</span></code> for each of the topics we’ll discuss during this session.</p>
+<div class="section" id="introduction-to-python-ii">
+<h3>Introduction to Python - II<a class="headerlink" href="#introduction-to-python-ii" title="Permalink to this headline">¶</a></h3>
+<p>This session, we’ll build upon the things learn last week and broader our capabilities in <code class="docutils literal notranslate"><span class="pre">python</span></code>, focusing on <code class="docutils literal notranslate"><span class="pre">operations</span></code>, <code class="docutils literal notranslate"><span class="pre">comparisons</span></code> and <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">types</span></code>/<code class="docutils literal notranslate"><span class="pre">structures</span></code>.</p>
+<div class="section" id="objectives">
+<h4>Objectives 📍<a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>learn basic and efficient usage of the <code class="docutils literal notranslate"><span class="pre">python</span></code> programming language</p>
+<ul>
+<li><p>what is <code class="docutils literal notranslate"><span class="pre">python</span></code> &amp; how to utilize it</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">operations</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">comparison</span></code> in <code class="docutils literal notranslate"><span class="pre">python</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">types</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">structures</span></code></p></li>
+</ul>
+</li>
+<li><p>Ask and answer questions</p></li>
+<li><p>Have a great time</p></li>
+</ul>
+</div>
+<div class="section" id="materials">
+<h4>Materials 📓<a class="headerlink" href="#materials" title="Permalink to this headline">¶</a></h4>
+<p>Please see the rendered version of the <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> <a class="reference external" href="https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/intro_python_II.html">Introduction VI - Introduction to Python II</a> in the <code class="docutils literal notranslate"><span class="pre">ToC</span></code> on the left.</p>
+</div>
+</div>
+</div>
+<div class="section" id="project-related-work">
+<h2>Project related work 🥼🧑🏿‍🔬👩🏻‍🔬<a class="headerlink" href="#project-related-work" title="Permalink to this headline">¶</a></h2>
+<p>Not applicable, as project related work didn’t start yet.</p>
+</div>
+<div class="section" id="tasks-for-subsequent-meeting">
+<h2>tasks for subsequent meeting 🖥️✍🏽📖<a class="headerlink" href="#tasks-for-subsequent-meeting" title="Permalink to this headline">¶</a></h2>
+<p>Your fourth homework assignment will entail working through a few tasks covering the contents discussed in this session within of a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>. You can download it <a class="reference external" href="https://www.dropbox.com/s/x2suy8dfcmb3yuf/PFP_assignment_4_intro_python_2.ipynb?dl=1">here</a>. In order to open it, put the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code> within the folder you stored the <code class="docutils literal notranslate"><span class="pre">course</span> <span class="pre">materials</span></code>, start a <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> as during the sessions, navigate to the <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span> <span class="pre">notebook</span></code>, open it and have fun! NB: a substantial part of it will be <em>optional</em> and thus the notebook will look way longer than it actually is.</p>
+<p><strong>Deadline: 15/12/2021, 11:59 PM EST</strong></p>
+<p>Also, in preparation for our switch to more applied things, starting with <code class="docutils literal notranslate"><span class="pre">experiments</span></code> in <code class="docutils literal notranslate"><span class="pre">python</span></code> and thus endeavors in <code class="docutils literal notranslate"><span class="pre">psychopy</span></code>, could you please create a new respective <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">environment</span></code> (remember those?) via the following lines:</p>
+<p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">-n</span> <span class="pre">psychopy</span> <span class="pre">psychopy</span></code><br />
+<code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">psychopy</span></code><br />
+<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">jedi</span> <span class="pre">psychtoolbox</span> <span class="pre">pygame</span> <span class="pre">pyo</span> <span class="pre">pyobjc</span> <span class="pre">python-vlc</span> <span class="pre">ujson</span></code></p>
+<p>and then test if everything works via running <code class="docutils literal notranslate"><span class="pre">psychopy</span></code> (type it and then press “enter”) from within the new <code class="docutils literal notranslate"><span class="pre">environment</span></code>?</p>
+<div class="section" id="optional-reading-further-materials">
+<h3>optional/reading/further materials<a class="headerlink" href="#optional-reading-further-materials" title="Permalink to this headline">¶</a></h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/--_K4G3HCcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./introduction"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </div>
+        </div>
+    </div>
+    <div id="main-content" class="row noprint">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
               <div>
@@ -490,15 +626,13 @@
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By Peer Herholz<br/>
-        
-            &copy; Copyright 2020.<br/>
-      </p>
-    </div>
-  </footer>
+  <p>
+    
+      By Peer Herholz<br/>
+    
+        &copy; Copyright 2020.<br/>
+  </p>
+</footer>
 </main>
 
 
