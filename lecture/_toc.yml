@@ -25,6 +25,10 @@ chapters:
     sections:
     - file: introduction/intro_python_III.ipynb
 - file: experiments/experiments.md
+  sections:
+  - file: experiments/experiments_1.md  
+    sections:
+    - file: experiments/intro_psychopy_I.ipynb
 - file: analyses/analyses.md
 - file: projects
 - file: questionnaires
