@@ -1,0 +1,1911 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experimentation I - Introduction to PsychoPy I &#8212; Winter - 2021</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Data analyses in Python" href="../analyses/analyses.html" />
+    <link rel="prev" title="Experiments I" href="experiments_1.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/pfp_logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Winter - 2021</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Welcome!
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../dei.html">
+   Diversity, Equity and Inclusion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../overview.html">
+   Course overview &amp; procedure
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../setup.html">
+   Setup for the course
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../outline.html">
+   General outline
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../introduction/introduction.html">
+   Introduction
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../introduction/introduction_1.html">
+     Introduction I
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../introduction/introduction_2.html">
+     Introduction II
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../introduction/intro_to_shell.html">
+       Introduction II - the (unix) command line: bash
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../introduction/introduction_3.html">
+     Introduction III
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../introduction/introduction_4.html">
+     Introduction IV
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../introduction/intro_jupyter.html">
+       Introduction IV - the jupyter ecosystem &amp; notebooks
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../introduction/introduction_5.html">
+     Introduction V
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../introduction/intro_python_I.html">
+       Introduction V - Introduction to Python - I
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../introduction/introduction_6.html">
+     Introduction VI
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../introduction/intro_python_II.html">
+       Introduction VI - Introduction to Python II
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../introduction/introduction_7.html">
+     Introduction VII
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../introduction/intro_python_III.html">
+       Introduction VII - Introduction to Python III
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="experiments.html">
+   Running experiments in Python
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="experiments_1.html">
+     Experiments I
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Experimentation I - Introduction to PsychoPy I
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyses/analyses.html">
+   Data analyses in Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projects.html">
+   Student projects
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../questionnaires.html">
+   Questionnaire templates
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../break.html">
+   Yoga and/or dance break
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../CoC.html">
+   Code of Conduct
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/experiments/intro_psychopy_I.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/PeerHerholz/Python_for_Psychologists_Winter2021"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/PeerHerholz/Python_for_Psychologists_Winter2021/issues/new?title=Issue%20on%20page%20%2Fexperiments/intro_psychopy_I.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/PeerHerholz/Python_for_Psychologists_Winter2021/edit/master/lecture/experiments/intro_psychopy_I.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/PeerHerholz/Python_for_Psychologists_Winter2021/master?urlpath=tree/lecture/experiments/intro_psychopy_I.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#objectives">
+   Objectives 📍
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#important-note">
+   Important note
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#outline">
+   Outline
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#prerequisites">
+   Prerequisites
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#computing-environments">
+     Computing environments
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#folders-files">
+     Folders &amp; files
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vscode-setup">
+     VScode setup
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#psychopy-basics">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     PsychoPy
+    </span>
+   </code>
+   basics
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-psychopy">
+     What is
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       PsychoPy
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#idea-goals-of-psychopy">
+     Idea/goals of
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       PsychoPy
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#things-to-check-evaluate">
+     Things to check/evaluate
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-general-idea">
+     The general idea
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#input-via-dialog-boxes">
+     Input via dialog boxes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#presenting-instructions">
+     Presenting instructions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#psychopy-working-principles">
+   PsychoPy working principles
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#drawing-flipping">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Draw
+      </span>
+     </code>
+     ing &amp;
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       flip
+      </span>
+     </code>
+     ping
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#trials">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       trials
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#input-output">
+   Input/output
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#collecting-responses">
+     Collecting responses
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#saving-data">
+     Saving data
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-very-simple-experiment">
+   A very simple experiment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#outro">
+   Outro
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Experimentation I - Introduction to PsychoPy I</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#objectives">
+   Objectives 📍
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#important-note">
+   Important note
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#outline">
+   Outline
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#prerequisites">
+   Prerequisites
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#computing-environments">
+     Computing environments
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#folders-files">
+     Folders &amp; files
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vscode-setup">
+     VScode setup
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#psychopy-basics">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     PsychoPy
+    </span>
+   </code>
+   basics
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-psychopy">
+     What is
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       PsychoPy
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#idea-goals-of-psychopy">
+     Idea/goals of
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       PsychoPy
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#things-to-check-evaluate">
+     Things to check/evaluate
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-general-idea">
+     The general idea
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#input-via-dialog-boxes">
+     Input via dialog boxes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#presenting-instructions">
+     Presenting instructions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#psychopy-working-principles">
+   PsychoPy working principles
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#drawing-flipping">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Draw
+      </span>
+     </code>
+     ing &amp;
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       flip
+      </span>
+     </code>
+     ping
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#trials">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       trials
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#input-output">
+   Input/output
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#collecting-responses">
+     Collecting responses
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#saving-data">
+     Saving data
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-very-simple-experiment">
+   A very simple experiment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#outro">
+   Outro
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="experimentation-i-introduction-to-psychopy-i">
+<h1>Experimentation I - Introduction to PsychoPy I<a class="headerlink" href="#experimentation-i-introduction-to-psychopy-i" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://peerherholz.github.io/">Peer Herholz (he/him)</a><br />
+Habilitation candidate  - <a class="reference external" href="http://www.fiebachlab.org/">Fiebach Lab</a>, <a class="reference external" href="https://www.psychologie.uni-frankfurt.de/49868684/Abteilungen">Neurocognitive Psychology</a> at <a class="reference external" href="https://www.goethe-university-frankfurt.de/en?locale=en">Goethe-University Frankfurt</a><br />
+Research affiliate - <a class="reference external" href="https://neurodatascience.github.io/">NeuroDataScience lab</a> at <a class="reference external" href="https://www.mcgill.ca/neuro/">MNI</a>/<a class="reference external" href="https://www.mcgill.ca/">McGill</a><br />
+Member - <a class="reference external" href="https://bids-specification.readthedocs.io/en/stable/">BIDS</a>, <a class="reference external" href="https://www.repronim.org/">ReproNim</a>, <a class="reference external" href="https://brainhack.org/">Brainhack</a>, <a class="reference external" href="https://www.cneuromod.ca/">Neuromod</a>, <a class="reference external" href="https://ohbm-environment.org/">OHBM SEA-SIG</a>, <a class="reference external" href="https://sites.google.com/view/unique-neuro-ai">UNIQUE</a></p>
+<p><img align="left" src="https://raw.githubusercontent.com/G0RELLA/gorella_mwn/master/lecture/static/Twitter%20social%20icons%20-%20circle%20-%20blue.png" alt="logo" title="Twitter" width="32" height="20" /> <img align="left" src="https://raw.githubusercontent.com/G0RELLA/gorella_mwn/master/lecture/static/GitHub-Mark-120px-plus.png" alt="logo" title="Github" width="30" height="20" />     &#64;peerherholz</p>
+<div class="section" id="objectives">
+<h2>Objectives 📍<a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>get to know the <a class="reference external" href="https://www.psychopy.org/">PsychoPy</a> library</p></li>
+<li><p>learn basic and efficient usage of its <code class="docutils literal notranslate"><span class="pre">module</span></code>s and <code class="docutils literal notranslate"><span class="pre">function</span></code>s to create <em>simple</em> experiments</p></li>
+</ul>
+</div>
+<div class="section" id="important-note">
+<h2>Important note<a class="headerlink" href="#important-note" title="Permalink to this headline">¶</a></h2>
+<p>The main content of this section will be presented via a mixture of <span class="xref myst">slides</span> and <span class="xref myst">VScode</span> which is further outlined in the <span class="xref myst">respective section of the course website</span> and <span class="xref myst">slides</span>. As noted there, <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebooks</span></code> aren’t the best way to work on and run experiments using <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code>, instead we need to switch to <code class="docutils literal notranslate"><span class="pre">IDE</span></code>s for this part of the course. Specifically, we will use <code class="docutils literal notranslate"><span class="pre">VScode</span></code> for this.</p>
+<img align="center" src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/ipynb_IDE.png" alt="logo" title="jupyter" width="600" height="100" /> 
+<p>This <code class="docutils literal notranslate"><span class="pre">notebook</span></code> is thus not intended as the main resource and you shouldn’t try to test/run the experiment via the here included <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">cells</span></code>. Rather, this is meant to be an add-on resource that presents some of the content and especially <code class="docutils literal notranslate"><span class="pre">code</span></code> in a more condensed form. We hope it will be useful/helpful for you.</p>
+</div>
+<div class="section" id="outline">
+<h2>Outline<a class="headerlink" href="#outline" title="Permalink to this headline">¶</a></h2>
+<p>Within this notebook we will go through the basic and required steps to create a new experiment using <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code>, including:</p>
+<ol class="simple">
+<li><p>Prerequisites<br />
+1.1 Computing environment<br />
+1.2 Folders &amp; Files</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> basics<br />
+2.1 The general idea<br />
+2.2 Input via <code class="docutils literal notranslate"><span class="pre">dialog</span> <span class="pre">boxes</span></code><br />
+2.3 Presenting instructions</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code>’s working principles<br />
+3.1 <code class="docutils literal notranslate"><span class="pre">draw</span></code>ing &amp; <code class="docutils literal notranslate"><span class="pre">flip</span></code>ping<br />
+3.2 <code class="docutils literal notranslate"><span class="pre">trial</span></code>s</p></li>
+<li><p>Input/output<br />
+4.1 collecting responses<br />
+4.2 saving data</p></li>
+<li><p>A very simple experiment</p></li>
+</ol>
+</div>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<p>Starting new experiments in <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> follows the same guidelines as starting new projects in general. This includes the following:</p>
+<ul class="simple">
+<li><p>create and store everything in a dedicated place on your machine</p></li>
+<li><p>create and use a dedicated computing environment</p></li>
+<li><p>document everything or at least as much as possible</p></li>
+<li><p>test and save things in very short intervals, basically after every change</p></li>
+</ul>
+<img align="center" src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/experiment_prereq.png" alt="logo" title="jupyter" width="600" height="100" /> 
+<div class="section" id="computing-environments">
+<h3>Computing environments<a class="headerlink" href="#computing-environments" title="Permalink to this headline">¶</a></h3>
+<p>As addressed during the first weeks of the course, <code class="docutils literal notranslate"><span class="pre">computing</span> <span class="pre">environments</span></code> are essential when programming, not only in <code class="docutils literal notranslate"><span class="pre">Python</span></code>. This refers to reproducibility, transfer/sharing of code and many other factors. Lucky for us <code class="docutils literal notranslate"><span class="pre">Python</span></code> makes it easy to <code class="docutils literal notranslate"><span class="pre">create</span></code> and <code class="docutils literal notranslate"><span class="pre">manage</span></code> <code class="docutils literal notranslate"><span class="pre">computing</span> <span class="pre">environments</span></code>, for example using <span class="xref myst">conda</span>.</p>
+<p>We can thus also use it to create a new <code class="docutils literal notranslate"><span class="pre">computing</span> <span class="pre">environment</span></code> specifically dedicated to creating and running a new experiment using <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code>. Here we will name it <code class="docutils literal notranslate"><span class="pre">psychopy</span></code> and include/install a few dependencies we already know:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">bash</span>
+
+conda create -n psychopy psychopy
+
+conda activate psychopy
+
+pip install jedi psychtoolbox pygame pyo pyobjc   
+            python-vlc ujson
+</pre></div>
+</div>
+</div>
+</div>
+<p>With these few steps we have our (initial) <code class="docutils literal notranslate"><span class="pre">computing</span> <span class="pre">environment</span></code> ready to go!</p>
+<p>Let’s continue with creating <code class="docutils literal notranslate"><span class="pre">folders</span></code> and <code class="docutils literal notranslate"><span class="pre">files</span></code> we need.</p>
+</div>
+<div class="section" id="folders-files">
+<h3>Folders &amp; files<a class="headerlink" href="#folders-files" title="Permalink to this headline">¶</a></h3>
+<p>As mentioned above, it’s a good idea to keep things handy and organized. Obviously, this also holds true for running experiments using <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code>. While there are several ways we could do this, at the minimum we need a dedicated <code class="docutils literal notranslate"><span class="pre">folder</span></code> or <code class="docutils literal notranslate"><span class="pre">directory</span></code> somewhere on our machine within which we will store all corresponding information and <code class="docutils literal notranslate"><span class="pre">files</span></code>. Creating a new <code class="docutils literal notranslate"><span class="pre">directory</span></code> as no biggie using <code class="docutils literal notranslate"><span class="pre">bash</span></code>, we can simply use <code class="docutils literal notranslate"><span class="pre">mkdir</span></code> and specify the wanted <code class="docutils literal notranslate"><span class="pre">path</span></code> and <code class="docutils literal notranslate"><span class="pre">name</span></code>. For the sake of simplicity, let’s put everything in a folder called <code class="docutils literal notranslate"><span class="pre">psychopy_experiment</span></code> on our <code class="docutils literal notranslate"><span class="pre">Desktop</span></code>s.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">bash</span>
+mkdir /path/to/your/Desktop/psychopy_environment
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now we will change our <code class="docutils literal notranslate"><span class="pre">current</span> <span class="pre">working</span> <span class="pre">directory</span></code> to this new folder</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">bash</span>
+cd /path/to/your/Desktop/psychopy_environment
+</pre></div>
+</div>
+</div>
+</div>
+<p>and once there, create a new <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">script</span></code>, i.e. an empty <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">file</span></code>. For this we can use <code class="docutils literal notranslate"><span class="pre">bash</span></code>s <code class="docutils literal notranslate"><span class="pre">touch</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code> followed by the desired <code class="docutils literal notranslate"><span class="pre">filename</span></code>. Keeping things simple again, we will name it <code class="docutils literal notranslate"><span class="pre">experiment.py</span></code> (notice the file extension <code class="docutils literal notranslate"><span class="pre">.py</span></code>).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">bash</span>
+touch experiment.py
+</pre></div>
+</div>
+</div>
+</div>
+<p>Within this, currently empty, <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">file</span></code>/<code class="docutils literal notranslate"><span class="pre">script</span></code> we will put our <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">code</span></code> needed to <code class="docutils literal notranslate"><span class="pre">run</span></code> the <code class="docutils literal notranslate"><span class="pre">experiment</span></code>.</p>
+</div>
+<div class="section" id="vscode-setup">
+<h3>VScode setup<a class="headerlink" href="#vscode-setup" title="Permalink to this headline">¶</a></h3>
+<p>Once more: please remember that we’re switching to an <code class="docutils literal notranslate"><span class="pre">IDE</span></code> for this part of the course, specifically <code class="docutils literal notranslate"><span class="pre">VScode</span></code>, as <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebooks</span></code> aren’t the most feasible way to implement/test/run <code class="docutils literal notranslate"><span class="pre">experiment</span></code>s via <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code>. Therefore, please open <code class="docutils literal notranslate"><span class="pre">VScode</span></code> and within it open the folder we just created (<code class="docutils literal notranslate"><span class="pre">File</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Folder</span></code>). Next, click on the <code class="docutils literal notranslate"><span class="pre">experiment.py</span></code> file which should open in the <code class="docutils literal notranslate"><span class="pre">editor</span></code> window and finally also open a <code class="docutils literal notranslate"><span class="pre">terminal</span></code> via <code class="docutils literal notranslate"><span class="pre">Terminal</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Terminal</span></code> and activate the <code class="docutils literal notranslate"><span class="pre">computing</span> <span class="pre">environment</span></code> we created above. With that your setup is ready for our <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> adventure and should look roughly like below:</p>
+<img align="center" src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/vscode_setup.png" alt="logo" title="jupyter" width="600" height="100" /> </div>
+</div>
+<div class="section" id="psychopy-basics">
+<h2><code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> basics<a class="headerlink" href="#psychopy-basics" title="Permalink to this headline">¶</a></h2>
+<p>It’s already time to talk about <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code>, one of the <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">libraries</span></code> intended to run <code class="docutils literal notranslate"><span class="pre">experiments</span></code> and acquire <code class="docutils literal notranslate"><span class="pre">data</span></code>. For more information regarding different software and options, their advantages and drawbacks, please consult the <span class="xref myst">slides</span>.</p>
+<img align="center" src="https://www.psychopy.org/_static/psychopyLogoOnlineStrap_h480.png" alt="logo" title="jupyter" width="600" height="100" /> 
+<p>Make sure to check the <a class="reference external" href="https://www.psychopy.org/"><code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> website</a>, <a class="reference external" href="https://psychopy.org/documentation.html">documentation</a> and <a class="reference external" href="https://discourse.psychopy.org/">forum</a>.</p>
+<div class="section" id="what-is-psychopy">
+<h3>What is <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code><a class="headerlink" href="#what-is-psychopy" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Psychology software in <code class="docutils literal notranslate"><span class="pre">Python</span></code>, i.e. a <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">library</span></code>, i.e. completely written in <code class="docutils literal notranslate"><span class="pre">Python</span></code></p></li>
+<li><p>2002-2003: Jon Pierce began work on this for his own lab (visual neuroscience)</p></li>
+<li><p>2003-2017: a purely volunteer-driven, evenings and weekends project</p></li>
+<li><p>2017-now: still open source and free to install but with professional support</p></li>
+</ul>
+</div>
+<div class="section" id="idea-goals-of-psychopy">
+<h3>Idea/goals of <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code><a class="headerlink" href="#idea-goals-of-psychopy" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>allow scientists to run as wide a range of experiments as possible, easily and via standard computer hardware</p></li>
+<li><p>precise enough for psychophysics</p></li>
+<li><p>intuitive enough for (undergraduate) psychology (no offence)</p></li>
+<li><p>flexible enough for everything else</p></li>
+<li><p>capable of running studies in the lab or online</p></li>
+</ul>
+</div>
+<div class="section" id="things-to-check-evaluate">
+<h3>Things to check/evaluate<a class="headerlink" href="#things-to-check-evaluate" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>computer hardware settings &amp; interfaces</p></li>
+<li><p>rapid software development</p></li>
+<li><p>always check version</p></li>
+<li><p>set <code class="docutils literal notranslate"><span class="pre">version</span></code> in <code class="docutils literal notranslate"><span class="pre">experiment</span></code></p></li>
+<li><p>use <code class="docutils literal notranslate"><span class="pre">environments</span></code> for <code class="docutils literal notranslate"><span class="pre">experiments</span></code></p></li>
+<li><p>don’t change version in running <code class="docutils literal notranslate"><span class="pre">experiments</span></code></p></li>
+</ul>
+<p>First things first: do you have a working <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> installation?</p>
+<p>We can simply check that via starting an <code class="docutils literal notranslate"><span class="pre">ipython</span></code> session from our <code class="docutils literal notranslate"><span class="pre">terminal</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">bash</span>
+
+ipython
+</pre></div>
+</div>
+</div>
+</div>
+<p>and from within there then try <code class="docutils literal notranslate"><span class="pre">import</span></code>ing <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psychopy</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="the-general-idea">
+<h3>The general idea<a class="headerlink" href="#the-general-idea" title="Permalink to this headline">¶</a></h3>
+<p>If you don’t get an <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">error</span></code>, at least the basic <code class="docutils literal notranslate"><span class="pre">installation</span></code> should be ok!</p>
+<p>Cool, we are now ready to actually do some <code class="docutils literal notranslate"><span class="pre">coding</span></code>! As said before we will do that in our <code class="docutils literal notranslate"><span class="pre">experiment.py</span></code> <code class="docutils literal notranslate"><span class="pre">script</span></code>. While the transition from <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebooks</span></code> to <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">scripts</span></code> might seem harsh at first, it’s actually straight-forward: the steps we conducted/<code class="docutils literal notranslate"><span class="pre">commands</span></code> we <code class="docutils literal notranslate"><span class="pre">run</span></code> in an incremental fashion will also be indicated/<code class="docutils literal notranslate"><span class="pre">run</span></code> in an incremental fashion here, just within one <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">script</span></code> line-by-line.</p>
+<p>So, what’s the first thing we usually do? That’s right: <code class="docutils literal notranslate"><span class="pre">import</span></code>ing <code class="docutils literal notranslate"><span class="pre">modules</span></code> and <code class="docutils literal notranslate"><span class="pre">function</span></code>s we need. Comparably to <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>, we will do that at the beginning of our <code class="docutils literal notranslate"><span class="pre">script</span></code>. Please note, that we will go through a realistic example of <code class="docutils literal notranslate"><span class="pre">coding</span></code> <code class="docutils literal notranslate"><span class="pre">experiments</span></code> in <code class="docutils literal notranslate"><span class="pre">python</span></code> and thus might not all <code class="docutils literal notranslate"><span class="pre">modules</span></code>/<code class="docutils literal notranslate"><span class="pre">functions</span></code> we will actually need when we start. Thus, we will add them at the beginning as we go along!</p>
+<p>However, we actually haven’t checked out what <code class="docutils literal notranslate"><span class="pre">modules</span></code>/<code class="docutils literal notranslate"><span class="pre">functions</span></code> <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> has. Let’s do that first.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://psychopy.org/api/core.html">psychopy.core</a>: various basic functions, including timing &amp; experiment termination</p></li>
+<li><p><a class="reference external" href="https://psychopy.org/api/gui.html">psychopy.gui</a>: various basic functions, including timing &amp; experiment termination</p></li>
+<li><p><a class="reference external" href="https://psychopy.org/api/event.html">psychopy.event</a>: handling of keyboard/mouse/other input from user</p></li>
+<li><p>psychopy.<a class="reference external" href="https://psychopy.org/api/visual/index.html">visual</a>/<a class="reference external" href="https://psychopy.org/api/sound/index.html">sound</a>: presentation of stimuli of various types (e.g. images, sounds, etc.)</p></li>
+<li><p><a class="reference external" href="https://psychopy.org/api/data.html">psychopy.data</a>: handling of condition parameters, response registration, trial order, etc.</p></li>
+<li><p>many more …: we unfortunately can’t check out due to time constraints</p></li>
+</ul>
+<p>Nice, looks like a decent collection of useful/feasible <code class="docutils literal notranslate"><span class="pre">modules</span></code>/<code class="docutils literal notranslate"><span class="pre">functions</span></code>. The question now is: which ones do we need to implement and <code class="docutils literal notranslate"><span class="pre">run</span></code> our <code class="docutils literal notranslate"><span class="pre">experiment</span></code>? Wait a minute…we genuinely didn’t even talk about the <code class="docutils literal notranslate"><span class="pre">experiment</span></code> yet…</p>
+<p>Let’s assume we have obtained some data regarding favorite <code class="docutils literal notranslate"><span class="pre">movies</span></code>, <code class="docutils literal notranslate"><span class="pre">snacks</span></code> and <code class="docutils literal notranslate"><span class="pre">animals</span></code> from a group of fantastic students (obviously talking about you rockstars!) and now want to test how each respectively provided item is <code class="docutils literal notranslate"><span class="pre">perceived</span></code>/<code class="docutils literal notranslate"><span class="pre">evaluated</span></code> by our entire sample: how would we do that?</p>
+<img align="center" src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/experiment_outline.png" alt="logo" title="jupyter" width="600" height="100" /> 
+<p>As you can see, we need all of them!</p>
+</div>
+<div class="section" id="input-via-dialog-boxes">
+<h3>Input via dialog boxes<a class="headerlink" href="#input-via-dialog-boxes" title="Permalink to this headline">¶</a></h3>
+<p>Many <code class="docutils literal notranslate"><span class="pre">experiments</span></code> start with a <code class="docutils literal notranslate"><span class="pre">GUI</span> <span class="pre">dialog</span> <span class="pre">box</span></code> that allow users/participant to input certain information, for example <code class="docutils literal notranslate"><span class="pre">participant</span> <span class="pre">id</span></code>, <code class="docutils literal notranslate"><span class="pre">session</span></code>, <code class="docutils literal notranslate"><span class="pre">group</span></code>, <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">storage</span> <span class="pre">path</span></code>, etc. . We can implement this crucial aspect via the <a class="reference external" href="https://psychopy.org/api/gui.html">psychopy.gui module</a>. Initially, we need to <code class="docutils literal notranslate"><span class="pre">import</span></code> it and thus need to start a new section in our <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">script</span></code> and after that, we can define the <code class="docutils literal notranslate"><span class="pre">GUI</span> <span class="pre">dialog</span> <span class="pre">box</span></code> we want to create via a <code class="docutils literal notranslate"><span class="pre">dictionary</span></code> with respective <code class="docutils literal notranslate"><span class="pre">key-value</span> <span class="pre">pairs</span></code>.</p>
+<p>Please note: at this we will start populating our <code class="docutils literal notranslate"><span class="pre">experiment.py</span></code> <code class="docutils literal notranslate"><span class="pre">script</span></code>. Thus, you should copy paste the respective content of the <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">cells</span></code> into your <code class="docutils literal notranslate"><span class="pre">experiment.py</span></code> <code class="docutils literal notranslate"><span class="pre">script</span></code> you opened in <code class="docutils literal notranslate"><span class="pre">VScode</span></code>. As we will go step-by-step, the <code class="docutils literal notranslate"><span class="pre">code</span></code>/<code class="docutils literal notranslate"><span class="pre">script</span></code> will get longer and longer.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#===============</span>
+<span class="c1"># Import modules</span>
+<span class="c1">#===============</span>
+
+<span class="kn">from</span> <span class="nn">psychopy</span> <span class="kn">import</span> <span class="n">gui</span><span class="p">,</span> <span class="n">core</span> <span class="c1"># import psychopy modules/functions</span>
+
+<span class="c1">#========================================</span>
+<span class="c1"># Create GUI dialog box for user input</span>
+<span class="c1">#========================================</span>
+
+<span class="c1"># Get subject name, age, handedness and other information through a dialog box</span>
+<span class="n">exp_name</span> <span class="o">=</span> <span class="s1">&#39;PfP_2021&#39;</span> <span class="c1"># set experiment name</span>
+<span class="n">exp_info</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;participant&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># participant name as string</span>
+            <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># age name as string</span>
+            <span class="s1">&#39;left-handed&#39;</span><span class="p">:</span><span class="kc">False</span><span class="p">,</span> <span class="c1"># handedness as boolean</span>
+            <span class="s1">&#39;like this course&#39;</span><span class="p">:(</span><span class="s1">&#39;yes&#39;</span><span class="p">,</span> <span class="s1">&#39;no&#39;</span><span class="p">),</span> <span class="c1"># course feedback as tuple</span>
+            <span class="s1">&#39;data path&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># data path as string</span>
+            <span class="p">}</span>
+<span class="n">dlg</span> <span class="o">=</span> <span class="n">gui</span><span class="o">.</span><span class="n">DlgFromDict</span><span class="p">(</span><span class="n">dictionary</span><span class="o">=</span><span class="n">exp_info</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">exp_name</span><span class="p">)</span> <span class="c1"># create GUI dialog box from dictionary</span>
+
+<span class="c1"># If &#39;Cancel&#39; is pressed, quit experiment</span>
+<span class="k">if</span> <span class="n">dlg</span><span class="o">.</span><span class="n">OK</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+    <span class="n">core</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>That’s actually all we need to test our <code class="docutils literal notranslate"><span class="pre">GUI</span> <span class="pre">dialog</span> <span class="pre">box</span></code>. In order to do that, we need to <code class="docutils literal notranslate"><span class="pre">run</span></code>/<code class="docutils literal notranslate"><span class="pre">execute</span></code> our <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">script</span></code> called <code class="docutils literal notranslate"><span class="pre">experiment.py</span></code>. This is achieved via typing <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">experiment.py</span></code> in the <code class="docutils literal notranslate"><span class="pre">VScode</span> <span class="pre">terminal</span></code> and pressing <code class="docutils literal notranslate"><span class="pre">enter</span></code> this will <code class="docutils literal notranslate"><span class="pre">run</span></code>/<code class="docutils literal notranslate"><span class="pre">execute</span></code> the <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">script</span></code> <code class="docutils literal notranslate"><span class="pre">experiment.py</span></code> via the <code class="docutils literal notranslate"><span class="pre">python</span></code> installed in our <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">environment</span></code> called <code class="docutils literal notranslate"><span class="pre">psychopy</span></code>. Again, please don’t <code class="docutils literal notranslate"><span class="pre">run</span></code>/<code class="docutils literal notranslate"><span class="pre">execute</span></code> <code class="docutils literal notranslate"><span class="pre">code</span></code> in this <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">experiment</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>If everything works/is set correctly you should see a <code class="docutils literal notranslate"><span class="pre">GUI</span> <span class="pre">dialog</span> <span class="pre">box</span></code> appearing on your screen asking for the information we indicated in our <code class="docutils literal notranslate"><span class="pre">experiment.py</span></code> <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">script</span></code> (chances are the layout on your end looks a bit different than mine, that’s no biggie). After entering all requested information and clicking <code class="docutils literal notranslate"><span class="pre">ok</span></code> the <code class="docutils literal notranslate"><span class="pre">GUI</span> <span class="pre">dialog</span> <span class="pre">box</span></code> should close and no errors should appear.</p>
+<img align="center" src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/gui_example.png" alt="logo" title="jupyter" width="600" height="100" /> <p>The next aspect we should take care of is the <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">handling</span></code>, i.e. defining a <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">filename</span></code> and <code class="docutils literal notranslate"><span class="pre">path</span></code> where it should be saved. We can make use of the <code class="docutils literal notranslate"><span class="pre">exp_info</span> <span class="pre">dictionary</span></code> right away and extract important information from there, for example, the <code class="docutils literal notranslate"><span class="pre">experiment</span></code> name and <code class="docutils literal notranslate"><span class="pre">participant</span> <span class="pre">ID</span></code>. Additionally, we will obtain the <code class="docutils literal notranslate"><span class="pre">date</span></code> and <code class="docutils literal notranslate"><span class="pre">time</span></code> via the <code class="docutils literal notranslate"><span class="pre">psychopy.core</span> <span class="pre">module</span></code>. We will also create a unique <code class="docutils literal notranslate"><span class="pre">filename</span></code> for the resulting <code class="docutils literal notranslate"><span class="pre">data</span></code> and check if the set <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">path</span></code> works out via the <code class="docutils literal notranslate"><span class="pre">os</span></code> <code class="docutils literal notranslate"><span class="pre">module</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#===============</span>
+<span class="c1"># Import modules</span>
+<span class="c1">#===============</span>
+
+<span class="kn">from</span> <span class="nn">psychopy</span> <span class="kn">import</span> <span class="n">gui</span><span class="p">,</span> <span class="n">core</span> <span class="c1"># import psychopy modules/functions</span>
+<span class="kn">import</span> <span class="nn">os</span> <span class="c1"># import os module</span>
+
+<span class="c1">#========================================</span>
+<span class="c1"># Create GUI dialog box for user input</span>
+<span class="c1">#========================================</span>
+
+<span class="c1"># Get subject name, age, handedness and other information through a dialog box</span>
+<span class="n">exp_name</span> <span class="o">=</span> <span class="s1">&#39;PfP_2021&#39;</span> <span class="c1"># set experiment name</span>
+<span class="n">exp_info</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;participant&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># participant name as string</span>
+            <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># age name as string</span>
+            <span class="s1">&#39;left-handed&#39;</span><span class="p">:</span><span class="kc">False</span><span class="p">,</span> <span class="c1"># handedness as boolean</span>
+            <span class="s1">&#39;like this course&#39;</span><span class="p">:(</span><span class="s1">&#39;yes&#39;</span><span class="p">,</span> <span class="s1">&#39;no&#39;</span><span class="p">),</span> <span class="c1"># course feedback as tuple</span>
+            <span class="s1">&#39;data path&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># data path as string</span>
+            <span class="p">}</span>
+<span class="n">dlg</span> <span class="o">=</span> <span class="n">gui</span><span class="o">.</span><span class="n">DlgFromDict</span><span class="p">(</span><span class="n">dictionary</span><span class="o">=</span><span class="n">exp_info</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">exp_name</span><span class="p">)</span> <span class="c1"># create GUI dialog box from dictionary</span>
+
+<span class="c1"># If &#39;Cancel&#39; is pressed, quit experiment</span>
+<span class="k">if</span> <span class="n">dlg</span><span class="o">.</span><span class="n">OK</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+    <span class="n">core</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+
+<span class="c1">#=================================================</span>
+<span class="c1"># Data storage: basic information, filename &amp; path</span>
+<span class="c1">#=================================================</span>
+
+<span class="c1"># Get date and time</span>
+<span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">getDateStr</span><span class="p">()</span> <span class="c1"># get date and time via data module</span>
+<span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;exp_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">exp_name</span> <span class="c1"># set experiment name</span>
+
+<span class="c1"># Check if set data path exists, if not create it</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;data path&#39;</span><span class="p">]):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;data path&#39;</span><span class="p">])</span>
+
+<span class="c1"># Create a unique filename for the experiment data    </span>
+<span class="n">data_fname</span> <span class="o">=</span> <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;participant&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;_&#39;</span> <span class="o">+</span> <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="c1"># create initial file name from participant ID and date/time</span>
+<span class="n">data_fname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;data path&#39;</span><span class="p">],</span> <span class="n">data_fname</span><span class="p">)</span> <span class="c1"># add path from GUI dialog box</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="presenting-instructions">
+<h3>Presenting instructions<a class="headerlink" href="#presenting-instructions" title="Permalink to this headline">¶</a></h3>
+<p>After having set some crucial backbones of our <code class="docutils literal notranslate"><span class="pre">experiment</span></code>, it’s time to actually start it. Quite often, <code class="docutils literal notranslate"><span class="pre">experiments</span></code> start with several messages of <code class="docutils literal notranslate"><span class="pre">instructions</span></code> that explain the <code class="docutils literal notranslate"><span class="pre">experiment</span></code> to the <code class="docutils literal notranslate"><span class="pre">participant</span></code>. Thus, we will add a few here as well, starting with a common <code class="docutils literal notranslate"><span class="pre">“welcome”</span> <span class="pre">text</span> <span class="pre">message</span></code>. To display things in general but also text, the <a class="reference external" href="https://psychopy.org/api/visual/index.html">psychopy.visual module</a> is the way to go. What we need to do now is define a general <code class="docutils literal notranslate"><span class="pre">experiment</span> <span class="pre">window</span></code> to utilize during the entire <code class="docutils literal notranslate"><span class="pre">experiment</span></code> and a <code class="docutils literal notranslate"><span class="pre">text</span></code> to be displayed on it.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#===============</span>
+<span class="c1"># Import modules</span>
+<span class="c1">#===============</span>
+
+<span class="kn">from</span> <span class="nn">psychopy</span> <span class="kn">import</span> <span class="n">gui</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">visual</span> <span class="c1"># import psychopy modules/functions</span>
+<span class="kn">import</span> <span class="nn">os</span> <span class="c1"># import os module</span>
+
+<span class="c1">#========================================</span>
+<span class="c1"># Create GUI dialog box for user input</span>
+<span class="c1">#========================================</span>
+
+<span class="c1"># Get subject name, age, handedness and other information through a dialog box</span>
+<span class="n">exp_name</span> <span class="o">=</span> <span class="s1">&#39;PfP_2021&#39;</span> <span class="c1"># set experiment name</span>
+<span class="n">exp_info</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;participant&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># participant name as string</span>
+            <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># age name as string</span>
+            <span class="s1">&#39;left-handed&#39;</span><span class="p">:</span><span class="kc">False</span><span class="p">,</span> <span class="c1"># handedness as boolean</span>
+            <span class="s1">&#39;like this course&#39;</span><span class="p">:(</span><span class="s1">&#39;yes&#39;</span><span class="p">,</span> <span class="s1">&#39;no&#39;</span><span class="p">),</span> <span class="c1"># course feedback as tuple</span>
+            <span class="s1">&#39;data path&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># data path as string</span>
+            <span class="p">}</span>
+<span class="n">dlg</span> <span class="o">=</span> <span class="n">gui</span><span class="o">.</span><span class="n">DlgFromDict</span><span class="p">(</span><span class="n">dictionary</span><span class="o">=</span><span class="n">exp_info</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">exp_name</span><span class="p">)</span> <span class="c1"># create GUI dialog box from dictionary</span>
+
+<span class="c1"># If &#39;Cancel&#39; is pressed, quit experiment</span>
+<span class="k">if</span> <span class="n">dlg</span><span class="o">.</span><span class="n">OK</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+    <span class="n">core</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+
+<span class="c1">#=================================================</span>
+<span class="c1"># Data storage: basic information, filename &amp; path</span>
+<span class="c1">#=================================================</span>
+
+<span class="c1"># Get date and time</span>
+<span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">getDateStr</span><span class="p">()</span> <span class="c1"># get date and time via data module</span>
+<span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;exp_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">exp_name</span> <span class="c1"># set experiment name</span>
+
+<span class="c1"># Check if set data path exists, if not create it</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;data path&#39;</span><span class="p">]):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;data path&#39;</span><span class="p">])</span>
+
+<span class="c1"># Create a unique filename for the experiment data    </span>
+<span class="n">data_fname</span> <span class="o">=</span> <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;participant&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;_&#39;</span> <span class="o">+</span> <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="c1"># create initial file name from participant ID and date/time</span>
+<span class="n">data_fname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;data path&#39;</span><span class="p">],</span> <span class="n">data_fname</span><span class="p">)</span> <span class="c1"># add path from GUI dialog box</span>
+
+
+<span class="c1">#===============================</span>
+<span class="c1"># Creation of window and messages</span>
+<span class="c1">#===============================</span>
+
+<span class="c1"># Open a window</span>
+<span class="n">win</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">Window</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span><span class="mi">600</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">units</span><span class="o">=</span><span class="s1">&#39;pix&#39;</span><span class="p">,</span> <span class="n">fullscr</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1"># set size, background color, etc. of window</span>
+
+<span class="c1"># Define experiment start text</span>
+<span class="n">welcome_message</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span>
+                                <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Welcome to the experiment. Please press the spacebar to continue.&quot;</span><span class="p">,</span>
+                                <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="psychopy-working-principles">
+<h2>PsychoPy working principles<a class="headerlink" href="#psychopy-working-principles" title="Permalink to this headline">¶</a></h2>
+<p>Here, we came across one of <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code>’s core working principles: we need a <code class="docutils literal notranslate"><span class="pre">general</span> <span class="pre">experiment</span> <span class="pre">window</span></code>, i.e. a place we can display/present something on. You can define a variety of different <code class="docutils literal notranslate"><span class="pre">windows</span></code> based on different <code class="docutils literal notranslate"><span class="pre">screens</span></code>/<code class="docutils literal notranslate"><span class="pre">monitors</span></code> which should however be adapted to the <code class="docutils literal notranslate"><span class="pre">setup</span></code> and <code class="docutils literal notranslate"><span class="pre">experiment</span></code> at hand (e.g. <code class="docutils literal notranslate"><span class="pre">size</span></code>, <code class="docutils literal notranslate"><span class="pre">background</span> <span class="pre">color</span></code>, etc.). Basically all <code class="docutils literal notranslate"><span class="pre">experiments</span></code> you will set up will require to define a <code class="docutils literal notranslate"><span class="pre">general</span> <span class="pre">experiment</span> <span class="pre">window</span></code> as without it no <code class="docutils literal notranslate"><span class="pre">visual</span> <span class="pre">stimuli</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">images</span></code>, <code class="docutils literal notranslate"><span class="pre">text</span></code>, <code class="docutils literal notranslate"><span class="pre">movies</span></code>, etc.) can be displayed/presented or how <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> would say it: <code class="docutils literal notranslate"><span class="pre">drawn</span></code></p>
+<p>Speaking of which: this is the next core working principle we are going to see and explore is the difference between <code class="docutils literal notranslate"><span class="pre">draw</span></code>ing something and showing it.</p>
+<div class="section" id="drawing-flipping">
+<h3><code class="docutils literal notranslate"><span class="pre">Draw</span></code>ing &amp; <code class="docutils literal notranslate"><span class="pre">flip</span></code>ping<a class="headerlink" href="#drawing-flipping" title="Permalink to this headline">¶</a></h3>
+<p>In <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> (and many other comparable software) there’s a big difference between <code class="docutils literal notranslate"><span class="pre">draw</span></code>ing and showing something. While we need to <code class="docutils literal notranslate"><span class="pre">draw</span></code> something on/in a <code class="docutils literal notranslate"><span class="pre">window</span></code> that alone won’t actually show it. This is because <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> internally uses <code class="docutils literal notranslate"><span class="pre">“two</span> <span class="pre">screens”</span></code> one <code class="docutils literal notranslate"><span class="pre">background</span></code> or <code class="docutils literal notranslate"><span class="pre">buffer</span></code> <code class="docutils literal notranslate"><span class="pre">screen</span></code> which is not seen (yet) and one <code class="docutils literal notranslate"><span class="pre">front</span> <span class="pre">screen</span></code> which is (currently) seen. When you <code class="docutils literal notranslate"><span class="pre">draw</span></code> something it’s always going to be <code class="docutils literal notranslate"><span class="pre">draw</span></code>n on the <code class="docutils literal notranslate"><span class="pre">background</span></code>/<code class="docutils literal notranslate"><span class="pre">buffer</span></code> <code class="docutils literal notranslate"><span class="pre">screen</span></code>, thus “invisible” and you need to <code class="docutils literal notranslate"><span class="pre">flip</span></code> it to the <code class="docutils literal notranslate"><span class="pre">front</span> <span class="pre">screen</span></code> to be “visible”.</p>
+<img align="center" src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/draw_flip.png" alt="logo" title="jupyter" width="600" height="100" /> 
+<p>Why does <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> (and other comparable software) work like that? The idea/aim is always the same: increase performance and minimize delays (as addressed in the <span class="xref myst">slides</span>). <code class="docutils literal notranslate"><span class="pre">Draw</span></code>ing something might take a long time, depending on the stimulus at hand, but <code class="docutils literal notranslate"><span class="pre">flip</span></code>ping something already drawn from the <code class="docutils literal notranslate"><span class="pre">buffer</span></code> to the <code class="docutils literal notranslate"><span class="pre">front</span> <span class="pre">screen</span></code> is fast(er). It can thus ensure better and more precise timing. This can work comparably for <code class="docutils literal notranslate"><span class="pre">images</span></code>, <code class="docutils literal notranslate"><span class="pre">sounds</span></code>, <code class="docutils literal notranslate"><span class="pre">movies</span></code>, etc. where things are set/<code class="docutils literal notranslate"><span class="pre">draw</span></code>n/pre-loaded and presented exactly when needed.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#===============</span>
+<span class="c1"># Import modules</span>
+<span class="c1">#===============</span>
+
+<span class="kn">from</span> <span class="nn">psychopy</span> <span class="kn">import</span> <span class="n">gui</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">visual</span> <span class="c1"># import psychopy modules/functions</span>
+<span class="kn">import</span> <span class="nn">os</span> <span class="c1"># import os module</span>
+
+<span class="c1">#========================================</span>
+<span class="c1"># Create GUI dialog box for user input</span>
+<span class="c1">#========================================</span>
+
+<span class="c1"># Get subject name, age, handedness and other information through a dialog box</span>
+<span class="n">exp_name</span> <span class="o">=</span> <span class="s1">&#39;PfP_2021&#39;</span> <span class="c1"># set experiment name</span>
+<span class="n">exp_info</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;participant&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># participant name as string</span>
+            <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># age name as string</span>
+            <span class="s1">&#39;left-handed&#39;</span><span class="p">:</span><span class="kc">False</span><span class="p">,</span> <span class="c1"># handedness as boolean</span>
+            <span class="s1">&#39;like this course&#39;</span><span class="p">:(</span><span class="s1">&#39;yes&#39;</span><span class="p">,</span> <span class="s1">&#39;no&#39;</span><span class="p">),</span> <span class="c1"># course feedback as tuple</span>
+            <span class="s1">&#39;data path&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># data path as string</span>
+            <span class="p">}</span>
+<span class="n">dlg</span> <span class="o">=</span> <span class="n">gui</span><span class="o">.</span><span class="n">DlgFromDict</span><span class="p">(</span><span class="n">dictionary</span><span class="o">=</span><span class="n">exp_info</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">exp_name</span><span class="p">)</span> <span class="c1"># create GUI dialog box from dictionary</span>
+
+<span class="c1"># If &#39;Cancel&#39; is pressed, quit experiment</span>
+<span class="k">if</span> <span class="n">dlg</span><span class="o">.</span><span class="n">OK</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+    <span class="n">core</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+
+<span class="c1">#=================================================</span>
+<span class="c1"># Data storage: basic information, filename &amp; path</span>
+<span class="c1">#=================================================</span>
+
+<span class="c1"># Get date and time</span>
+<span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">getDateStr</span><span class="p">()</span> <span class="c1"># get date and time via data module</span>
+<span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;exp_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">exp_name</span> <span class="c1"># set experiment name</span>
+
+<span class="c1"># Check if set data path exists, if not create it</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;data path&#39;</span><span class="p">]):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;data path&#39;</span><span class="p">])</span>
+
+<span class="c1"># Create a unique filename for the experiment data    </span>
+<span class="n">data_fname</span> <span class="o">=</span> <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;participant&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;_&#39;</span> <span class="o">+</span> <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="c1"># create initial file name from participant ID and date/time</span>
+<span class="n">data_fname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;data path&#39;</span><span class="p">],</span> <span class="n">data_fname</span><span class="p">)</span> <span class="c1"># add path from GUI dialog box</span>
+
+
+<span class="c1">#===============================</span>
+<span class="c1"># Creation of window and messages</span>
+<span class="c1">#===============================</span>
+
+<span class="c1"># Open a window</span>
+<span class="n">win</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">Window</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span><span class="mi">600</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">units</span><span class="o">=</span><span class="s1">&#39;pix&#39;</span><span class="p">,</span> <span class="n">fullscr</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1"># set size, background color, etc. of window</span>
+
+<span class="c1"># Define experiment start text</span>
+<span class="n">welcome_message</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span>
+                                <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Welcome to the experiment. Please press the spacebar to continue.&quot;</span><span class="p">,</span>
+                                <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
+
+<span class="c1">#=====================</span>
+<span class="c1"># Start the experiment</span>
+<span class="c1">#=====================</span>
+
+<span class="c1"># display welcome message</span>
+<span class="n">welcome_message</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span> <span class="c1"># draw welcome message to buffer screen</span>
+<span class="n">win</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span> <span class="c1"># flip it to the front screen</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s give it a try via <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">experiment.py</span></code>. If everything works/is set correctly you should see the <code class="docutils literal notranslate"><span class="pre">GUI</span> <span class="pre">dialog</span> <span class="pre">box</span></code> again but this time after clicking <code class="docutils literal notranslate"><span class="pre">OK</span></code>, the <code class="docutils literal notranslate"><span class="pre">text</span></code> we defined as a welcome message should appear next.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">experiment</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>However, it only appears very briefly and in contrast to our <code class="docutils literal notranslate"><span class="pre">GUI</span> <span class="pre">dialog</span> <span class="pre">box</span></code> we don’t need to press anything
+to advance. This is because we didn’t tell <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> that we want to <code class="docutils literal notranslate"><span class="pre">wait</span></code> for a distinct <code class="docutils literal notranslate"><span class="pre">key</span> <span class="pre">press</span></code> before we advance further, we need the <a class="reference external" href="https://psychopy.org/api/event.html">psychopy.event module</a>. Through its <code class="docutils literal notranslate"><span class="pre">.waitKeys()</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code> we can define that nothing should happen/we shouldn’t advancing unless a certain <code class="docutils literal notranslate"><span class="pre">key</span></code> is pressed. While we are at it, let’s add a few more messages to our <code class="docutils literal notranslate"><span class="pre">experiment</span></code>. One will be presented right after the welcome message and explain very generally what will happen in the <code class="docutils literal notranslate"><span class="pre">experiment</span></code>. Another one will be presented at the end of the experiment and display a general “that’s it, thanks for taking part” message. The syntax for creating, <code class="docutils literal notranslate"><span class="pre">draw</span></code>ing and presenting these message is identical to the one we just explored, we only need to change the <code class="docutils literal notranslate"><span class="pre">text</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#===============</span>
+<span class="c1"># Import modules</span>
+<span class="c1">#===============</span>
+
+<span class="kn">from</span> <span class="nn">psychopy</span> <span class="kn">import</span> <span class="n">gui</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">visual</span><span class="p">,</span> <span class="n">event</span> <span class="c1"># import psychopy modules/functions</span>
+<span class="kn">import</span> <span class="nn">os</span> <span class="c1"># import os module</span>
+
+<span class="c1">#========================================</span>
+<span class="c1"># Create GUI dialog box for user input</span>
+<span class="c1">#========================================</span>
+
+<span class="c1"># Get subject name, age, handedness and other information through a dialog box</span>
+<span class="n">exp_name</span> <span class="o">=</span> <span class="s1">&#39;PfP_2021&#39;</span> <span class="c1"># set experiment name</span>
+<span class="n">exp_info</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;participant&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># participant name as string</span>
+            <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># age name as string</span>
+            <span class="s1">&#39;left-handed&#39;</span><span class="p">:</span><span class="kc">False</span><span class="p">,</span> <span class="c1"># handedness as boolean</span>
+            <span class="s1">&#39;like this course&#39;</span><span class="p">:(</span><span class="s1">&#39;yes&#39;</span><span class="p">,</span> <span class="s1">&#39;no&#39;</span><span class="p">),</span> <span class="c1"># course feedback as tuple</span>
+            <span class="s1">&#39;data path&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># data path as string</span>
+            <span class="p">}</span>
+<span class="n">dlg</span> <span class="o">=</span> <span class="n">gui</span><span class="o">.</span><span class="n">DlgFromDict</span><span class="p">(</span><span class="n">dictionary</span><span class="o">=</span><span class="n">exp_info</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">exp_name</span><span class="p">)</span> <span class="c1"># create GUI dialog box from dictionary</span>
+
+<span class="c1"># If &#39;Cancel&#39; is pressed, quit experiment</span>
+<span class="k">if</span> <span class="n">dlg</span><span class="o">.</span><span class="n">OK</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+    <span class="n">core</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+
+<span class="c1">#=================================================</span>
+<span class="c1"># Data storage: basic information, filename &amp; path</span>
+<span class="c1">#=================================================</span>
+
+<span class="c1"># Get date and time</span>
+<span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">getDateStr</span><span class="p">()</span> <span class="c1"># get date and time via data module</span>
+<span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;exp_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">exp_name</span> <span class="c1"># set experiment name</span>
+
+<span class="c1"># Check if set data path exists, if not create it</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;data path&#39;</span><span class="p">]):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;data path&#39;</span><span class="p">])</span>
+
+<span class="c1"># Create a unique filename for the experiment data    </span>
+<span class="n">data_fname</span> <span class="o">=</span> <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;participant&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;_&#39;</span> <span class="o">+</span> <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="c1"># create initial file name from participant ID and date/time</span>
+<span class="n">data_fname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;data path&#39;</span><span class="p">],</span> <span class="n">data_fname</span><span class="p">)</span> <span class="c1"># add path from GUI dialog box</span>
+
+
+<span class="c1">#===============================</span>
+<span class="c1"># Creation of window and messages</span>
+<span class="c1">#===============================</span>
+
+<span class="c1"># Open a window</span>
+<span class="n">win</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">Window</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span><span class="mi">600</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">units</span><span class="o">=</span><span class="s1">&#39;pix&#39;</span><span class="p">,</span> <span class="n">fullscr</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1"># set size, background color, etc. of window</span>
+
+<span class="c1"># Define experiment start text</span>
+<span class="n">welcome_message</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span>
+                                <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Welcome to the experiment. Please press the spacebar to continue.&quot;</span><span class="p">,</span>
+                                <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
+
+
+<span class="c1"># Define trial start text</span>
+<span class="n">start_message</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span>
+                                <span class="n">text</span><span class="o">=</span><span class="s2">&quot;In this experiment you will rate different movies, snacks and animals on a scale from 1 to 7. Please press the spacebar to start.&quot;</span><span class="p">,</span>
+                                <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
+
+<span class="c1"># Define experiment end text</span>
+<span class="n">end_message</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span>
+                                <span class="n">text</span><span class="o">=</span><span class="s2">&quot;You have reached the end of the experiment, thanks for participating.&quot;</span><span class="p">,</span>
+                                <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
+
+
+<span class="c1">#=====================</span>
+<span class="c1"># Start the experiment</span>
+<span class="c1">#=====================</span>
+
+<span class="c1"># display welcome message</span>
+<span class="n">welcome_message</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span> <span class="c1"># draw welcome message to buffer screen</span>
+<span class="n">win</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span> <span class="c1"># flip it to the front screen</span>
+<span class="n">keys</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">waitKeys</span><span class="p">(</span><span class="n">keyList</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;space&#39;</span><span class="p">,</span> <span class="s1">&#39;escape&#39;</span><span class="p">])</span> <span class="c1"># wait for spacebar key press before advancing or quit when escape is pressed </span>
+
+<span class="c1"># display start message</span>
+<span class="n">start_message</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span> <span class="c1"># draw start message to buffer screen</span>
+<span class="n">win</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span> <span class="c1"># flip it to the front screen</span>
+<span class="n">keys</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">waitKeys</span><span class="p">(</span><span class="n">keyList</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;space&#39;</span><span class="p">,</span> <span class="s1">&#39;escape&#39;</span><span class="p">])</span> <span class="c1"># wait for spacebar key press before advancing or quit when escape is pressed </span>
+
+
+<span class="c1">#======================</span>
+<span class="c1"># End of the experiment</span>
+<span class="c1">#======================</span>
+
+<span class="c1"># Display end message</span>
+<span class="n">end_message</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span> <span class="c1"># draw end message to buffer screen</span>
+<span class="n">win</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span> <span class="c1"># flip it to the front screen</span>
+<span class="n">keys</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">waitKeys</span><span class="p">(</span><span class="n">keyList</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;space&#39;</span><span class="p">,</span> <span class="s1">&#39;escape&#39;</span><span class="p">])</span> <span class="c1"># wait for spacebar key press before advancing or quit when escape is pressed </span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s give it a try via <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">experiment.py</span></code>. If everything works/is set correctly you should see the <code class="docutils literal notranslate"><span class="pre">GUI</span> <span class="pre">dialog</span> <span class="pre">box</span></code> and after clicking <code class="docutils literal notranslate"><span class="pre">OK</span></code>, the <code class="docutils literal notranslate"><span class="pre">text</span></code> we defined as a welcome message should appear next, followed by the start message and finally the end message. In all cases, the <code class="docutils literal notranslate"><span class="pre">experiment</span></code> should only advance if you press <code class="docutils literal notranslate"><span class="pre">spacebar</span></code> or quit when you press <code class="docutils literal notranslate"><span class="pre">escape</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">experiment</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Having this rough frame of our <code class="docutils literal notranslate"><span class="pre">experiment</span></code>, it’s actually time to add the <code class="docutils literal notranslate"><span class="pre">experiment</span></code> itself: the <code class="docutils literal notranslate"><span class="pre">evaluation</span></code> of our <code class="docutils literal notranslate"><span class="pre">movies</span></code>, <code class="docutils literal notranslate"><span class="pre">snacks</span></code> and <code class="docutils literal notranslate"><span class="pre">animals</span></code>.</p>
+</div>
+<div class="section" id="trials">
+<h3><code class="docutils literal notranslate"><span class="pre">trials</span></code><a class="headerlink" href="#trials" title="Permalink to this headline">¶</a></h3>
+<p>Quick reminder: our <code class="docutils literal notranslate"><span class="pre">experiment</span></code> should collect responses from <code class="docutils literal notranslate"><span class="pre">participants</span></code> regarding our <code class="docutils literal notranslate"><span class="pre">list</span></code>s of <code class="docutils literal notranslate"><span class="pre">movies</span></code>, <code class="docutils literal notranslate"><span class="pre">snacks</span></code> and <code class="docutils literal notranslate"><span class="pre">animals</span></code>, specifically their respective <code class="docutils literal notranslate"><span class="pre">rating</span></code>. Thus we need to add/implement two aspects in our <code class="docutils literal notranslate"><span class="pre">experiment</span></code>: the <strong>presentation of stimuli</strong> and their <strong>rating</strong>/</p>
+<p>Starting with the <code class="docutils literal notranslate"><span class="pre">presentation</span> <span class="pre">of</span> <span class="pre">stimuli</span></code>, we will keep it simple for now and present them via <code class="docutils literal notranslate"><span class="pre">text</span></code>. However, any ideas how we could begin working on this? That’s right: we need to define <code class="docutils literal notranslate"><span class="pre">list</span></code>s with our stimuli!</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>movies = [‘Forrest Gump’, ‘Interstellar’, ‘Love Actually’, …]```
+
+
+Within that process, we can already think about the next step: quite often `experiments` `shuffle` the order of `stimuli` across participants to avoid sequence/order effects. We will do the same and implement that via the [numpy.random module](https://numpy.org/doc/stable/reference/random/index.html), specifically its [.shuffle()](https://numpy.org/doc/stable/reference/random/generated/numpy.random.shuffle.html) `function` which will allow us to randomly `shuffle` our previously created `list`.
+
+</pre></div>
+</div>
+<p>rnd.shuffle(movies)
+movies
+[‘Interstellar’, ‘Love Actually’, ‘Forrest Gump’,  …]```</p>
+<p>After that we need to bring our <code class="docutils literal notranslate"><span class="pre">shuffle</span></code>d <code class="docutils literal notranslate"><span class="pre">stimuli</span> <span class="pre">list</span></code> into the format required by <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code>. Specifically, this refers to the definition of <code class="docutils literal notranslate"><span class="pre">experiment</span> <span class="pre">trials</span></code>, i.e. <code class="docutils literal notranslate"><span class="pre">trials</span></code> that will be presented during the <code class="docutils literal notranslate"><span class="pre">experiment</span></code>, including their properties (e.g. <code class="docutils literal notranslate"><span class="pre">content</span></code>, <code class="docutils literal notranslate"><span class="pre">order</span></code>, <code class="docutils literal notranslate"><span class="pre">repetition</span></code>, etc.). In <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> this is achieved via the <a class="reference external" href="https://psychopy.org/api/data.html#psychopy.data.TrialHandler">data.TrialHandler()</a> <code class="docutils literal notranslate"><span class="pre">function</span></code> for which we need to convert our <code class="docutils literal notranslate"><span class="pre">shuffle</span></code>d <code class="docutils literal notranslate"><span class="pre">stimuli</span> <span class="pre">list</span></code> into a <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">dictionaries</span></code> of the form <code class="docutils literal notranslate"><span class="pre">“stimulus”:</span> <span class="pre">value</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>stim_order = []
+
+for stim in movies:
+    stim_order.append({&#39;stimulus&#39;: stim})
+    
+stim_order
+
+[{‘stimulus’:‘Interstellar’},
+ {‘stimulus’:‘Love Actually’},
+ {‘stimulus’:‘Forrest Gump’},…]
+   
+    ```
+The result is then provided as `input` for the [data.TrialHandler()](https://psychopy.org/api/data.html#psychopy.data.TrialHandler) `function`.     
+
+With that we can simply `loop` over the `trials` in the `trials object` and during each `iteration` `draw` and `flip` the respective `value` of the `dictionary key` `“stimulus”` to present the stimuli of our `list` “movies” one-by-one after one another. 
+
+</pre></div>
+</div>
+<p>for trial in trials:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span># display/draw respective stimulus within each iteration, notice how the stimulus is set &quot;on the fly&quot;
+visual.TextStim(win, text=trial[&#39;stimulus&#39;], bold=True, pos=[0, 30], height=40).draw()```
+</pre></div>
+</div>
+<p>Additionally, we want to display the question <code class="docutils literal notranslate"><span class="pre">“How</span> <span class="pre">much</span> <span class="pre">do</span> <span class="pre">you</span> <span class="pre">like</span> <span class="pre">the</span> <span class="pre">following?”</span></code> above the respective stimulus to remind participant about the task. Within each <code class="docutils literal notranslate"><span class="pre">iteration</span></code> of our <code class="docutils literal notranslate"><span class="pre">for-loop</span></code> we will also allow participants to <code class="docutils literal notranslate"><span class="pre">quit</span></code> the <code class="docutils literal notranslate"><span class="pre">experiment</span></code> by pressing <code class="docutils literal notranslate"><span class="pre">“escape”</span></code> via the <code class="docutils literal notranslate"><span class="pre">event.getKeys()</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code> as we don’t want to wait for a <code class="docutils literal notranslate"><span class="pre">key</span></code> to be <code class="docutils literal notranslate"><span class="pre">pressed</span></code> but want to do something whenever a certain <code class="docutils literal notranslate"><span class="pre">key</span></code> is <code class="docutils literal notranslate"><span class="pre">pressed</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#===============</span>
+<span class="c1"># Import modules</span>
+<span class="c1">#===============</span>
+
+<span class="kn">from</span> <span class="nn">psychopy</span> <span class="kn">import</span> <span class="n">gui</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">visual</span><span class="p">,</span> <span class="n">event</span><span class="p">,</span> <span class="n">data</span> <span class="c1"># import psychopy modules/functions</span>
+<span class="kn">import</span> <span class="nn">os</span> <span class="c1"># import os module</span>
+<span class="kn">import</span> <span class="nn">numpy.random</span> <span class="k">as</span> <span class="nn">rnd</span> <span class="c1"># import random module from numpy</span>
+
+<span class="c1">#========================================</span>
+<span class="c1"># Create GUI dialog box for user input</span>
+<span class="c1">#========================================</span>
+
+<span class="c1"># Get subject name, age, handedness and other information through a dialog box</span>
+<span class="n">exp_name</span> <span class="o">=</span> <span class="s1">&#39;PfP_2021&#39;</span> <span class="c1"># set experiment name</span>
+<span class="n">exp_info</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;participant&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># participant name as string</span>
+            <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># age name as string</span>
+            <span class="s1">&#39;left-handed&#39;</span><span class="p">:</span><span class="kc">False</span><span class="p">,</span> <span class="c1"># handedness as boolean</span>
+            <span class="s1">&#39;like this course&#39;</span><span class="p">:(</span><span class="s1">&#39;yes&#39;</span><span class="p">,</span> <span class="s1">&#39;no&#39;</span><span class="p">),</span> <span class="c1"># course feedback as tuple</span>
+            <span class="s1">&#39;data path&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># data path as string</span>
+            <span class="p">}</span>
+<span class="n">dlg</span> <span class="o">=</span> <span class="n">gui</span><span class="o">.</span><span class="n">DlgFromDict</span><span class="p">(</span><span class="n">dictionary</span><span class="o">=</span><span class="n">exp_info</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">exp_name</span><span class="p">)</span> <span class="c1"># create GUI dialog box from dictionary</span>
+
+<span class="c1"># If &#39;Cancel&#39; is pressed, quit experiment</span>
+<span class="k">if</span> <span class="n">dlg</span><span class="o">.</span><span class="n">OK</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+    <span class="n">core</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+
+<span class="c1">#=================================================</span>
+<span class="c1"># Data storage: basic information, filename &amp; path</span>
+<span class="c1">#=================================================</span>
+
+<span class="c1"># Get date and time</span>
+<span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">getDateStr</span><span class="p">()</span> <span class="c1"># get date and time via data module</span>
+<span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;exp_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">exp_name</span> <span class="c1"># set experiment name</span>
+
+<span class="c1"># Check if set data path exists, if not create it</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;data path&#39;</span><span class="p">]):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;data path&#39;</span><span class="p">])</span>
+
+<span class="c1"># Create a unique filename for the experiment data    </span>
+<span class="n">data_fname</span> <span class="o">=</span> <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;participant&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;_&#39;</span> <span class="o">+</span> <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="c1"># create initial file name from participant ID and date/time</span>
+<span class="n">data_fname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;data path&#39;</span><span class="p">],</span> <span class="n">data_fname</span><span class="p">)</span> <span class="c1"># add path from GUI dialog box</span>
+
+
+<span class="c1">#===============================</span>
+<span class="c1"># Creation of window and messages</span>
+<span class="c1">#===============================</span>
+
+<span class="c1"># Open a window</span>
+<span class="n">win</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">Window</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span><span class="mi">600</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">units</span><span class="o">=</span><span class="s1">&#39;pix&#39;</span><span class="p">,</span> <span class="n">fullscr</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1"># set size, background color, etc. of window</span>
+
+<span class="c1"># Define experiment start text</span>
+<span class="n">welcome_message</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span>
+                                <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Welcome to the experiment. Please press the spacebar to continue.&quot;</span><span class="p">,</span>
+                                <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
+
+
+<span class="c1"># Define trial start text</span>
+<span class="n">start_message</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span>
+                                <span class="n">text</span><span class="o">=</span><span class="s2">&quot;In this experiment you will rate different movies, snacks and animals on a scale from 1 to 7. Please press the spacebar to start.&quot;</span><span class="p">,</span>
+                                <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
+
+<span class="c1"># Define experiment end text</span>
+<span class="n">end_message</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span>
+                                <span class="n">text</span><span class="o">=</span><span class="s2">&quot;You have reached the end of the experiment, thanks for participating.&quot;</span><span class="p">,</span>
+                                <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
+
+
+<span class="c1">#==========================</span>
+<span class="c1"># Define the trial sequence</span>
+<span class="c1">#==========================</span>
+
+<span class="c1"># Define a list of trials with their properties:</span>
+
+<span class="c1"># create empty list</span>
+<span class="n">stim_order</span> <span class="o">=</span> <span class="p">[]</span> 
+
+<span class="c1"># convert list into list of dictionaries with key (&#39;stimulus&#39;) - value pairing</span>
+<span class="k">for</span> <span class="n">stim</span> <span class="ow">in</span> <span class="n">movies</span><span class="p">:</span>
+    <span class="n">stim_order</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;stimulus&#39;</span><span class="p">:</span> <span class="n">stim</span><span class="p">})</span> 
+
+<span class="c1"># use dictionary to create trials object via data.TrialHandler, specifying further settings</span>
+<span class="n">trials</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">TrialHandler</span><span class="p">(</span><span class="n">stim_order</span><span class="p">,</span> <span class="n">nReps</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">extraInfo</span><span class="o">=</span><span class="n">exp_info</span><span class="p">,</span>
+                           <span class="n">method</span><span class="o">=</span><span class="s1">&#39;sequential&#39;</span><span class="p">)</span> <span class="c1"># create</span>
+
+
+<span class="c1">#=====================</span>
+<span class="c1"># Start the experiment</span>
+<span class="c1">#=====================</span>
+
+<span class="c1"># display welcome message</span>
+<span class="n">welcome_message</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span> <span class="c1"># draw welcome message to buffer screen</span>
+<span class="n">win</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span> <span class="c1"># flip it to the front screen</span>
+<span class="n">keys</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">waitKeys</span><span class="p">(</span><span class="n">keyList</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;space&#39;</span><span class="p">,</span> <span class="s1">&#39;escape&#39;</span><span class="p">])</span> <span class="c1"># wait for spacebar key press before advancing or quit when escape is pressed </span>
+
+<span class="c1"># display start message</span>
+<span class="n">start_message</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span> <span class="c1"># draw start message to buffer screen</span>
+<span class="n">win</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span> <span class="c1"># flip it to the front screen</span>
+<span class="n">keys</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">waitKeys</span><span class="p">(</span><span class="n">keyList</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;space&#39;</span><span class="p">,</span> <span class="s1">&#39;escape&#39;</span><span class="p">])</span> <span class="c1"># wait for spacebar key press before advancing or quit when escape is pressed </span>
+
+<span class="c1"># Run through the trials, stimulus by stimulus</span>
+<span class="k">for</span> <span class="n">trial</span> <span class="ow">in</span> <span class="n">trials</span><span class="p">:</span>
+
+    <span class="c1"># display/draw task question to remind participants</span>
+    <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;How much do you like the following?&#39;</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">],</span> <span class="n">italic</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+
+    <span class="c1"># display/draw respective stimulus within each iteration, notice how the stimulus is set &quot;on the fly&quot;</span>
+    <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">trial</span><span class="p">[</span><span class="s1">&#39;stimulus&#39;</span><span class="p">],</span> <span class="n">bold</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">],</span> <span class="n">height</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+
+    <span class="c1"># after everything is drawn, flip it to the front screen</span>
+    <span class="n">win</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span>
+
+    <span class="c1"># if participants press `escape`, stop the experiment</span>
+    <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">getKeys</span><span class="p">([</span><span class="s1">&#39;escape&#39;</span><span class="p">]):</span>
+        <span class="n">core</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+
+
+<span class="c1">#======================</span>
+<span class="c1"># End of the experiment</span>
+<span class="c1">#======================</span>
+
+<span class="c1"># Display end message</span>
+<span class="n">end_message</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span> <span class="c1"># draw end message to buffer screen</span>
+<span class="n">win</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span> <span class="c1"># flip it to the front screen</span>
+<span class="n">keys</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">waitKeys</span><span class="p">(</span><span class="n">keyList</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;space&#39;</span><span class="p">,</span> <span class="s1">&#39;escape&#39;</span><span class="p">])</span> <span class="c1"># wait for spacebar key press before advancing or quit when escape is pressed </span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s give it a try via <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">experiment.py</span></code>. If everything works/is set correctly you should see the <code class="docutils literal notranslate"><span class="pre">GUI</span> <span class="pre">dialog</span> <span class="pre">box</span></code> and after clicking <code class="docutils literal notranslate"><span class="pre">OK</span></code>, the <code class="docutils literal notranslate"><span class="pre">text</span></code> we defined as a welcome message should appear next, followed by the start message. Subsequently, you should see all of our <code class="docutils literal notranslate"><span class="pre">stimuli</span></code> one after another and the same question above them every <code class="docutils literal notranslate"><span class="pre">trial</span></code>. Finally, you should see the end message.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">experiment</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>While this is already great, the same thing as during our initial tests with the instruction screens happened: the <code class="docutils literal notranslate"><span class="pre">text</span></code>, i.e. our <code class="docutils literal notranslate"><span class="pre">stimuli</span></code>, is only very briefly shown on screen and disappears before we can do anything. That’s because we didn’t specify that we want to collect <code class="docutils literal notranslate"><span class="pre">responses</span></code> before moving on to the next <code class="docutils literal notranslate"><span class="pre">stimulus</span></code> yet. We need to add the <code class="docutils literal notranslate"><span class="pre">rating</span></code> to our <code class="docutils literal notranslate"><span class="pre">experiment</span></code>, specifically the <code class="docutils literal notranslate"><span class="pre">trials</span></code>.</p>
+</div>
+</div>
+<div class="section" id="input-output">
+<h2>Input/output<a class="headerlink" href="#input-output" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> offers quite a bit of possible options to collect <code class="docutils literal notranslate"><span class="pre">responses</span></code>: simple yes/no questions, rating scales, visual analog scales, voice recordings, etc. and store outputs (<code class="docutils literal notranslate"><span class="pre">files</span></code>, different levels of detail, etc.).</p>
+<div class="section" id="collecting-responses">
+<h3>Collecting responses<a class="headerlink" href="#collecting-responses" title="Permalink to this headline">¶</a></h3>
+<p>For the <code class="docutils literal notranslate"><span class="pre">experiment</span></code> at hand a simple <code class="docutils literal notranslate"><span class="pre">rating</span> <span class="pre">scale</span></code> (yes, a <code class="docutils literal notranslate"><span class="pre">Likert</span> <span class="pre">scale</span></code> to make it Psychology, hehe) should be sufficient. As with the other components we have explored so far, we need to implement/add this via two steps: <code class="docutils literal notranslate"><span class="pre">defining</span></code>/<code class="docutils literal notranslate"><span class="pre">creating</span></code> a <code class="docutils literal notranslate"><span class="pre">rating</span> <span class="pre">scale</span></code> and <code class="docutils literal notranslate"><span class="pre">draw</span></code>ing/presenting it.</p>
+<p>We can easily define and tweak a rating scale via <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code>’s <a class="reference external" href="https://psychopy.org/api/visual/ratingscale.html#psychopy.visual.RatingScale">visual.RatingScale()</a> <code class="docutils literal notranslate"><span class="pre">function</span></code> which allows us to set the <code class="docutils literal notranslate"><span class="pre">range</span></code> of <code class="docutils literal notranslate"><span class="pre">values</span></code>, <code class="docutils literal notranslate"><span class="pre">labels</span></code>, <code class="docutils literal notranslate"><span class="pre">size</span></code>, etc..</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ratingScale = visual.RatingScale(win, 
+          scale = None,      
+          low = 1,           
+          high = 7,          
+          showAccept = True, 
+          markerStart = 4,   
+          labels = [&#39;1 - Not at all&#39;, &#39;7 - A lot&#39;], 
+          pos = [0, -80]) ```
+
+
+We then need to `draw` it and indicate that we want to `wait` until a `rating` was conducted before we advance to the next `trial`. 
+
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>while ratingScale.noResponse:
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+Additionally, we are going to display a small helpful message describing the `rating` and make sure that the `rating scale` is reset back to its `default status` before the next `trial` starts.
+
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ratingScale.reset()
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+
+Even though `participants` could already perform the `rating` of the `stimuli`, we don’t track and collect the respective `responses` yet. These need to be obtained from the `rating scale` before we `reset` it at the end of the `trial`. As indicated before `visual.RatingScale()` creates an `object`/`class`/`data type` with many inbuilt `functions`, this includes `.getRating()` and `.getRT()` to collect the provided `rating` and corresponding `response time`:
+
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>rating = ratingScale.getRating()
+rt = ratingScale.getRT()
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+We can then store both `values` per `trial` in the `trials object` via its `.addData()` `function`:
+
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>trials.addData(&#39;rt&#39;, rt)
+trials.addData(&#39;rating&#39;, rating)
+```
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#===============</span>
+<span class="c1"># Import modules</span>
+<span class="c1">#===============</span>
+
+<span class="kn">from</span> <span class="nn">psychopy</span> <span class="kn">import</span> <span class="n">gui</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">visual</span><span class="p">,</span> <span class="n">event</span><span class="p">,</span> <span class="n">data</span> <span class="c1"># import psychopy modules/functions</span>
+<span class="kn">import</span> <span class="nn">os</span> <span class="c1"># import os module</span>
+<span class="kn">import</span> <span class="nn">numpy.random</span> <span class="k">as</span> <span class="nn">rnd</span> <span class="c1"># import random module from numpy</span>
+
+<span class="c1">#========================================</span>
+<span class="c1"># Create GUI dialog box for user input</span>
+<span class="c1">#========================================</span>
+
+<span class="c1"># Get subject name, age, handedness and other information through a dialog box</span>
+<span class="n">exp_name</span> <span class="o">=</span> <span class="s1">&#39;PfP_2021&#39;</span> <span class="c1"># set experiment name</span>
+<span class="n">exp_info</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;participant&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># participant name as string</span>
+            <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># age name as string</span>
+            <span class="s1">&#39;left-handed&#39;</span><span class="p">:</span><span class="kc">False</span><span class="p">,</span> <span class="c1"># handedness as boolean</span>
+            <span class="s1">&#39;like this course&#39;</span><span class="p">:(</span><span class="s1">&#39;yes&#39;</span><span class="p">,</span> <span class="s1">&#39;no&#39;</span><span class="p">),</span> <span class="c1"># course feedback as tuple</span>
+            <span class="s1">&#39;data path&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># data path as string</span>
+            <span class="p">}</span>
+<span class="n">dlg</span> <span class="o">=</span> <span class="n">gui</span><span class="o">.</span><span class="n">DlgFromDict</span><span class="p">(</span><span class="n">dictionary</span><span class="o">=</span><span class="n">exp_info</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">exp_name</span><span class="p">)</span> <span class="c1"># create GUI dialog box from dictionary</span>
+
+<span class="c1"># If &#39;Cancel&#39; is pressed, quit experiment</span>
+<span class="k">if</span> <span class="n">dlg</span><span class="o">.</span><span class="n">OK</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+    <span class="n">core</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+
+<span class="c1">#=================================================</span>
+<span class="c1"># Data storage: basic information, filename &amp; path</span>
+<span class="c1">#=================================================</span>
+
+<span class="c1"># Get date and time</span>
+<span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">getDateStr</span><span class="p">()</span> <span class="c1"># get date and time via data module</span>
+<span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;exp_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">exp_name</span> <span class="c1"># set experiment name</span>
+
+<span class="c1"># Check if set data path exists, if not create it</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;data path&#39;</span><span class="p">]):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;data path&#39;</span><span class="p">])</span>
+
+<span class="c1"># Create a unique filename for the experiment data    </span>
+<span class="n">data_fname</span> <span class="o">=</span> <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;participant&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;_&#39;</span> <span class="o">+</span> <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="c1"># create initial file name from participant ID and date/time</span>
+<span class="n">data_fname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;data path&#39;</span><span class="p">],</span> <span class="n">data_fname</span><span class="p">)</span> <span class="c1"># add path from GUI dialog box</span>
+
+
+<span class="c1">#===============================</span>
+<span class="c1"># Creation of window and messages</span>
+<span class="c1">#===============================</span>
+
+<span class="c1"># Open a window</span>
+<span class="n">win</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">Window</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span><span class="mi">600</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">units</span><span class="o">=</span><span class="s1">&#39;pix&#39;</span><span class="p">,</span> <span class="n">fullscr</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1"># set size, background color, etc. of window</span>
+
+<span class="c1"># Define experiment start text</span>
+<span class="n">welcome_message</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span>
+                                <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Welcome to the experiment. Please press the spacebar to continue.&quot;</span><span class="p">,</span>
+                                <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
+
+
+<span class="c1"># Define trial start text</span>
+<span class="n">start_message</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span>
+                                <span class="n">text</span><span class="o">=</span><span class="s2">&quot;In this experiment you will rate different movies, snacks and animals on a scale from 1 to 7. Please press the spacebar to start.&quot;</span><span class="p">,</span>
+                                <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
+
+<span class="c1"># Define experiment end text</span>
+<span class="n">end_message</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span>
+                                <span class="n">text</span><span class="o">=</span><span class="s2">&quot;You have reached the end of the experiment, thanks for participating.&quot;</span><span class="p">,</span>
+                                <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
+
+
+<span class="c1">#==========================</span>
+<span class="c1"># Define the trial sequence</span>
+<span class="c1">#==========================</span>
+
+<span class="c1"># Define a list of trials with their properties:</span>
+
+<span class="c1"># create empty list</span>
+<span class="n">stim_order</span> <span class="o">=</span> <span class="p">[]</span> 
+
+<span class="c1"># convert list into list of dictionaries with key (&#39;stimulus&#39;) - value pairing</span>
+<span class="k">for</span> <span class="n">stim</span> <span class="ow">in</span> <span class="n">movies</span><span class="p">:</span>
+    <span class="n">stim_order</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;stimulus&#39;</span><span class="p">:</span> <span class="n">stim</span><span class="p">})</span> 
+
+<span class="c1"># use dictionary to create trials object via data.TrialHandler, specifying further settings</span>
+<span class="n">trials</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">TrialHandler</span><span class="p">(</span><span class="n">stim_order</span><span class="p">,</span> <span class="n">nReps</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">extraInfo</span><span class="o">=</span><span class="n">exp_info</span><span class="p">,</span>
+                           <span class="n">method</span><span class="o">=</span><span class="s1">&#39;sequential&#39;</span><span class="p">)</span> <span class="c1"># create</span>
+
+
+<span class="c1">#================================</span>
+<span class="c1"># Define a rating scale</span>
+<span class="c1">#================================</span>
+
+<span class="n">ratingScale</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">RatingScale</span><span class="p">(</span><span class="n">win</span><span class="p">,</span> 
+          <span class="n">scale</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>          <span class="c1"># This makes sure there&#39;s no subdivision on the scale</span>
+          <span class="n">low</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>               <span class="c1"># This is the minimum value I want the scale to have</span>
+          <span class="n">high</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span>             <span class="c1"># This is the maximum value of the scale</span>
+          <span class="n">showAccept</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>    <span class="c1"># This shows the user&#39;s chosen value in a window below the scale</span>
+          <span class="n">markerStart</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span>       <span class="c1"># This sets the rating scale to have its marker start on 5</span>
+          <span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;1 - Not at all&#39;</span><span class="p">,</span> <span class="s1">&#39;7 - A lot&#39;</span><span class="p">],</span> <span class="c1"># This creates the labels</span>
+          <span class="n">pos</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">80</span><span class="p">])</span> <span class="c1"># set the position of the rating scale within the window</span>
+
+
+<span class="c1">#=====================</span>
+<span class="c1"># Start the experiment</span>
+<span class="c1">#=====================</span>
+
+<span class="c1"># display welcome message</span>
+<span class="n">welcome_message</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span> <span class="c1"># draw welcome message to buffer screen</span>
+<span class="n">win</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span> <span class="c1"># flip it to the front screen</span>
+<span class="n">keys</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">waitKeys</span><span class="p">(</span><span class="n">keyList</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;space&#39;</span><span class="p">,</span> <span class="s1">&#39;escape&#39;</span><span class="p">])</span> <span class="c1"># wait for spacebar key press before advancing or quit when escape is pressed </span>
+
+<span class="c1"># display start message</span>
+<span class="n">start_message</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span> <span class="c1"># draw start message to buffer screen</span>
+<span class="n">win</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span> <span class="c1"># flip it to the front screen</span>
+<span class="n">keys</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">waitKeys</span><span class="p">(</span><span class="n">keyList</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;space&#39;</span><span class="p">,</span> <span class="s1">&#39;escape&#39;</span><span class="p">])</span> <span class="c1"># wait for spacebar key press before advancing or quit when escape is pressed </span>
+
+<span class="c1"># Run through the trials, stimulus by stimulus</span>
+<span class="k">for</span> <span class="n">trial</span> <span class="ow">in</span> <span class="n">trials</span><span class="p">:</span>
+
+    <span class="c1"># wait until a rating was conducted before advancing to the next trial</span>
+    <span class="k">while</span> <span class="n">ratingScale</span><span class="o">.</span><span class="n">noResponse</span><span class="p">:</span>
+
+
+        <span class="c1"># display/draw task question to remind participants</span>
+        <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;How much do you like the following?&#39;</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">],</span> <span class="n">italic</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+
+        <span class="c1"># display/draw respective stimulus within each iteration, notice how the stimulus is set &quot;on the fly&quot;</span>
+        <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">trial</span><span class="p">[</span><span class="s1">&#39;stimulus&#39;</span><span class="p">],</span> <span class="n">bold</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">],</span> <span class="n">height</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+
+        <span class="c1"># display/draw the rating scale</span>
+        <span class="n">ratingScale</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+        
+        <span class="c1"># display/draw help message regarding rating scale</span>
+        <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;(Move the marker along the line and click &quot;enter&quot; to indicate your rating from 1 to 7.)&#39;</span><span class="p">,</span> 
+                        <span class="n">pos</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">200</span><span class="p">],</span> <span class="n">height</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+        
+        <span class="c1"># after everything is drawn, flip it to the front screen</span>
+        <span class="n">win</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span>
+
+        <span class="c1"># if participants press `escape`, stop the experiment</span>
+        <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">getKeys</span><span class="p">([</span><span class="s1">&#39;escape&#39;</span><span class="p">]):</span>
+            <span class="n">core</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+            
+    <span class="c1"># get the current rating        </span>
+    <span class="n">rating</span> <span class="o">=</span> <span class="n">ratingScale</span><span class="o">.</span><span class="n">getRating</span><span class="p">()</span>
+
+    <span class="c1"># get the response time of the current rating </span>
+    <span class="n">rt</span> <span class="o">=</span> <span class="n">ratingScale</span><span class="o">.</span><span class="n">getRT</span><span class="p">()</span>
+
+    <span class="c1"># add the current rating to the trials object</span>
+    <span class="n">trials</span><span class="o">.</span><span class="n">addData</span><span class="p">(</span><span class="s1">&#39;rt&#39;</span><span class="p">,</span> <span class="n">rt</span><span class="p">)</span>
+    
+    <span class="c1"># add the response time of the current rating to the trials object</span>
+    <span class="n">trials</span><span class="o">.</span><span class="n">addData</span><span class="p">(</span><span class="s1">&#39;rating&#39;</span><span class="p">,</span> <span class="n">rating</span><span class="p">)</span>
+
+    <span class="c1"># reset the rating scale</span>
+    <span class="n">ratingScale</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>            
+
+
+<span class="c1">#======================</span>
+<span class="c1"># End of the experiment</span>
+<span class="c1">#======================</span>
+
+<span class="c1"># Display end message</span>
+<span class="n">end_message</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span> <span class="c1"># draw end message to buffer screen</span>
+<span class="n">win</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span> <span class="c1"># flip it to the front screen</span>
+<span class="n">keys</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">waitKeys</span><span class="p">(</span><span class="n">keyList</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;space&#39;</span><span class="p">,</span> <span class="s1">&#39;escape&#39;</span><span class="p">])</span> <span class="c1"># wait for spacebar key press before advancing or quit when escape is pressed </span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s give it a try via <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">experiment.py</span></code>. If everything works/is set correctly you should see the <code class="docutils literal notranslate"><span class="pre">GUI</span> <span class="pre">dialog</span> <span class="pre">box</span></code> and after clicking <code class="docutils literal notranslate"><span class="pre">OK</span></code>, the <code class="docutils literal notranslate"><span class="pre">text</span></code> we defined as a welcome message should appear next, followed by the start message. Subsequently, you should see all of our <code class="docutils literal notranslate"><span class="pre">stimuli</span></code> one after another and the same question above them every <code class="docutils literal notranslate"><span class="pre">trial</span></code>, this time not advancing until you provided a <code class="docutils literal notranslate"><span class="pre">rating</span></code>. Finally, you should see the end message.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">experiment</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Our <code class="docutils literal notranslate"><span class="pre">experiment</span></code> works as expected but we don’t get any <code class="docutils literal notranslate"><span class="pre">output</span> <span class="pre">files</span></code>. The reason is once again simple: we actually didn’t tell <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> that we would like to <code class="docutils literal notranslate"><span class="pre">save</span></code> our <code class="docutils literal notranslate"><span class="pre">data</span></code> to an <code class="docutils literal notranslate"><span class="pre">output</span> <span class="pre">file</span></code>. Importantly, our <code class="docutils literal notranslate"><span class="pre">data</span></code> is stored in the <code class="docutils literal notranslate"><span class="pre">trials</span> <span class="pre">object</span></code>.</p>
+</div>
+<div class="section" id="saving-data">
+<h3>Saving data<a class="headerlink" href="#saving-data" title="Permalink to this headline">¶</a></h3>
+<p>Because things work like a charm and we’re using <code class="docutils literal notranslate"><span class="pre">Python</span></code>-based tools, the <code class="docutils literal notranslate"><span class="pre">trials</span> <span class="pre">object</span></code> has an <code class="docutils literal notranslate"><span class="pre">in-built</span> <span class="pre">function</span></code>, called <code class="docutils literal notranslate"><span class="pre">.saveAsWideText()</span></code>, that easily allows this by indicating the desired <code class="docutils literal notranslate"><span class="pre">filename</span></code>, <code class="docutils literal notranslate"><span class="pre">type</span></code> and <code class="docutils literal notranslate"><span class="pre">delimiter</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">trials</span><span class="o">.</span><span class="n">saveAsWideText</span><span class="p">(</span><span class="n">data_fname</span> <span class="o">+</span> <span class="s1">&#39;.csv&#39;</span><span class="p">,</span> <span class="n">delim</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#===============</span>
+<span class="c1"># Import modules</span>
+<span class="c1">#===============</span>
+
+<span class="kn">from</span> <span class="nn">psychopy</span> <span class="kn">import</span> <span class="n">gui</span><span class="p">,</span> <span class="n">core</span><span class="p">,</span> <span class="n">visual</span><span class="p">,</span> <span class="n">event</span><span class="p">,</span> <span class="n">data</span> <span class="c1"># import psychopy modules/functions</span>
+<span class="kn">import</span> <span class="nn">os</span> <span class="c1"># import os module</span>
+<span class="kn">import</span> <span class="nn">numpy.random</span> <span class="k">as</span> <span class="nn">rnd</span> <span class="c1"># import random module from numpy</span>
+
+<span class="c1">#========================================</span>
+<span class="c1"># Create GUI dialog box for user input</span>
+<span class="c1">#========================================</span>
+
+<span class="c1"># Get subject name, age, handedness and other information through a dialog box</span>
+<span class="n">exp_name</span> <span class="o">=</span> <span class="s1">&#39;PfP_2021&#39;</span> <span class="c1"># set experiment name</span>
+<span class="n">exp_info</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;participant&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># participant name as string</span>
+            <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># age name as string</span>
+            <span class="s1">&#39;left-handed&#39;</span><span class="p">:</span><span class="kc">False</span><span class="p">,</span> <span class="c1"># handedness as boolean</span>
+            <span class="s1">&#39;like this course&#39;</span><span class="p">:(</span><span class="s1">&#39;yes&#39;</span><span class="p">,</span> <span class="s1">&#39;no&#39;</span><span class="p">),</span> <span class="c1"># course feedback as tuple</span>
+            <span class="s1">&#39;data path&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1"># data path as string</span>
+            <span class="p">}</span>
+<span class="n">dlg</span> <span class="o">=</span> <span class="n">gui</span><span class="o">.</span><span class="n">DlgFromDict</span><span class="p">(</span><span class="n">dictionary</span><span class="o">=</span><span class="n">exp_info</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">exp_name</span><span class="p">)</span> <span class="c1"># create GUI dialog box from dictionary</span>
+
+<span class="c1"># If &#39;Cancel&#39; is pressed, quit experiment</span>
+<span class="k">if</span> <span class="n">dlg</span><span class="o">.</span><span class="n">OK</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+    <span class="n">core</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+
+<span class="c1">#=================================================</span>
+<span class="c1"># Data storage: basic information, filename &amp; path</span>
+<span class="c1">#=================================================</span>
+
+<span class="c1"># Get date and time</span>
+<span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">getDateStr</span><span class="p">()</span> <span class="c1"># get date and time via data module</span>
+<span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;exp_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">exp_name</span> <span class="c1"># set experiment name</span>
+
+<span class="c1"># Check if set data path exists, if not create it</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;data path&#39;</span><span class="p">]):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;data path&#39;</span><span class="p">])</span>
+
+<span class="c1"># Create a unique filename for the experiment data    </span>
+<span class="n">data_fname</span> <span class="o">=</span> <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;participant&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;_&#39;</span> <span class="o">+</span> <span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="c1"># create initial file name from participant ID and date/time</span>
+<span class="n">data_fname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">exp_info</span><span class="p">[</span><span class="s1">&#39;data path&#39;</span><span class="p">],</span> <span class="n">data_fname</span><span class="p">)</span> <span class="c1"># add path from GUI dialog box</span>
+
+
+<span class="c1">#===============================</span>
+<span class="c1"># Creation of window and messages</span>
+<span class="c1">#===============================</span>
+
+<span class="c1"># Open a window</span>
+<span class="n">win</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">Window</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span><span class="mi">600</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">units</span><span class="o">=</span><span class="s1">&#39;pix&#39;</span><span class="p">,</span> <span class="n">fullscr</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1"># set size, background color, etc. of window</span>
+
+<span class="c1"># Define experiment start text</span>
+<span class="n">welcome_message</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span>
+                                <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Welcome to the experiment. Please press the spacebar to continue.&quot;</span><span class="p">,</span>
+                                <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
+
+
+<span class="c1"># Define trial start text</span>
+<span class="n">start_message</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span>
+                                <span class="n">text</span><span class="o">=</span><span class="s2">&quot;In this experiment you will rate different movies, snacks and animals on a scale from 1 to 7. Please press the spacebar to start.&quot;</span><span class="p">,</span>
+                                <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
+
+<span class="c1"># Define experiment end text</span>
+<span class="n">end_message</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span>
+                                <span class="n">text</span><span class="o">=</span><span class="s2">&quot;You have reached the end of the experiment, thanks for participating.&quot;</span><span class="p">,</span>
+                                <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
+
+
+<span class="c1">#==========================</span>
+<span class="c1"># Define the trial sequence</span>
+<span class="c1">#==========================</span>
+
+<span class="c1"># Define a list of trials with their properties:</span>
+
+<span class="c1"># create empty list</span>
+<span class="n">stim_order</span> <span class="o">=</span> <span class="p">[]</span> 
+
+<span class="c1"># convert list into list of dictionaries with key (&#39;stimulus&#39;) - value pairing</span>
+<span class="k">for</span> <span class="n">stim</span> <span class="ow">in</span> <span class="n">movies</span><span class="p">:</span>
+    <span class="n">stim_order</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;stimulus&#39;</span><span class="p">:</span> <span class="n">stim</span><span class="p">})</span> 
+
+<span class="c1"># use dictionary to create trials object via data.TrialHandler, specifying further settings</span>
+<span class="n">trials</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">TrialHandler</span><span class="p">(</span><span class="n">stim_order</span><span class="p">,</span> <span class="n">nReps</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">extraInfo</span><span class="o">=</span><span class="n">exp_info</span><span class="p">,</span>
+                           <span class="n">method</span><span class="o">=</span><span class="s1">&#39;sequential&#39;</span><span class="p">)</span> <span class="c1"># create</span>
+
+
+<span class="c1">#================================</span>
+<span class="c1"># Define a rating scale</span>
+<span class="c1">#================================</span>
+
+<span class="n">ratingScale</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">RatingScale</span><span class="p">(</span><span class="n">win</span><span class="p">,</span> 
+          <span class="n">scale</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>          <span class="c1"># This makes sure there&#39;s no subdivision on the scale</span>
+          <span class="n">low</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>               <span class="c1"># This is the minimum value I want the scale to have</span>
+          <span class="n">high</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span>             <span class="c1"># This is the maximum value of the scale</span>
+          <span class="n">showAccept</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>    <span class="c1"># This shows the user&#39;s chosen value in a window below the scale</span>
+          <span class="n">markerStart</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span>       <span class="c1"># This sets the rating scale to have its marker start on 5</span>
+          <span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;1 - Not at all&#39;</span><span class="p">,</span> <span class="s1">&#39;7 - A lot&#39;</span><span class="p">],</span> <span class="c1"># This creates the labels</span>
+          <span class="n">pos</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">80</span><span class="p">])</span> <span class="c1"># set the position of the rating scale within the window</span>
+
+
+<span class="c1">#=====================</span>
+<span class="c1"># Start the experiment</span>
+<span class="c1">#=====================</span>
+
+<span class="c1"># display welcome message</span>
+<span class="n">welcome_message</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span> <span class="c1"># draw welcome message to buffer screen</span>
+<span class="n">win</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span> <span class="c1"># flip it to the front screen</span>
+<span class="n">keys</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">waitKeys</span><span class="p">(</span><span class="n">keyList</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;space&#39;</span><span class="p">,</span> <span class="s1">&#39;escape&#39;</span><span class="p">])</span> <span class="c1"># wait for spacebar key press before advancing or quit when escape is pressed </span>
+
+<span class="c1"># display start message</span>
+<span class="n">start_message</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span> <span class="c1"># draw start message to buffer screen</span>
+<span class="n">win</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span> <span class="c1"># flip it to the front screen</span>
+<span class="n">keys</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">waitKeys</span><span class="p">(</span><span class="n">keyList</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;space&#39;</span><span class="p">,</span> <span class="s1">&#39;escape&#39;</span><span class="p">])</span> <span class="c1"># wait for spacebar key press before advancing or quit when escape is pressed </span>
+
+<span class="c1"># Run through the trials, stimulus by stimulus</span>
+<span class="k">for</span> <span class="n">trial</span> <span class="ow">in</span> <span class="n">trials</span><span class="p">:</span>
+
+    <span class="c1"># wait until a rating was conducted before advancing to the next trial</span>
+    <span class="k">while</span> <span class="n">ratingScale</span><span class="o">.</span><span class="n">noResponse</span><span class="p">:</span>
+
+
+        <span class="c1"># display/draw task question to remind participants</span>
+        <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;How much do you like the following?&#39;</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">],</span> <span class="n">italic</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+
+        <span class="c1"># display/draw respective stimulus within each iteration, notice how the stimulus is set &quot;on the fly&quot;</span>
+        <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">trial</span><span class="p">[</span><span class="s1">&#39;stimulus&#39;</span><span class="p">],</span> <span class="n">bold</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">],</span> <span class="n">height</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+
+        <span class="c1"># display/draw the rating scale</span>
+        <span class="n">ratingScale</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+        
+        <span class="c1"># display/draw help message regarding rating scale</span>
+        <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;(Move the marker along the line and click &quot;enter&quot; to indicate your rating from 1 to 7.)&#39;</span><span class="p">,</span> 
+                        <span class="n">pos</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">200</span><span class="p">],</span> <span class="n">height</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+        
+        <span class="c1"># after everything is drawn, flip it to the front screen</span>
+        <span class="n">win</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span>
+
+        <span class="c1"># if participants press `escape`, stop the experiment</span>
+        <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">getKeys</span><span class="p">([</span><span class="s1">&#39;escape&#39;</span><span class="p">]):</span>
+            <span class="n">core</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+            
+    <span class="c1"># get the current rating        </span>
+    <span class="n">rating</span> <span class="o">=</span> <span class="n">ratingScale</span><span class="o">.</span><span class="n">getRating</span><span class="p">()</span>
+
+    <span class="c1"># get the response time of the current rating </span>
+    <span class="n">rt</span> <span class="o">=</span> <span class="n">ratingScale</span><span class="o">.</span><span class="n">getRT</span><span class="p">()</span>
+
+    <span class="c1"># add the current rating to the trials object</span>
+    <span class="n">trials</span><span class="o">.</span><span class="n">addData</span><span class="p">(</span><span class="s1">&#39;rt&#39;</span><span class="p">,</span> <span class="n">rt</span><span class="p">)</span>
+    
+    <span class="c1"># add the response time of the current rating to the trials object</span>
+    <span class="n">trials</span><span class="o">.</span><span class="n">addData</span><span class="p">(</span><span class="s1">&#39;rating&#39;</span><span class="p">,</span> <span class="n">rating</span><span class="p">)</span>
+
+    <span class="c1"># reset the rating scale</span>
+    <span class="n">ratingScale</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>            
+
+
+<span class="c1">#======================</span>
+<span class="c1"># End of the experiment</span>
+<span class="c1">#======================</span>
+
+<span class="c1"># Save all data to a file</span>
+<span class="n">trials</span><span class="o">.</span><span class="n">saveAsWideText</span><span class="p">(</span><span class="n">data_fname</span> <span class="o">+</span> <span class="s1">&#39;.csv&#39;</span><span class="p">,</span> <span class="n">delim</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+
+<span class="c1"># Display end message</span>
+<span class="n">end_message</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span> <span class="c1"># draw end message to buffer screen</span>
+<span class="n">win</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span> <span class="c1"># flip it to the front screen</span>
+<span class="n">keys</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">waitKeys</span><span class="p">(</span><span class="n">keyList</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;space&#39;</span><span class="p">,</span> <span class="s1">&#39;escape&#39;</span><span class="p">])</span> <span class="c1"># wait for spacebar key press before advancing or quit when escape is pressed </span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>If you now try it again, everything should work as before bu after finishing the <code class="docutils literal notranslate"><span class="pre">experiment</span></code> you should see a new <code class="docutils literal notranslate"><span class="pre">file</span></code> within the indicated <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">path</span></code> containing all <code class="docutils literal notranslate"><span class="pre">information</span></code> stored about the <code class="docutils literal notranslate"><span class="pre">experiment</span></code>: <code class="docutils literal notranslate"><span class="pre">trials</span></code>, <code class="docutils literal notranslate"><span class="pre">stimuli</span></code>, <code class="docutils literal notranslate"><span class="pre">responses</span></code>, <code class="docutils literal notranslate"><span class="pre">reaction</span> <span class="pre">times</span></code>, etc. .</p>
+</div>
+</div>
+<div class="section" id="a-very-simple-experiment">
+<h2>A very simple experiment<a class="headerlink" href="#a-very-simple-experiment" title="Permalink to this headline">¶</a></h2>
+<p>Believe it or not folks, with that we already created our first working <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> <code class="docutils literal notranslate"><span class="pre">experiment</span></code>. Using only a small amount of, <em>very readable</em>, <code class="docutils literal notranslate"><span class="pre">code</span></code>, we can obtain <code class="docutils literal notranslate"><span class="pre">ratings</span></code> for our <code class="docutils literal notranslate"><span class="pre">stimuli</span></code>. Obviously, this is a very simple <code class="docutils literal notranslate"><span class="pre">experiment</span></code> but nevertheless a good start, showcasing a lot of the core things you should know to start using <code class="docutils literal notranslate"><span class="pre">PsychoPy</span></code> for <code class="docutils literal notranslate"><span class="pre">experiments</span></code>. All the things addressed here are usually also part of much more complex <code class="docutils literal notranslate"><span class="pre">experiments</span></code>, as well as build their basis.</p>
+<img align="center" src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/experiment_outline.png" alt="logo" title="jupyter" width="600" height="100" /> </div>
+<div class="section" id="outro">
+<h2>Outro<a class="headerlink" href="#outro" title="Permalink to this headline">¶</a></h2>
+<p>As usually: awesome work folks! The transition from basic <code class="docutils literal notranslate"><span class="pre">Python</span></code> aspects to applied together is definitely no cake-walk, especially when simultaneously switching to <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">scripts</span></code> from <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebooks</span></code> but you did a great job!
+Thank so much for sticking with us throughout this!</p>
+<img align="center" src="https://media4.giphy.com/media/7zWYE1ostmPWZdygj3/giphy.gif?cid=ecf05e475wkt0wsob0pgmaggnreymvom43vxe6ainhr1dzh0&rid=giphy.gif&ct=g" alt="logo" title="jupyter" width="600" height="100" /> </div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "ml-dl-synage"
+        },
+        kernelOptions: {
+            kernelName: "ml-dl-synage",
+            path: "./experiments"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'ml-dl-synage'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="experiments_1.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Experiments I</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../analyses/analyses.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Data analyses in Python</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Peer Herholz<br/>
+    
+        &copy; Copyright 2020.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
