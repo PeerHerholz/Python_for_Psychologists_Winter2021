@@ -364,19 +364,20 @@
         </div>
     </div>
 </div>
-    <!-- Table of contents that is only displayed when printing the page -->
-    <div id="jb-print-docs-body" class="onlyprint">
-        <h1>Welcome!</h1>
-        <!-- Table of contents -->
-        <div id="print-main-content" class="row">
-            <div class="col-12 col-md-12 pl-md-5 pr-md-5">
-            <div id="jb-print-toc">
-                
-                <div>
-                    <h2> Contents </h2>
-                </div>
-                <nav aria-label="Page">
-                    <ul class="visible nav section-nav flex-column">
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Welcome!</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#python-for-psychologists">
    Python for Psychologists
@@ -394,7 +395,9 @@
  </li>
 </ul>
 
-                </nav>
+                        </nav>
+                    </div>
+                </div>
             </div>
             
               <div>
@@ -488,105 +491,8 @@ GitHub site of the course. Every feedback or idea or you might have is also high
 
               </div>
               
-            </div>
-        </div>
-    </div>
-    <div id="main-content" class="row noprint">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
-              <div>
-                
-  <div class="toctree-wrapper compound">
-</div>
-<img align="right" src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/pfp_logo.png" alt="logo" title="Twitter" width="500" height="300" />
-<div class="section" id="welcome">
-<h1>Welcome!<a class="headerlink" href="#welcome" title="Permalink to this headline">¶</a></h1>
-<div class="margin sidebar">
-<p class="sidebar-title"></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>These pages are currently under construction and will be updated continuously.
-Please visit these pages again in the next few weeks for further information.</p>
-</div>
-</div>
-<p>Hello everyone and welcome to the course page for “Python for Psychologists”, taught
-within the <a class="reference external" href="https://www.goethe-university-frankfurt.de/51789866/Institute_of_Psychology">Psychology master programme</a> of the <a class="reference external" href="https://www.goethe-university-frankfurt.de/en">Goethe-University Frankfurt</a> during the winter term 2021. We’re glad to see you here!</p>
-<p>Within these pages, we provide the all information important to follow and conduct the course, including formal aspects, requirements, lecture materials, practicals and so on.  This <a class="reference external" href="https://jupyterbook.org/intro.html">jupyter book</a> will include the used slides and code in a way that they can be explored in an interactive manner. You can navigate through the respective sections via the TOC on the left side and within sections via the TOC on the right side. The three symbols in the top allow to enable full screen mode, link to the underlying <a class="reference external" href="https://github.com/PeerHerholz/Python_for_Psychologists_Winter2021">Github repository</a> and allow you to download the contents as a pdf or <span class="xref myst">jupyter notebook</span> respectively. Some sections will additionally have a little rocket in that row which will allow you to interactively rerun certain parts of the practicals via cloud computing. Additionally, we support public reviews and comments through an <a class="reference external" href="https://web.hypothes.is/">hypothes.is</a> plugin with which you can interact on the right side. All of this awesomeness (talking about the infrastructure and resource) is possible through the dedicated and second to none work of the <a class="reference external" href="https://jupyter.org/">Jupyter community</a>, specifically, the <a class="reference external" href="https://executablebooks.org/en/latest/">Executable/Jupyter Book</a> and <a class="reference external" href="https://mybinder.org/">mybinder project</a>.</p>
-<div class="section" id="python-for-psychologists">
-<h2>Python for Psychologists<a class="headerlink" href="#python-for-psychologists" title="Permalink to this headline">¶</a></h2>
-<p>Within this course we will explore the <a class="reference external" href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python programming language</a>, specifically how it can be and why it should be utilized within experimental
-psychology. To do so, we will follow a “learning by doing” approach in a tripartite manner. Starting from a basic introduction into <code class="docutils literal notranslate"><span class="pre">programming</span></code> and <code class="docutils literal notranslate"><span class="pre">python</span></code> (Block I), we will evaluate how <code class="docutils literal notranslate"><span class="pre">python</span></code> can be used to run <code class="docutils literal notranslate"><span class="pre">experiments</span></code> (Block II) and <code class="docutils literal notranslate"><span class="pre">analyze</span></code> the resulting <code class="docutils literal notranslate"><span class="pre">data</span></code> (Block III). Thus, we actively seek out <code class="docutils literal notranslate"><span class="pre">realistic</span> <span class="pre">examples</span></code> and <code class="docutils literal notranslate"><span class="pre">workflows</span></code>, trying to solve problems with <code class="docutils literal notranslate"><span class="pre">python</span></code>.  Along this way we will also talk about important adjacent topics such as <code class="docutils literal notranslate"><span class="pre">computing</span> <span class="pre">environments</span></code> and <code class="docutils literal notranslate"><span class="pre">IDE</span></code>s. For a rather precise outline of the course, please consult the <a class="reference external" href="https://peerherholz.github.io/Python_for_Psychologists_Winter2021/setup.html">respective section</a>.
-This course is designed to provide lecture content in a way that it is <a class="reference external" href="https://en.wikipedia.org/wiki/FAIR_data">FAIR</a> for as many people as possible.</p>
-<p align="center"><iframe src="https://giphy.com/embed/13HgwGsXF0aiGY" width="340" height="140" frameBorder="0" vspace="0" class="giphy-embed" allowFullScreen></iframe></p><p align="center"><a href="https://giphy.com/gifs/13HgwGsXF0aiGY"><small>via GIPHY</small></a></p></p>
-<p>You can use the following sections to navigate through the content of the lecture:</p>
-<ul>
-<li><p><a class="reference external" href="https://peerherholz.github.io/Python_for_Psychologists_Winter2021/overview.html">Overview &amp; procedure </a></p>
-<p>What’s this course all about? How are things implemented and supposed to work?</p>
-</li>
-<li><p><a class="reference external" href="https://peerherholz.github.io/Python_for_Psychologists_Winter2021/outline.html">General outline</a></p>
-<p>What are the specific topics and aspects taught?</p>
-</li>
-<li><p><a class="reference external" href="https://peerherholz.github.io/Python_for_Psychologists_Winter2021/introduction/introduction.html">Introduction</a></p>
-<p>All things gotta start somewhere and using programming within research settings is no exception to
-that, but how?</p>
-</li>
-<li><p><a class="reference external" href="https://peerherholz.github.io/Python_for_Psychologists_Winter2021/experiments/experiments.html">Running experiments in Python</a></p>
-<p>How can you use python to conduct experiments to acquire data from participants?</p>
-</li>
-<li><p><a class="reference external" href="https://peerherholz.github.io/Python_for_Psychologists_Winter2021/analyses/analyses.html">Data analyses in Python</a></p>
-<p>How can you use python to obtain insights from data, including preprocessing, statistics and visualizations?</p>
-</li>
-<li><p><a class="reference external" href="https://peerherholz.github.io/Python_for_Psychologists_Winter2021/projects.html">Student projects</a></p>
-<p>Making sure the work and progress of the participants is transparent and
-documented.</p>
-</li>
-<li><p><a class="reference external" href="https://peerherholz.github.io/Python_for_Psychologists_Winter2021/questionnaires.html">Questionnaires</a></p>
-<p>Was it worth it and how can this be evaluated?</p>
-</li>
-<li><p><a class="reference external" href="https://peerherholz.github.io/Python_for_Psychologists_Winter2021/CoC.html">Code of Conduct</a></p>
-<p>Necessities for creating an open, fair, safe and inclusive learning
-experience.</p>
-</li>
-</ul>
-</div>
-<div class="section" id="i-ve-got-a-question">
-<h2>I’ve got a question!<a class="headerlink" href="#i-ve-got-a-question" title="Permalink to this headline">¶</a></h2>
-<p>In case you have any questions or difficulties with the lecture and its materials, please don’t hesitate a single second to get in touch with us. A great way to do this is to <a class="reference external" href="https://github.com/PeerHerholz/Python_for_Psychologists_Winter2021/issues">open an issue</a> on the
-GitHub site of the course. Every feedback or idea or you might have is also highly appreciated and valued.</p>
-<p align="center"><iframe src="https://giphy.com/embed/ATt7p8OO4mvvO" width="440" height="140" frameBorder="0" vspace="0" class="giphy-embed" allowFullScreen></iframe></p><p align="center"><a href="https://giphy.com/gifs/photos-street-sesame-ATt7p8OO4mvvO"><small>via GIPHY</small></a></p></p>
-</div>
-<div class="section" id="acknowledgements">
-<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permalink to this headline">¶</a></h2>
-<p>Peer Herholz’ work on and ability to compile this course was enabled through training received at the <a class="reference external" href="https://www.mcgill.ca/neuro/">Montreal Neurological Institute</a>, specifically the <a class="reference external" href="https://neurodatascience.github.io/">NeuroDataScience - ORIGAMI lab</a> supported by funding from the Canada First Research Excellence Fund, awarded to McGill University for the <a class="reference external" href="https://www.mcgill.ca/hbhl/">Healthy Brains for Healthy Lives initiative</a>, the <a class="reference external" href="https://www.nih.gov/">National Institutes of Health (NIH)</a> <a class="reference external" href="https://www.repronim.org/">NIH-NIBIB P41 EB019936 (ReproNim)</a>, the <a class="reference external" href="https://www.nimh.nih.gov/">National Institute Of Mental Health</a> of the NIH under Award  Number <a class="reference external" href="https://www.neurosynth.org/">R01MH096906 (Neurosynth)</a>, a <a class="reference external" href="https://conp.ca/">research scholar award from Brain Canada, in partnership with Health Canada, for the Canadian Open Neuroscience Platform initiative</a>, as well as an <a class="reference external" href="https://sites.google.com/view/unique-neuro-ai">Excellence Scholarship from Unifying Neuroscience and Artificial Intelligence - Québec</a>.</p>
-</div>
-<div class="toctree-wrapper compound">
-</div>
-</div>
-
-    <script type="text/x-thebe-config">
-    {
-        requestKernel: true,
-        binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
-        },
-        codeMirrorConfig: {
-            theme: "abcdef",
-            mode: "python"
-        },
-        kernelOptions: {
-            kernelName: "python3",
-            path: "./."
-        },
-        predefinedOutput: true
-    }
-    </script>
-    <script>kernelName = 'python3'</script>
-
-              </div>
-              
-        
-            <!-- Previous / next buttons -->
+            
+                <!-- Previous / next buttons -->
 <div class='prev-next-area'>
     <a class='right-next' id="next-link" href="dei.html" title="next page">
     <div class="prev-next-info">
@@ -596,7 +502,7 @@ GitHub site of the course. Every feedback or idea or you might have is also high
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-        
+            
         </div>
     </div>
     <footer class="footer">
