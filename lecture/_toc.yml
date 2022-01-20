@@ -29,6 +29,7 @@ chapters:
   - file: experiments/experiments_1.md  
     sections:
     - file: experiments/intro_psychopy_I.ipynb
+  - file: experiments/experiments_2.md    
 - file: analyses/analyses.md
 - file: projects
 - file: questionnaires
