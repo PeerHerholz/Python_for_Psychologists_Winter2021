@@ -259,15 +259,34 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="analyses/analyses.html">
    Data analyses in Python
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="projects.html">
-   Student projects
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="analyses/analyses_1.html">
+     Analyses I
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="analyses/intro_data_analyzes_visualization.html">
+       Data analyzes I - basics in data handling
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="questionnaires.html">
@@ -555,8 +574,8 @@ You <em>must</em> have <code class="docutils literal notranslate"><span class="p
 <h3>OS-specific installation instructions<a class="headerlink" href="#os-specific-installation-instructions" title="Permalink to this headline">¶</a></h3>
 <p>Select the tab that corresponds to your operating system and follow the instructions therein.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="8421f8b2-720b-493e-86e7-f1955dfd3efc" name="24cb3883-b428-4574-ad12-d388f3230ca9" type="radio">
-</input><label class="tabbed-label" for="8421f8b2-720b-493e-86e7-f1955dfd3efc">
+<input checked="checked" id="851028c1-789e-47d6-9726-e129e50ccd01" name="22f2efe7-b8f9-4cf4-bb6f-1d8f65f05102" type="radio">
+</input><label class="tabbed-label" for="851028c1-789e-47d6-9726-e129e50ccd01">
 Windows</label><div class="tabbed-content docutils">
 <p><strong>Windows Subsystem for Linux (WSL)</strong></p>
 <ol>
@@ -651,8 +670,8 @@ If your issue is still not resolved skip the following step and contact an instr
 </pre></div>
 </div>
 </div>
-<input id="2125b020-8446-4d0a-b31f-640ac6d6d922" name="24cb3883-b428-4574-ad12-d388f3230ca9" type="radio">
-</input><label class="tabbed-label" for="2125b020-8446-4d0a-b31f-640ac6d6d922">
+<input id="36092840-d9f6-4da4-887f-b70d1fc90b76" name="22f2efe7-b8f9-4cf4-bb6f-1d8f65f05102" type="radio">
+</input><label class="tabbed-label" for="36092840-d9f6-4da4-887f-b70d1fc90b76">
 Linux</label><div class="tabbed-content docutils">
 <p><strong>Bash shell</strong></p>
 <p>You already have it!
@@ -723,8 +742,8 @@ If your issue is still not resolved skip the following step and contact an instr
 </pre></div>
 </div>
 </div>
-<input id="1c71c491-0160-4e2e-9bb0-a460ed5816c0" name="24cb3883-b428-4574-ad12-d388f3230ca9" type="radio">
-</input><label class="tabbed-label" for="1c71c491-0160-4e2e-9bb0-a460ed5816c0">
+<input id="28fc635b-c00c-4e53-9050-45872f2d28a7" name="22f2efe7-b8f9-4cf4-bb6f-1d8f65f05102" type="radio">
+</input><label class="tabbed-label" for="28fc635b-c00c-4e53-9050-45872f2d28a7">
 MacOs</label><div class="tabbed-content docutils">
 <p><strong>Bash shell</strong></p>
 <p>You already have it!
@@ -844,8 +863,8 @@ If you followed these instructions step-by-step and cannot resolve the issue ple
 <h2>Getting the course content<a class="headerlink" href="#getting-the-course-content" title="Permalink to this headline">¶</a></h2>
 <p>Now that you have installed the required software (or not) to follow the course, it’s time to gather the respective materials.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="e875daa6-4520-4460-a95a-710f035c359b" name="85d652c0-cf72-472f-9059-f5351b385950" type="radio">
-</input><label class="tabbed-label" for="e875daa6-4520-4460-a95a-710f035c359b">
+<input checked="checked" id="ca4771d0-2073-4d9b-a956-24af6b8bdf63" name="8ca2ed70-4bc6-4ce0-a015-41d4d229b2b2" type="radio">
+</input><label class="tabbed-label" for="ca4771d0-2073-4d9b-a956-24af6b8bdf63">
 Local</label><div class="tabbed-content docutils">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg" alt="conda logo" width="300"/><br />
 <sub><sup><sub><sup><a class="reference external" href="https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg">https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg</a></sup></sub></sup></sub></p>
@@ -859,8 +878,8 @@ Local</label><div class="tabbed-content docutils">
 <li><p>Finally, via the <code class="docutils literal notranslate"><span class="pre">terminal</span></code>, move to the folder where you’ve put all the unzipped content of this workshop, e.g. with the command <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~/Desktop/Python_for_Psychologists_Winter2021</span></code> and run the command <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>. If the <code class="docutils literal notranslate"><span class="pre">notebook</span> <span class="pre">server</span></code> isn’t automatically opened in a new browser window, please copy-paste either the <code class="docutils literal notranslate"><span class="pre">http://127.0.0.1:8888/...</span></code> or the <code class="docutils literal notranslate"><span class="pre">http://localhost:8888/...</span></code> path into a new browser window and press <code class="docutils literal notranslate"><span class="pre">Enter</span></code>. You should now see the <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span> <span class="pre">server</span></code> (looking like a file browser and displaying the content of the directory).</p></li>
 </ol>
 </div>
-<input id="89b7d42c-0ffe-4bab-8b76-26204d41da9c" name="85d652c0-cf72-472f-9059-f5351b385950" type="radio">
-</input><label class="tabbed-label" for="89b7d42c-0ffe-4bab-8b76-26204d41da9c">
+<input id="f93c4873-a2b6-4407-9a55-7c79aa114d91" name="8ca2ed70-4bc6-4ce0-a015-41d4d229b2b2" type="radio">
+</input><label class="tabbed-label" for="f93c4873-a2b6-4407-9a55-7c79aa114d91">
 Cloud via Mybinder</label><div class="tabbed-content docutils">
 <p><img src="https://mybinder.org/static/logo.svg?v=fe52c40adc69454ba7536393f76ebd715e5fb75f5feafe16a27c47483eabf3311c14ed9fda905c49915d6dbf369ae68fb855a40dd05489a7b9542a9ee532e92b" alt="binder logo" width="300"/><br />
 <sub><sup><sub><sup><a class="reference external" href="https://mybinder.org/static/logo.svg?v=fe52c40adc69454ba7536393f76ebd715e5fb75f5feafe16a27c47483eabf3311c14ed9fda905c49915d6dbf369ae68fb855a40dd05489a7b9542a9ee532e92b">https://mybinder.org/static/logo.svg?v=fe52c40adc69454ba7536393f76ebd715e5fb75f5feafe16a27c47483eabf3311c14ed9fda905c49915d6dbf369ae68fb855a40dd05489a7b9542a9ee532e92b</a></sup></sub></sup></sub></p>
