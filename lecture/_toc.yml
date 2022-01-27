@@ -31,7 +31,10 @@ chapters:
     - file: experiments/intro_psychopy_I.ipynb
   - file: experiments/experiments_2.md    
 - file: analyses/analyses.md
-- file: projects
+  sections:
+  - file: analyses/analyses_1.md  
+    sections:
+    - file: analyses/intro_data_analyzes_visualization.ipynb
 - file: questionnaires
 - file: break
 - file: CoC
