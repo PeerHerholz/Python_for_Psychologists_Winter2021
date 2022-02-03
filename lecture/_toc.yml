@@ -35,6 +35,9 @@ chapters:
   - file: analyses/analyses_1.md  
     sections:
     - file: analyses/intro_data_analyzes_visualization.ipynb
+  - file: analyses/analyses_2.md  
+    sections:
+    - file: analyses/intro_data_analyzes_visualization_II.ipynb    
 - file: questionnaires
 - file: break
 - file: CoC
