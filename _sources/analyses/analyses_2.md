@@ -32,7 +32,7 @@ Please see the rendered version of the `jupyter notebook` [Data analyzes II - da
 
 Your ninth homework assignment will entail working through a few tasks covering the contents discussed in this session within of a `jupyter notebook`. You can download it [here](https://www.dropbox.com/s/8onpnvjap5yejnd/PFP_assignment_9_intro_analyzes_II.ipynb?dl=1). In order to open it, put the `homework assignment notebook` within the folder you stored the `course materials`, start a `jupyter notebook` as during the sessions, navigate to the `homework assignment notebook`, open it and have fun!  
 
-**Deadline: 09/02/2022, 11:59 PM EST**
+**Deadline: 16/02/2022, 11:59 PM EST**
 
 _Optional_: If you are interested in using `python` for a specific task/problem/analyses/etc. or have general questions, please send us a message before the class or outline them to ask during the class, as we will do a general Q&A and provide some pointers on how to continue and extent your `python` adventures! 
 
