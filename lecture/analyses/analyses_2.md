@@ -1,5 +1,5 @@
 # Analyses II
-With this session, we conclude the final chapter of our endeavor. After spending quite a good while on `basic data handling` and `data wranglin`, we will continue with `data visualization` and `data analyses` using `python`. This includes a brief showcase of several distinct aspects/steps in a "classic" data analyses workflow: `data visualization` for `explorative and statistical purposes`, as well as `statistical analyses`. As usual the aim is to provide folks a respective overview that allows them to dig further into details and start using `python` for their `data analyses` after the course ends.
+With this session, we conclude the final chapter of our endeavor. After spending quite a good while on `basic data handling` and `data wrangling`, we will continue with `data visualization` and `data analyses` using `python`. This includes a brief showcase of several distinct aspects/steps in a "classic" data analyses workflow: `data visualization` for `explorative and statistical purposes`, as well as `statistical analyses`. As usual the aim is to provide folks a respective overview that allows them to dig further into details and start using `python` for their `data analyses` after the course ends.
 
 ## Topics 💡👨🏻‍🏫 
 

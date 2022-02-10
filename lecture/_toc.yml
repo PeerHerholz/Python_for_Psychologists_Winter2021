@@ -37,7 +37,23 @@ chapters:
     - file: analyses/intro_data_analyzes_visualization.ipynb
   - file: analyses/analyses_2.md  
     sections:
-    - file: analyses/intro_data_analyzes_visualization_II.ipynb    
+    - file: analyses/intro_data_analyzes_visualization_II.ipynb   
+  - file: analyses/analyses_3_finale.md  
+- file: showcases/module_showcases.md
+  sections:
+    - file: showcases/python_numpy.ipynb
+    - file: showcases/python_scipy.ipynb
+    - file: showcases/python_scikit.ipynb
+    - file: showcases/python_visualization_for_data.ipynb
+    - file: showcases/image_manipulation_nibabel.ipynb
+    - file: showcases/image_manipulation_nilearn.ipynb
+    - file: showcases/statistical_analyses_MRI.ipynb
+    - file: showcases/functional_connectivity.ipynb
+    - file: showcases/diffusion_imaging.ipynb
+    - file: showcases/machine_learning_preparation.ipynb
+    - file: showcases/machine_learning_nilearn.ipynb
+    - file: showcases/machine_learning_keras.ipynb
+    - file: showcases/Predicting_age_with_machine_learning.ipynb
 - file: questionnaires
 - file: break
 - file: CoC
